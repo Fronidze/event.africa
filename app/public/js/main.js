@@ -9,6 +9,28 @@ let  windowLoad = () => {
         slidesPerView: 1,
         loop: true,
     });
+
+    const program_festival_movies = new Swiper('.program_festival__gallery.movies', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        loopedSlides: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    const program_festival_music = new Swiper('.program_festival__gallery.music', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        loopedSlides: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 }
 
 window.addEventListener('load', windowLoad);

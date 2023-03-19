@@ -47,4 +47,38 @@
 
   }
 
+  .movies_wrapper,
+  .music_wrapper {
+    padding-left: var(--container-padding);
+    margin-bottom: 7.2rem;
+    position: relative;
+    .swiper-pagination {
+      bottom: -5rem;
+      .swiper-pagination-bullet-active {
+        background: #F39C11;
+      }
+      .swiper-pagination-bullet {
+        border: .2rem solid #F3DE66;
+        opacity: 1;
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+
+  &__gallery {
+    &.movies {
+
+      .swiper-slide {
+        width: 30rem;
+        height: 44.4rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
 }

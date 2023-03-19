@@ -550,5 +550,35 @@ header .menu__list a:hover {
   margin-top: 2.5rem;
   line-height: 1.3;
 }
+.program_festival .movies_wrapper,
+.program_festival .music_wrapper {
+  padding-left: var(--container-padding);
+  margin-bottom: 7.2rem;
+  position: relative;
+}
+.program_festival .movies_wrapper .swiper-pagination,
+.program_festival .music_wrapper .swiper-pagination {
+  bottom: -5rem;
+}
+.program_festival .movies_wrapper .swiper-pagination .swiper-pagination-bullet-active,
+.program_festival .music_wrapper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #F39C11;
+}
+.program_festival .movies_wrapper .swiper-pagination .swiper-pagination-bullet,
+.program_festival .music_wrapper .swiper-pagination .swiper-pagination-bullet {
+  border: 0.2rem solid #F3DE66;
+  opacity: 1;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.program_festival__gallery.movies .swiper-slide {
+  width: 30rem;
+  height: 44.4rem;
+}
+.program_festival__gallery.movies .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 /*# sourceMappingURL=main.css.map */
