@@ -1,4 +1,7 @@
 version: '3.9'
+networks:
+  traefik:
+    external: true
 services:
   nginx:
     image: africa.nginx:latest
