@@ -128,6 +128,7 @@ header .menu__list a:hover {
 }
 
 .about {
+  position: relative;
   margin-top: 3rem;
   min-height: 135.8rem;
 }
@@ -160,10 +161,27 @@ header .menu__list a:hover {
   font-size: 7rem;
   font-weight: 500;
 }
+.about .africa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 126rem;
+  height: 135rem;
+}
 .about .africa img {
-  width: 12.6rem;
-  height: 13.5rem;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+}
+.about .green_blur {
+  width: 85rem;
+  height: 85rem;
+  position: absolute;
+  bottom: -6rem;
+  left: -6rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(47, 255, 199, 0.8) 0%, rgba(18, 58, 43, 0) 100%);
+  filter: blur(250px);
 }
 
 .festival {
@@ -171,9 +189,9 @@ header .menu__list a:hover {
 }
 .festival__left_background {
   position: absolute;
-  top: 0;
+  top: -11rem;
   left: 0;
-  height: 100rem;
+  height: 168rem;
 }
 .festival__left_background img {
   height: 100%;
