@@ -443,6 +443,9 @@ header .menu__list a:hover {
   padding-bottom: 15.4rem;
   position: relative;
 }
+.about_festival .about_festival__images .images__wrapper__left img {
+  width: 100%;
+}
 .about_festival .about_festival__images .images__wrapper__left::before {
   content: "";
   display: block;
@@ -459,6 +462,9 @@ header .menu__list a:hover {
 .about_festival .about_festival__images .images__wrapper__right img:nth-child(1) {
   margin-bottom: 2.6rem;
 }
+.about_festival .about_festival__images .images__wrapper__right img {
+  width: 100%;
+}
 
 .teams {
   margin-top: 16.8rem;
@@ -467,6 +473,11 @@ header .menu__list a:hover {
   width: 100%;
   height: 6.4rem;
   margin-bottom: 8rem;
+}
+.teams__border img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .teams__title {
   font-size: 9rem;
@@ -523,9 +534,19 @@ header .menu__list a:hover {
   left: -6rem;
   z-index: 1001;
 }
+.program_festival .red_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .program_festival__border {
   width: 100%;
   height: 6.4rem;
+}
+.program_festival__border img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .program_festival__description h3 {
   text-align: right;

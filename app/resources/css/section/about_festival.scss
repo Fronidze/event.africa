@@ -48,6 +48,10 @@
         padding-bottom: 15.4rem;
         position: relative;
 
+        img {
+          width: 100%;
+        }
+
         &::before {
           content: '';
           display: block;
@@ -64,6 +68,9 @@
         width: 64.8rem;
         img:nth-child(1) {
           margin-bottom: 2.6rem;
+        }
+        img {
+          width: 100%;
         }
       }
     }
