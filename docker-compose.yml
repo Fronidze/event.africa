@@ -10,7 +10,7 @@ services:
       - traefik
       - default
     volumes:
-      - ${PWD}/app:/app
+      - ./app:/app
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.sales.rule=Host(`simapple.ru`)"
@@ -32,4 +32,4 @@ services:
     container_name: africa.node
     command: [ "/usr/local/bin/sass", "--watch", "/app/resources/css/main.scss", "/app/public/style/main.css" ]
     volumes:
-      - $PWD/app:/app:delegated
+      - ./app:/app:delegated
