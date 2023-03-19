@@ -1,0 +1,47 @@
+.about {
+
+  margin-top: 3rem;
+  min-height: 135.8rem;
+
+  &__description {
+    padding-top: 13.6rem;
+
+    h1 {
+      font-size: 24rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 8.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .date {
+      margin-top: 11rem;
+      display: flex;
+      align-items: flex-start;
+      font-size: 13rem;
+      font-weight: 700;
+      small {
+        font-size: 4rem;
+        font-weight: 400;
+        margin: 1.5rem 0 0 1.5rem;
+      }
+    }
+
+    .city {
+      font-size: 7rem;
+      font-weight: 500;
+    }
+  }
+  .africa {
+    img {
+      width: 12.6rem;
+      height: 13.5rem;
+      object-fit: contain;
+    }
+  }
+
+}

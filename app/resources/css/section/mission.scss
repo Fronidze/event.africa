@@ -1,0 +1,98 @@
+.mission {
+  margin-top: 14rem;
+  position: relative;
+
+  .red_square {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    width: 70rem;
+    height: 70rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(246, 131, 131, 0.6) 0%, rgba(229, 120, 73, 0.6) 100%);
+    filter: blur(250px);
+    z-index: 1;
+  }
+
+  .red_icon {
+    width: 57rem;
+    height: 57rem;
+    position: absolute;
+    top: 16rem;
+    right: 10rem;
+    z-index: 1001;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__description {
+    p {
+      width: 96.6rem;
+      margin-top: 6rem;
+    }
+  }
+
+  &__gallery {
+
+    width: 100%;
+    height: 111.4rem;
+    border-top: .1rem solid var(--color-border-brown);
+
+    &__wrapper {
+      margin-top: 14rem;
+    }
+
+    .mission__element {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 28.16%, #000000 95.74%);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      &__describe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 14.6rem var(--container-padding);
+        p {
+          margin-top: 6rem;
+          width: 105.5rem;
+        }
+      }
+
+    }
+
+  }
+
+}

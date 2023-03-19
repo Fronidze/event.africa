@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  node:
+    image: africa.node:latest
+    build:
+      context: .
+      dockerfile: .docker/node/Dockerfile
+    container_name: africa.node
+    command: [ "/usr/local/bin/sass", "--watch", "/app/resources/css/main.scss", "/app/public/style/main.css" ]
+    volumes:
+      - $PWD/app:/app:delegated
