@@ -149,7 +149,7 @@ header .menu__list a:hover {
   text-transform: uppercase;
 }
 .about__description .date {
-  margin-top: 11rem;
+  margin-top: 8rem;
   display: flex;
   align-items: flex-start;
   font-size: 13rem;
