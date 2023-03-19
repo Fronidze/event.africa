@@ -344,6 +344,29 @@ header .menu__list a:hover {
   font-weight: 300;
   margin-top: 3rem;
 }
+.program__information__row .program__list {
+  margin-top: 4rem;
+  padding-left: 5rem;
+}
+.program__information__row .program__list li {
+  margin-top: 1.8rem;
+  position: relative;
+}
+.program__information__row .program__list li:before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -3.2rem;
+  margin-top: -1.2rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--color-border-brown);
+}
+.program__information__row .program__list li p {
+  font-weight: 300;
+}
 .program__top_image {
   position: absolute;
   top: 0;
@@ -362,6 +385,13 @@ header .menu__list a:hover {
   bottom: 0;
   right: var(--container-padding);
   z-index: -1;
+  width: 81rem;
+  height: 34rem;
+}
+.program__bottom_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
