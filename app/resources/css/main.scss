@@ -3,6 +3,7 @@
   --color-black: #000000;
   --color-white: #FFFFFF;
   --color-border-brown: #EDE0D3;
+  --color-orange: #F39C11;
   --container-padding: 19rem;
 }
 
@@ -69,3 +70,5 @@ html {
 @import "section/festival";
 @import "section/mission";
 @import "section/program";
+@import "section/about_festival";
+@import "section/teams";

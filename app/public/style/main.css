@@ -3,6 +3,7 @@
   --color-black: #000000;
   --color-white: #FFFFFF;
   --color-border-brown: #EDE0D3;
+  --color-orange: #F39C11;
   --container-padding: 19rem;
 }
 
@@ -317,6 +318,7 @@ header .menu__list a:hover {
 .program {
   position: relative;
   padding-top: 30rem;
+  padding-bottom: 10rem;
 }
 .program__information h3 {
   text-align: right;
@@ -346,7 +348,7 @@ header .menu__list a:hover {
 }
 .program__information__row .program__list {
   margin-top: 4rem;
-  padding-left: 5rem;
+  padding-left: 10rem;
 }
 .program__information__row .program__list li {
   margin-top: 1.8rem;
@@ -392,6 +394,119 @@ header .menu__list a:hover {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.about_festival {
+  margin-top: 17rem;
+  position: relative;
+  background: url("../../public/images/about_festival_bottom_bg.svg") center bottom no-repeat;
+}
+.about_festival .top_left_bg {
+  position: absolute;
+  top: 0;
+  right: 2.2rem;
+  width: 57rem;
+  height: 106rem;
+  z-index: -1;
+}
+.about_festival .top_left_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.about_festival__description {
+  padding-top: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.about_festival__description p {
+  width: 86.6rem;
+  margin-top: 6rem;
+}
+.about_festival .about_festival__images {
+  padding-top: 25rem;
+}
+.about_festival .about_festival__images .images__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.about_festival .about_festival__images .images__wrapper img {
+  border-radius: 6rem;
+}
+.about_festival .about_festival__images .images__wrapper__left {
+  width: 82.6rem;
+  padding-bottom: 15.4rem;
+  position: relative;
+}
+.about_festival .about_festival__images .images__wrapper__left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 19.8rem;
+  left: -6.45rem;
+  width: 12.9rem;
+  height: 42.8rem;
+  background: url("../../public/images/about_festival_left_decoration.svg");
+}
+.about_festival .about_festival__images .images__wrapper__right {
+  width: 64.8rem;
+}
+.about_festival .about_festival__images .images__wrapper__right img:nth-child(1) {
+  margin-bottom: 2.6rem;
+}
+
+.teams {
+  margin-top: 16.8rem;
+}
+.teams__border {
+  width: 100%;
+  height: 6.4rem;
+  margin-bottom: 8rem;
+}
+.teams__title {
+  font-size: 9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.teams__elements {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.teams__record {
+  width: 31rem;
+  margin-right: 10rem;
+  margin-bottom: 3rem;
+}
+.teams__record:nth-child(4n) {
+  margin-right: 0;
+}
+.teams__record .images {
+  width: 100%;
+  height: 31rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.teams__record .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.teams__record .title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 3.2rem;
+  margin-bottom: 1.3rem;
+}
+.teams__record .description {
+  font-size: 2.9rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-orange);
 }
 
 /*# sourceMappingURL=main.css.map */
