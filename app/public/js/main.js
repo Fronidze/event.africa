@@ -12,24 +12,19 @@ let  windowLoad = () => {
 
     const program_festival_movies = new Swiper('.program_festival__gallery.movies', {
         slidesPerView: 5,
-        spaceBetween: 30,
-        loop: true,
-        loopedSlides: 3,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        spaceBetween: 10,
+        pagination: {el: '.swiper-pagination.movies', clickable: true},
     });
 
     const program_festival_music = new Swiper('.program_festival__gallery.music', {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        loop: true,
-        loopedSlides: 3,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        slidesPerView: 4,
+        spaceBetween: 5,
+        pagination: {el: '.swiper-pagination.music', clickable: true},
+    });
+
+    const program_festival_photos = new Swiper('.program_festival__gallery.photos', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
     });
 }
 

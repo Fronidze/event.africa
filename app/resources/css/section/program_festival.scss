@@ -66,9 +66,12 @@
     }
   }
 
+  .photos_wrapper {
+    margin-bottom: 7.2rem;
+  }
+
   &__gallery {
     &.movies {
-
       .swiper-slide {
         width: 30rem;
         height: 44.4rem;
@@ -76,6 +79,31 @@
           width: 100%;
           height: 100%;
           object-fit: contain;
+        }
+      }
+    }
+
+    &.music {
+      .swiper-slide {
+        width: 40.3rem;
+        height: 40rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &.photos {
+      .swiper-slide {
+        width: 137.2rem;
+        height: 116.1rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 6rem;
         }
       }
     }

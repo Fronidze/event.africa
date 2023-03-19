@@ -571,6 +571,9 @@ header .menu__list a:hover {
   width: 1.6rem;
   height: 1.6rem;
 }
+.program_festival .photos_wrapper {
+  margin-bottom: 7.2rem;
+}
 .program_festival__gallery.movies .swiper-slide {
   width: 30rem;
   height: 44.4rem;
@@ -579,6 +582,25 @@ header .menu__list a:hover {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.program_festival__gallery.music .swiper-slide {
+  width: 40.3rem;
+  height: 40rem;
+}
+.program_festival__gallery.music .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.program_festival__gallery.photos .swiper-slide {
+  width: 137.2rem;
+  height: 116.1rem;
+}
+.program_festival__gallery.photos .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6rem;
 }
 
 /*# sourceMappingURL=main.css.map */
