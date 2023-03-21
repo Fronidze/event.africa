@@ -16,13 +16,13 @@ services:
       - ./app:/app
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.sales.rule=Host(`simapple.ru`)"
+      - "traefik.http.routers.sales.rule=Host(`african-days.ru`)"
       - "traefik.http.routers.sales.entryPoints=http"
       - "traefik.http.services.sales.loadBalancer.server.port=80"
       - "traefik.http.routers.sales.middlewares=redirectToHttps"
       - "traefik.http.middlewares.redirectToHttps.redirectScheme.scheme=https"
       - "traefik.http.middlewares.redirectToHttps.redirectScheme.permanent=true"
-      - "traefik.http.routers.sslSales.rule=Host(`simapple.ru`)"
+      - "traefik.http.routers.sslSales.rule=Host(`african-days.ru`)"
       - "traefik.http.routers.sslSales.entryPoints=https"
       - "traefik.http.routers.sslSales.tls=true"
       - "traefik.http.routers.sslSales.tls.certResolver=letsEncrypt"

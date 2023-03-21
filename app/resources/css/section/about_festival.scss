@@ -25,6 +25,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+
     p {
       width: 86.6rem;
       margin-top: 6rem;
@@ -66,9 +67,11 @@
 
       &__right {
         width: 64.8rem;
+
         img:nth-child(1) {
           margin-bottom: 2.6rem;
         }
+
         img {
           width: 100%;
         }
