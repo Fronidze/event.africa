@@ -22,26 +22,27 @@
   font-style: normal;
 }
 
+
 @font-face {
   font-family: 'Parangon 420';
-  src: url('../fonts/PARANGON420C.eot');
-  src: url('../fonts/PARANGON420C.eot') format('embedded-opentype'),
-  url('../fonts/PARANGON420C.woff2') format('woff2'),
-  url('../fonts/PARANGON420C.woff') format('woff'),
-  url('../fonts/PARANGON420C.ttf') format('truetype'),
-  url('../fonts/PARANGON420C.svg#PARANGON420C') format('svg');
+  src: url('../fonts/Parangon420C.eot');
+  src: local('Parangon 420C'), local('Parangon420C'),
+  url('../fonts/Parangon420C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon420C.woff2') format('woff2'),
+  url('../fonts/Parangon420C.woff') format('woff'),
+  url('../fonts/Parangon420C.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Parangon';
-  src: url('../fonts/PARANGON430C.eot');
-  src: url('../fonts/PARANGON430C.eot') format('embedded-opentype'),
-  url('../fonts/PARANGON430C.woff2') format('woff2'),
-  url('../fonts/PARANGON430C.woff') format('woff'),
-  url('../fonts/PARANGON430C.ttf') format('truetype'),
-  url('../fonts/PARANGON430C.svg#PARANGON430C') format('svg');
+  src: url('../fonts/Parangon430C.eot');
+  src: local('Parangon 430C'), local('Parangon430C'),
+  url('../fonts/Parangon430C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon430C.woff2') format('woff2'),
+  url('../fonts/Parangon430C.woff') format('woff'),
+  url('../fonts/Parangon430C.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
