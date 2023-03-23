@@ -1,0 +1,15 @@
+.invite {
+  padding-top: 19rem;
+  &__description {}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text_how {
+    width: 88rem;
+    font-weight: 400;
+  }
+  &__form {
+    width: 66.7rem;
+  }
+}
