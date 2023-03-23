@@ -1,5 +1,20 @@
 .btn {
 
+  &-link {
+
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+
+    &-default {
+      color: #F39C11;
+    }
+    &-white {
+      color: white;
+    }
+  }
+
   &-md {}
 
   &.registration {

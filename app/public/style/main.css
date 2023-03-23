@@ -53,38 +53,121 @@ html body .icon__link img {
 
 @font-face {
   font-family: "Parangon";
-  src: url("../fonts/Parangon130C.eot");
-  src: local("Parangon 130C"), local("Parangon130C"), url("../fonts/Parangon130C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon130C.woff2") format("woff2"), url("../fonts/Parangon130C.woff") format("woff"), url("../fonts/Parangon130C.ttf") format("truetype");
-  font-weight: 200;
+  src: url("../fonts/PARANGON320C.eot");
+  src: url("../fonts/PARANGON320C.eot") format("embedded-opentype"), url("../fonts/PARANGON320C.woff2") format("woff2"), url("../fonts/PARANGON320C.woff") format("woff"), url("../fonts/PARANGON320C.ttf") format("truetype"), url("../fonts/PARANGON320C.svg#PARANGON320C") format("svg");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Parangon";
-  src: url("../fonts/Parangon230C.eot");
-  src: local("Parangon 230C"), local("Parangon230C"), url("../fonts/Parangon230C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon230C.woff2") format("woff2"), url("../fonts/Parangon230C.woff") format("woff"), url("../fonts/Parangon230C.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Parangon 330";
+  src: url("../fonts/PARANGON330C.eot");
+  src: url("../fonts/PARANGON330C.eot") format("embedded-opentype"), url("../fonts/PARANGON330C.woff2") format("woff2"), url("../fonts/PARANGON330C.woff") format("woff"), url("../fonts/PARANGON330C.ttf") format("truetype"), url("../fonts/PARANGON330C.svg#PARANGON330C") format("svg");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Parangon";
-  src: url("../fonts/../fonts/Parangon330C.eot");
-  src: local("Parangon 330C"), local("Parangon330C"), url("../fonts/../fonts/Parangon330C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon330C.woff2") format("woff2"), url("../fonts/Parangon330C.woff") format("woff"), url("../fonts/Parangon330C.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Parangon";
-  src: url("../fonts/Parangon430C.eot");
-  src: local("Parangon 430C"), local("Parangon430C"), url("../fonts/Parangon430C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon430C.woff2") format("woff2"), url("../fonts/Parangon430C.woff") format("woff"), url("../fonts/Parangon430C.ttf") format("truetype");
+  font-family: "Parangon 420";
+  src: url("../fonts/PARANGON420C.eot");
+  src: url("../fonts/PARANGON420C.eot") format("embedded-opentype"), url("../fonts/PARANGON420C.woff2") format("woff2"), url("../fonts/PARANGON420C.woff") format("woff"), url("../fonts/PARANGON420C.ttf") format("truetype"), url("../fonts/PARANGON420C.svg#PARANGON420C") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Parangon";
-  src: url("../fonts/Parangon530C.eot");
-  src: local("Parangon 530C"), local("Parangon530C"), url("../fonts/Parangon530C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon530C.woff2") format("woff2"), url("../fonts/Parangon530C.woff") format("woff"), url("../fonts/Parangon530C.ttf") format("truetype");
+  src: url("../fonts/PARANGON430C.eot");
+  src: url("../fonts/PARANGON430C.eot") format("embedded-opentype"), url("../fonts/PARANGON430C.woff2") format("woff2"), url("../fonts/PARANGON430C.woff") format("woff"), url("../fonts/PARANGON430C.ttf") format("truetype"), url("../fonts/PARANGON430C.svg#PARANGON430C") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Parangon 510";
+  src: url("../fonts/PARANGON510C.eot");
+  src: url("../fonts/PARANGON510C.eot") format("embedded-opentype"), url("../fonts/PARANGON510C.woff2") format("woff2"), url("../fonts/PARANGON510C.woff") format("woff"), url("../fonts/PARANGON510C.ttf") format("truetype"), url("../fonts/PARANGON510C.svg#PARANGON510C") format("svg");
   font-weight: 700;
   font-style: normal;
+}
+@font-face {
+  font-family: "Parangon";
+  src: url("../fonts/PARANGON530C.eot");
+  src: url("../fonts/PARANGON530C.eot") format("embedded-opentype"), url("../fonts/PARANGON530C.woff2") format("woff2"), url("../fonts/PARANGON530C.woff") format("woff"), url("../fonts/PARANGON530C.ttf") format("truetype"), url("../fonts/PARANGON530C.svg#PARANGON530C") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+/*  |-----------------------------------
+    | OLDEST
+    |-----------------------------------
+
+@font-face {
+  font-family: 'Parangon';
+  src: url('../fonts/Parangon130C.eot');
+  src: local('Parangon 130C'), local('Parangon130C'),
+  url('../fonts/Parangon130C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon130C.woff2') format('woff2'),
+  url('../fonts/Parangon130C.woff') format('woff'),
+  url('../fonts/Parangon130C.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Parangon';
+  src: url('../fonts/Parangon230C.eot');
+  src: local('Parangon 230C'), local('Parangon230C'),
+  url('../fonts/Parangon230C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon230C.woff2') format('woff2'),
+  url('../fonts/Parangon230C.woff') format('woff'),
+  url('../fonts/Parangon230C.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Parangon';
+  src: url('../fonts/../fonts/Parangon330C.eot');
+  src: local('Parangon 330C'), local('Parangon330C'),
+  url('../fonts/../fonts/Parangon330C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon330C.woff2') format('woff2'),
+  url('../fonts/Parangon330C.woff') format('woff'),
+  url('../fonts/Parangon330C.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Parangon';
+  src: url('../fonts/Parangon430C.eot');
+  src: local('Parangon 430C'), local('Parangon430C'),
+  url('../fonts/Parangon430C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon430C.woff2') format('woff2'),
+  url('../fonts/Parangon430C.woff') format('woff'),
+  url('../fonts/Parangon430C.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Parangon';
+  src: url('../fonts/Parangon530C.eot');
+  src: local('Parangon 530C'), local('Parangon530C'),
+  url('../fonts/Parangon530C.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Parangon530C.woff2') format('woff2'),
+  url('../fonts/Parangon530C.woff') format('woff'),
+  url('../fonts/Parangon530C.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+.btn-link {
+  text-decoration: underline;
+}
+.btn-link:hover {
+  text-decoration: none;
+}
+.btn-link-default {
+  color: #F39C11;
+}
+.btn-link-white {
+  color: white;
 }
 .btn.registration {
   background: rgba(243, 156, 17, 0.87);
@@ -163,9 +246,50 @@ header .menu__list a {
   display: block;
   padding: 1.5rem 0;
   border-bottom: 0.2rem solid transparent;
+  font-family: "Parangon 420", sans-serif;
 }
 header .menu__list a:hover {
   border-bottom: 0.2rem solid var(--color-border-brown);
+}
+
+footer {
+  padding: 6rem 0;
+  border-top: 0.1rem solid var(--color-border-brown);
+}
+footer .footer_wrapper {
+  font-size: 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_wrapper .partners .icon {
+  display: block;
+  width: 8.1rem;
+  height: 4.9rem;
+}
+footer .footer_wrapper .social ul {
+  display: flex;
+  align-items: center;
+}
+footer .footer_wrapper .social ul li {
+  margin-right: 2.4rem;
+}
+footer .footer_wrapper .social ul li:last-child {
+  margin-right: 0;
+}
+footer .footer_wrapper .social ul li a {
+  width: 5.9rem;
+  height: 5.9rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--color-border-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer_wrapper .social ul li a img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
 }
 
 .about {
@@ -194,6 +318,7 @@ header .menu__list a:hover {
   font-weight: 700;
 }
 .about__description .date small {
+  font-family: "Parangon 330", sans-serif;
   font-size: 4rem;
   font-weight: 400;
   margin: 1.5rem 0 0 1.5rem;
@@ -664,17 +789,37 @@ header .menu__list a:hover {
 
 .invite {
   padding-top: 19rem;
+  padding-bottom: 4rem;
 }
 .invite__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 3.7rem;
 }
 .invite__text_how {
-  width: 88rem;
+  padding-top: 2.7rem;
+  width: 82rem;
   font-weight: 400;
+}
+.invite__text_how p:nth-child(1) {
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+.invite__text_how p:nth-child(2) {
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.3;
+}
+.invite__text_how p:nth-child(2) span {
+  color: #F39C11;
 }
 .invite__form {
   width: 66.7rem;
+  text-align: center;
+}
+.invite__form form {
+  margin-bottom: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

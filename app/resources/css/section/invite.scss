@@ -1,15 +1,36 @@
 .invite {
   padding-top: 19rem;
+  padding-bottom: 4rem;
+
   &__description {}
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 3.7rem;
   }
   &__text_how {
-    width: 88rem;
+    padding-top: 2.7rem;
+    width: 82rem;
     font-weight: 400;
+    p:nth-child(1) {
+      line-height: 1.2;
+      letter-spacing: .1rem;
+    }
+    p:nth-child(2) {
+      margin-top: 5rem;
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 1.3;
+      span {
+        color: #F39C11;
+      }
+    }
   }
   &__form {
     width: 66.7rem;
+    text-align: center;
+    form {
+      margin-bottom: 1.6rem;
+    }
   }
 }
