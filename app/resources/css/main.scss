@@ -12,6 +12,7 @@ html {
   width: 100%;
   font-size: var(--font-size);
   line-height: calc(29 / 26);
+  scroll-behavior: smooth;
 
   * {
     margin: 0;

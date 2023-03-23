@@ -11,6 +11,7 @@ html {
   width: 100%;
   font-size: var(--font-size);
   line-height: 1.1153846154;
+  scroll-behavior: smooth;
 }
 html * {
   margin: 0;
