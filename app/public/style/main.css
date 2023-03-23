@@ -53,16 +53,16 @@ html body .icon__link img {
 
 @font-face {
   font-family: "Parangon";
-  src: url("../fonts/PARANGON320C.eot");
-  src: url("../fonts/PARANGON320C.eot") format("embedded-opentype"), url("../fonts/PARANGON320C.woff2") format("woff2"), url("../fonts/PARANGON320C.woff") format("woff"), url("../fonts/PARANGON320C.ttf") format("truetype"), url("../fonts/PARANGON320C.svg#PARANGON320C") format("svg");
-  font-weight: 400;
+  src: url("../fonts/Parangon320C.eot");
+  src: local("Parangon 320C"), local("Parangon320C"), url("../fonts/Parangon320C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon320C.woff2") format("woff2"), url("../fonts/Parangon320C.woff") format("woff"), url("../fonts/Parangon320C.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Parangon 330";
-  src: url("../fonts/PARANGON330C.eot");
-  src: url("../fonts/PARANGON330C.eot") format("embedded-opentype"), url("../fonts/PARANGON330C.woff2") format("woff2"), url("../fonts/PARANGON330C.woff") format("woff"), url("../fonts/PARANGON330C.ttf") format("truetype"), url("../fonts/PARANGON330C.svg#PARANGON330C") format("svg");
-  font-weight: 400;
+  src: url("../fonts/Parangon330C.eot");
+  src: local("Parangon 330C"), local("Parangon330C"), url("../fonts/Parangon330C.eot?#iefix") format("embedded-opentype"), url("../fonts/Parangon330C.woff2") format("woff2"), url("../fonts/Parangon330C.woff") format("woff"), url("../fonts/Parangon330C.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
