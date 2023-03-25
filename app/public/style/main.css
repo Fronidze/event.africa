@@ -193,7 +193,7 @@ html body .icon__link img {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../public/images/btn_register_border.svg");
+  background: url("/images/btn_register_border.svg");
   background-size: contain;
 }
 .btn.registration::after {
@@ -204,7 +204,7 @@ html body .icon__link img {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("../../public/images/btn_register_border.svg");
+  background: url("/images/btn_register_border.svg");
   background-size: contain;
 }
 
@@ -565,7 +565,7 @@ footer .footer_wrapper .social ul li a img {
 .about_festival {
   margin-top: 17rem;
   position: relative;
-  background: url("../../public/images/about_festival_bottom_bg.svg") center bottom no-repeat;
+  background: url("/images/about_festival_bottom_bg.svg") center bottom no-repeat;
 }
 .about_festival .top_left_bg {
   position: absolute;
@@ -618,7 +618,7 @@ footer .footer_wrapper .social ul li a img {
   left: -6.45rem;
   width: 12.9rem;
   height: 42.8rem;
-  background: url("../../public/images/about_festival_left_decoration.svg");
+  background: url("/images/about_festival_left_decoration.svg");
 }
 .about_festival .about_festival__images .images__wrapper__right {
   width: 64.8rem;

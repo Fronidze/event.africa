@@ -1,0 +1,58 @@
+.btn {
+
+  &-link {
+
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+
+    &-default {
+      color: #F39C11;
+    }
+    &-white {
+      color: white;
+    }
+  }
+
+  &-md {}
+
+  &.registration {
+    background: rgba(243, 156, 17, 0.87);
+    width: 66.7rem;
+    height: 17.2rem;
+    border-radius: 4.2rem;
+    border: none;
+    font-family: "Parangon", sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #9A6613;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5.8rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../../public/images/btn_register_border.svg");
+      background-size: contain;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5.8rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: url("../../public/images/btn_register_border.svg");
+      background-size: contain;
+    }
+  }
+
+}

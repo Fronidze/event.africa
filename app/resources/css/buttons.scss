@@ -39,7 +39,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: url("../../public/images/btn_register_border.svg");
+      background: url("/images/btn_register_border.svg");
       background-size: contain;
     }
     &::after {
@@ -50,7 +50,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background: url("../../public/images/btn_register_border.svg");
+      background: url("/images/btn_register_border.svg");
       background-size: contain;
     }
   }

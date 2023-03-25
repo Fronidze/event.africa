@@ -1,0 +1,64 @@
+.about {
+  position: relative;
+  margin-top: 3rem;
+  min-height: 135.8rem;
+
+  &__description {
+    padding-top: 13.6rem;
+
+    h1 {
+      font-size: 24rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 8.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .date {
+      margin-top: 8rem;
+      display: flex;
+      align-items: flex-start;
+      font-size: 13rem;
+      font-weight: 700;
+      small {
+        font-family: "Parangon 330", sans-serif;
+        font-size: 4rem;
+        font-weight: 400;
+        margin: 1.5rem 0 0 1.5rem;
+      }
+    }
+
+    .city {
+      font-size: 7rem;
+      font-weight: 500;
+    }
+  }
+  .africa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 126rem;
+    height: 135rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .green_blur {
+    width: 85rem;
+    height: 85rem;
+    position: absolute;
+    bottom: -6rem;
+    left: -6rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(47, 255, 199, 0.8) 0%, rgba(18, 58, 43, 0) 100%);
+    filter: blur(250px);
+  }
+
+}

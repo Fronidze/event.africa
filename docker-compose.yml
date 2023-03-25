@@ -27,12 +27,11 @@ services:
       - "traefik.http.routers.sslSales.tls=true"
       - "traefik.http.routers.sslSales.tls.certResolver=letsEncrypt"
 
-  node:
-    image: africa.node:latest
+  php:
+    image: africa.php:latest
+    container_name: africa.php
     build:
       context: .
-      dockerfile: .docker/node/Dockerfile
-    container_name: africa.node
-    command: [ "/usr/local/bin/sass", "--watch", "/app/resources/css/main.scss", "/app/public/style/main.css" ]
+      dockerfile: .docker/php/Dockerfile
     volumes:
-      - ./app:/app:delegated
+      - ./app:/app

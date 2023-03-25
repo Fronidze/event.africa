@@ -1,0 +1,122 @@
+.program_festival {
+  margin-top: 22rem;
+  position: relative;
+
+  .red_icon {
+    width: 57rem;
+    height: 57rem;
+    position: absolute;
+    top: -12.5rem;
+    left: -6rem;
+    z-index: 1001;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__border {
+    width: 100%;
+    height: 6.4rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__description {
+    h3 {
+      text-align: right;
+      margin-bottom: 6.2rem;
+    }
+  }
+
+  &__element {
+    margin-bottom: 5.2rem;
+
+    .element {
+      margin-bottom: 7.2rem;
+    }
+
+    .element__title {
+      font-size: 9rem;
+      font-weight: 400;
+      line-height: 1.3;
+      text-transform: uppercase;
+      margin-top: 7.2rem;
+    }
+
+    .element__description {
+      font-size: 4rem;
+      font-weight: 300;
+      margin-top: 2.5rem;
+      line-height: 1.3;
+    }
+
+  }
+
+  .movies_wrapper,
+  .music_wrapper {
+    padding-left: var(--container-padding);
+    margin-bottom: 7.2rem;
+    position: relative;
+    .swiper-pagination {
+      bottom: -5rem;
+      .swiper-pagination-bullet-active {
+        background: #F39C11;
+      }
+      .swiper-pagination-bullet {
+        border: .2rem solid #F3DE66;
+        opacity: 1;
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+
+  .photos_wrapper {
+    margin-bottom: 7.2rem;
+  }
+
+  &__gallery {
+    &.movies {
+      .swiper-slide {
+        width: 30rem;
+        height: 44.4rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &.music {
+      .swiper-slide {
+        width: 40.3rem;
+        height: 40rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &.photos {
+      .swiper-slide {
+        width: 137.2rem;
+        height: 116.1rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 6rem;
+        }
+      }
+    }
+  }
+
+}

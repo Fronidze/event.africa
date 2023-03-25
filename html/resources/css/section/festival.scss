@@ -1,0 +1,55 @@
+.festival {
+
+  position: relative;
+
+  &__left_background {
+    position: absolute;
+    top: -11rem;
+    left: 0;
+    height: 168rem;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__description {
+    width: calc(102rem + var(--container-padding));
+    h3 {
+      padding-right: var(--container-padding);
+    }
+    p {
+      padding-left: 18.1rem;
+      padding-top: 6rem;
+      padding-right: var(--container-padding);
+    }
+  }
+
+  .gallery_wrapper {
+    padding-left: 18.1rem;
+    margin-top: 8rem;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 48rem;
+
+    .swiper-slide {
+      width: 36rem;
+      height: 48rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+  }
+
+}
