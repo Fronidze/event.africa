@@ -2,6 +2,8 @@ version: '3.9'
 networks:
   traefik:
     external: true
+volumes:
+  database:
 services:
   nginx:
     image: africa.nginx:latest
@@ -26,7 +28,6 @@ services:
       - "traefik.http.routers.sslSales.entryPoints=https"
       - "traefik.http.routers.sslSales.tls=true"
       - "traefik.http.routers.sslSales.tls.certResolver=letsEncrypt"
-
   php:
     image: africa.php:latest
     container_name: africa.php
@@ -35,3 +36,12 @@ services:
       dockerfile: .docker/php/Dockerfile
     volumes:
       - ./app:/app
+  database:
+    image: postgres:14.4-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: main
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - database:/var/lib/postgresql/data:delegated

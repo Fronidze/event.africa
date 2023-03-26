@@ -1,3 +1,5 @@
 /treva.africa.iml
 /.idea/
 /docker-compose.override.yml
+/app/.phpstorm.meta.php
+/app/_ide_helper.php

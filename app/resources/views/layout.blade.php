@@ -1,8 +1,19 @@
-<!doctype html>
+<?php
+
+use App\Models\FestivalGallery;
+use App\Models\NewsGallery;
+
+/**
+ * @var FestivalGallery[] $festivalElements
+ * @var NewsGallery[] $newsElements
+ */
+?>
+    <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -70,21 +81,11 @@
             <div class="gallery_wrapper">
                 <div class="swiper festival__swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="/images/mocks/festival.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/mocks/festival.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/mocks/festival.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/mocks/festival.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/images/mocks/festival.png" alt="">
-                        </div>
+                        @foreach($festivalElements as $element)
+                            <div class="swiper-slide">
+                                <img src="{{ $element->file?->filePath() }}" alt="{{ $element->title }}">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -114,36 +115,22 @@
     <div id="news" class="mission__gallery__wrapper">
         <div class="swiper mission__gallery">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="mission__element">
+                @foreach($newsElements as $element)
+                    <div class="swiper-slide">
+                        <div class="mission__element">
 
-                        <div class="mission__element__image">
-                            <img src="/images/mocks/mission.png" alt="">
+                            <div class="mission__element__image">
+                                <img src="{{ $element->file?->filePath() }}" alt="{{ $element->title }}">
+                            </div>
+
+                            <div class="mission__element__describe">
+                                <h3>{{ $element->title }}</h3>
+                                <p>{!! $element->description !!}</p>
+                            </div>
+
                         </div>
-
-                        <div class="mission__element__describe">
-                            <h3>новости</h3>
-                            <p>Московский международный кинофестиваль начал прием картин на участие в конкурсе.</p>
-                        </div>
-
                     </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="mission__element">
-
-                        <div class="mission__element__image">
-                            <img src="/images/mocks/mission.png" alt="">
-                        </div>
-
-                        <div class="mission__element__describe">
-                            <h3>новости</h3>
-                            <p>Московский международный кинофестиваль начал прием картин на участие в конкурсе.</p>
-                        </div>
-
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>
@@ -399,14 +386,17 @@
             <h3>{!! trans('content.participant_title') !!}</h3>
             <div class="invite__wrapper">
                 <div class="invite__text_how">
-                    <p>{!! trans('content.participant_about') !!} <a href="" class="btn btn-link btn-link-default">{!! trans('content.participant_about_register') !!}</a></p>
+                    <p>{!! trans('content.participant_about') !!} <a href=""
+                                                                     class="btn btn-link btn-link-default">{!! trans('content.participant_about_register') !!}</a>
+                    </p>
                     <p>{!! trans('content.participant_about_time') !!}</p>
                 </div>
                 <div class="invite__form">
                     <form action="">
                         <button class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
                     </form>
-                    <a href="" class="btn btn-md btn-link btn-link-white">{!! trans('content.participant_remember') !!}</a>
+                    <a href=""
+                       class="btn btn-md btn-link btn-link-white">{!! trans('content.participant_remember') !!}</a>
                 </div>
             </div>
         </div>

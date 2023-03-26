@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --color-orange: #8f2c24;
+    --color-orange-hover: #d64c42;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__trees {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.main__girls {
+    position: absolute;
+    scale: 0.65;
+    animation: moveGirl 23s linear infinite;
+}
+
+.content {
+    position: relative;
+    background: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(15px);
+    padding: 60px;
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .1);
+}
+
+.form_title {
+    font-size: 2.5rem;
+    color: var(--color-orange);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.content .form-group {
+    margin-bottom: 30px;
+}
+
+.content .form-group .form-label {
+    display: block;
+    color: var(--color-orange);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.content .form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25rem;
+    color: var(--color-orange);
+    border-radius: 5px;
+    background: white;
+    border: none;
+}
+
+.content .form-group .form-control::placeholder {
+    color: var(--color-orange);
+}
+
+.content .form-action button {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background: var(--color-orange);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.content .form-action button:hover {
+    background: var(--color-orange-hover);
+}
+
+.leaves {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.leaves .set {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.leaves .set div {
+    position: absolute;
+    display: block;
+}
+
+.leaves .set div:nth-child(1) {
+    left: 20%;
+    animation: leavesDown 20s linear infinite;
+}
+
+.leaves .set div:nth-child(2) {
+    left: 30%;
+    animation: leavesDown 14s linear infinite;
+}
+
+.leaves .set div:nth-child(3) {
+    left: 40%;
+    animation: leavesDown 12s linear infinite;
+}
+
+.leaves .set div:nth-child(4) {
+    left: 50%;
+    animation: leavesDown 15s linear infinite;
+}
+
+.leaves .set div:nth-child(5) {
+    left: 60%;
+    animation: leavesDown 18s linear infinite;
+}
+
+.leaves .set div:nth-child(6) {
+    left: 70%;
+    animation: leavesDown 12s linear infinite;
+}
+
+.leaves .set div:nth-child(7) {
+    left: 80%;
+    animation: leavesDown 14s linear infinite;
+}
+
+.leaves .set div:nth-child(8) {
+    left: 90%;
+    animation: leavesDown 15s linear infinite;
+}
+
+@keyframes leavesDown {
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+        transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    100% {
+        top: 110%;
+        transform: translateX(20px) rotate(225deg);
+    }
+}
+
+@keyframes moveGirl {
+    0% {
+        transform: translateX(calc(-100% + 100vw));
+    }
+    50% {
+        transform: translateX(calc(-100% - 100vw));
+    }
+    50.1% {
+        transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+    }
+}
