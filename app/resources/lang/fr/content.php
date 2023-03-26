@@ -10,6 +10,7 @@ return [
     'description_about_festival' => 'Les Journées de la culture et du cinéma africains sont un festival créé pour permettre aux téléspectateurs russes de mieux comprendre la culture moderne unique du continent africain, à travers la démonstration de films, d’arts visuels, de musique, de poésie et d’autres types d’expression créative.',
 
     'title_mission' => 'Mission du festival',
+    'mission_title_news' => 'nouvelles',
     'description_mission' => 'La mission du festival est de trouver de nouvelles opportunités et formes de coopération dans le domaine des industries créatives entre la Russie et les pays du continent africain.',
 
     'title_program' => 'Programme',

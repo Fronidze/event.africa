@@ -109,6 +109,8 @@
         </div>
     </div>
 
+    <h3 class="news_title">{!! trans('content.mission_title_news') !!}</h3>
+
     <div id="news" class="mission__gallery__wrapper">
         <div class="swiper mission__gallery">
             <div class="swiper-wrapper">

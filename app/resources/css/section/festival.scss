@@ -1,55 +1,87 @@
 .festival {
-
-  position: relative;
-
-  &__left_background {
-    position: absolute;
-    top: -11rem;
-    left: 0;
-    height: 168rem;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
+    position: relative;
+    @media screen {
+        @media (max-width: $mobile) {
+            padding: 6.4rem var(--container-padding) 42rem;
+        }
     }
-  }
 
-  &__container {
-    display: flex;
-    justify-content: flex-end;
-  }
+    &__left_background {
+        position: absolute;
+        top: -11rem;
+        left: 0;
+        height: 168rem;
 
-  &__description {
-    width: calc(102rem + var(--container-padding));
-    h3 {
-      padding-right: var(--container-padding);
+        @media screen {
+            @media (max-width: $mobile) {
+                top: 22rem;
+                letter-spacing: 0;
+                width: 48rem;
+                height: 66rem;
+            }
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
     }
-    p {
-      padding-left: 18.1rem;
-      padding-top: 6rem;
-      padding-right: var(--container-padding);
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
     }
-  }
 
-  .gallery_wrapper {
-    padding-left: 18.1rem;
-    margin-top: 8rem;
-  }
+    &__description {
+        width: calc(102rem + var(--container-padding));
+        @media screen {
+            @media (max-width: $mobile) {
+                width: 100%;
+            }
+        }
 
-  &__swiper {
-    width: 100%;
-    height: 48rem;
+        h3 {
+            padding-right: var(--container-padding);
+        }
 
-    .swiper-slide {
-      width: 36rem;
-      height: 48rem;
-      img {
+        p {
+            padding-left: 18.1rem;
+            padding-top: 6rem;
+            padding-right: var(--container-padding);
+            @media screen {
+                @media (max-width: $mobile) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .gallery_wrapper {
+        padding-left: 18.1rem;
+        margin-top: 8rem;
+        @media screen {
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__swiper {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
+        height: 48rem;
 
-  }
+        .swiper-slide {
+            width: 36rem;
+            height: 48rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
 
 }

@@ -1,38 +1,41 @@
 header {
+    .menu {
+        &__list {
+            @media screen {
+                @media (max-width: $mobile) {
+                    display: none;
+                }
+            }
+            font-size: 2.6rem;
+            display: flex;
 
-  .menu {
-    &__list {
+            li {
+                padding: 0 3.5rem;
+                border-bottom: .1rem solid var(--color-border-brown);
 
-      font-size: 2.6rem;
-      display: flex;
+                &:nth-child(1) {
+                    padding-left: 0;
+                }
 
-      li {
-        padding: 0 3.5rem;
-        border-bottom: .1rem solid var(--color-border-brown);
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
 
-        &:nth-child(1) {
-          padding-left: 0;
+            a {
+                color: var(--color-white);
+                text-decoration: none;
+                display: block;
+                padding: 1.5rem 0;
+                border-bottom: .2rem solid transparent;
+                font-family: "Parangon 420", sans-serif;
+
+                &:hover {
+                    border-bottom: .2rem solid var(--color-border-brown);
+                }
+            }
+
         }
-
-        &:last-child {
-          padding-right: 0;
-        }
-      }
-
-      a {
-        color: var(--color-white);
-        text-decoration: none;
-        display: block;
-        padding: 1.5rem 0;
-        border-bottom: .2rem solid transparent;
-        font-family: "Parangon 420", sans-serif;
-
-        &:hover {
-          border-bottom: .2rem solid var(--color-border-brown);
-        }
-      }
-
     }
-  }
 
 }
