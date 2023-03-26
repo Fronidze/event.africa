@@ -282,9 +282,35 @@ header .partners_logo {
 header .menu {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
+header .language {
+  font-size: 2.6rem;
+  margin-left: 5rem;
+}
+header .language li {
+  padding: 0 3.5rem;
+  border-bottom: 0.1rem solid var(--color-border-brown);
+}
+header .language li:nth-child(1) {
+  padding-left: 0;
+}
+header .language li:last-child {
+  padding-right: 0;
+}
+header .language a {
+  color: var(--color-white);
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem 0;
+  border-bottom: 0.2rem solid transparent;
+  font-family: "Parangon 420", sans-serif;
+  text-transform: uppercase;
+}
+header .language a:hover {
+  border-bottom: 0.2rem solid var(--color-border-brown);
+}
 header .menu__list {
   font-size: 2.6rem;
   display: flex;
@@ -295,7 +321,7 @@ header .menu__list {
   }
 }
 header .menu__list li {
-  padding: 0 3.5rem;
+  padding: 0 2rem;
   border-bottom: 0.1rem solid var(--color-border-brown);
 }
 header .menu__list li:nth-child(1) {

@@ -22,7 +22,7 @@ use App\Models\NewsGallery;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Фестиваль: Дни Африканской культуры и кино</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
 
@@ -46,6 +46,15 @@ use App\Models\NewsGallery;
             <li><a href="#news">{{ trans('menu.news') }}</a></li>
             <li><a href="#program">{{ trans('menu.program') }}</a></li>
             <li><a href="#participant">{{ trans('menu.participant') }}</a></li>
+        </ul>
+
+        <ul class="language">
+            @if(App::getLocale() == 'ru')
+                <li><a href="/fr/">fr</a></li>
+            @else
+                <li><a href="/">ru</a></li>
+            @endif
+
         </ul>
 
     </div>

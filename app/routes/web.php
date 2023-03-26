@@ -17,8 +17,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('{lang?}')->group(function () {
+    $lang = request()->segment(1);
+    if ($lang !== null) {
+        App::setLocale($lang);
+    }
 
-Route::get('/', [Controller::class, 'main']);
+    Route::get('/', [Controller::class, 'main']);
+});
+
 
 Route::prefix('panel')->name('panel.')->group(function () {
     Route::get('/', [PanelController::class, 'index'])->name('index');
