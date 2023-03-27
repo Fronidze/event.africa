@@ -304,10 +304,32 @@ header.open .mobile_menu {
   background: var(--color-black);
   z-index: 100;
 }
+header.open .mobile_menu__list {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+header.open .mobile_menu__list li {
+  padding-bottom: 3.6rem;
+  border-left: 0.2rem solid var(--color-border-brown);
+}
+header.open .mobile_menu__list li:last-child {
+  padding-bottom: 0;
+}
+header.open .mobile_menu__list li a {
+  color: var(--color-white);
+  padding-left: 2rem;
+  text-decoration: none;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+}
 header .mobile_menu {
   max-height: 0;
   overflow: hidden;
   transition: 0.1s linear;
+}
+header .mobile_menu__list {
+  display: none;
 }
 
 header .language {

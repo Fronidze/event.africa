@@ -26,7 +26,8 @@ use App\Models\NewsGallery;
 </head>
 <body>
 
-<header>
+<header class="open">
+{{--<header>--}}
     <div class="container menu">
 
         <div class="main_logo">
@@ -71,7 +72,14 @@ use App\Models\NewsGallery;
 
     </div>
 
-    <div class="mobile_menu"></div>
+    <div class="mobile_menu">
+        <ul class="mobile_menu__list">
+            <li><a data-close-menu href="#festival">{{ trans('menu.about') }}</a></li>
+            <li><a data-close-menu href="#news">{{ trans('menu.news') }}</a></li>
+            <li><a data-close-menu href="#program">{{ trans('menu.program') }}</a></li>
+            <li><a data-close-menu href="#participant">{{ trans('menu.participant') }}</a></li>
+        </ul>
+    </div>
 
 </header>
 

@@ -1,4 +1,4 @@
-let  windowLoad = () => {
+let windowLoad = () => {
 
     const swiper = new Swiper('.festival__swiper', {
         slidesPerView: "auto",
@@ -34,6 +34,18 @@ let  windowLoad = () => {
             target.closest('header').classList.toggle('open');
         });
     }
+
+    let closeMenuElements = document.querySelectorAll('[data-close-menu]');
+    closeMenuElements.forEach(element => {
+        element.addEventListener('click', function (event) {
+            const target = event.target.closest('[data-close-menu]');
+            if (target === null) {
+                return null;
+            }
+
+            target.closest('header').classList.remove('open');
+        });
+    });
 }
 
 window.addEventListener('load', windowLoad);
