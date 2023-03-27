@@ -26,8 +26,8 @@ use App\Models\NewsGallery;
 </head>
 <body>
 
-<header class="open">
-{{--<header>--}}
+{{--<header class="open">--}}
+<header>
     <div class="container menu">
 
         <div class="main_logo">
