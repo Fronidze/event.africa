@@ -26,6 +26,14 @@ let  windowLoad = () => {
         slidesPerView: 'auto',
         spaceBetween: 10,
     });
+
+    let menuToggle = document.querySelector('[data-menu-toggle]');
+    if (menuToggle !== null) {
+        menuToggle.addEventListener('click', function (event) {
+            const target = event.target.closest('[data-menu-toggle]');
+            target.closest('header').classList.toggle('open');
+        });
+    }
 }
 
 window.addEventListener('load', windowLoad);

@@ -54,10 +54,25 @@ use App\Models\NewsGallery;
             @else
                 <li><a href="/">ru</a></li>
             @endif
-
         </ul>
 
+        <div class="mobil_action">
+            <div class="mobil_action__wrapper">
+                <div class="lang">
+                    @if(App::getLocale() == 'ru')
+                        <a href="/fr/">fr</a>
+                    @else
+                        <a href="/">ru</a>
+                    @endif
+                </div>
+                <div data-menu-toggle class="open_menu"></div>
+            </div>
+        </div>
+
     </div>
+
+    <div class="mobile_menu"></div>
+
 </header>
 
 <section class="about">
