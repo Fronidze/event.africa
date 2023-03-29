@@ -418,17 +418,19 @@ use App\Models\NewsGallery;
             <h3>{!! trans('content.participant_title') !!}</h3>
             <div class="invite__wrapper">
                 <div class="invite__text_how">
-                    <p>{!! trans('content.participant_about') !!} <a href=""
-                                                                     class="btn btn-link btn-link-default">{!! trans('content.participant_about_register') !!}</a>
+                    <p>{!! trans('content.participant_about') !!} {!! trans('content.participant_about_register') !!}
+{{--                        <a href="" class="btn btn-link btn-link-default">{!! trans('content.participant_about_register') !!}</a>--}}
                     </p>
                     <p>{!! trans('content.participant_about_time') !!}</p>
                 </div>
                 <div class="invite__form">
-                    <form action="">
-                        <button class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
+                    <form action="" onsubmit="return false;">
+                        <div data-register-tooltip id="tooltip">
+                            Регистрация на фестиваль откроется 1 мая 2023 года.
+                            <div id="arrow" data-popper-arrow></div>
+                        </div>
+                        <button data-register-button class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
                     </form>
-                    <a href=""
-                       class="btn btn-md btn-link btn-link-white">{!! trans('content.participant_remember') !!}</a>
                 </div>
             </div>
         </div>
@@ -461,6 +463,7 @@ use App\Models\NewsGallery;
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="/js/main.js"></script>
 
 </body>

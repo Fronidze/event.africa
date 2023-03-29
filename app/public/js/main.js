@@ -46,6 +46,44 @@ let windowLoad = () => {
             target.closest('header').classList.remove('open');
         });
     });
-}
 
+
+    registerPopover();
+}
+const registerPopover = () => {
+    console.log('run init');
+    const button = document.querySelector('[data-register-button]');
+    const tooltip = document.querySelector('[data-register-tooltip]');
+    //
+    const popperInstance = Popper.createPopper(button, tooltip, {
+        modifiers: [
+            {
+                name: 'offset',
+                options: {
+                    offset: [0, 8],
+                },
+            },
+        ],
+    });
+    function show() {
+        tooltip.setAttribute('data-show', '');
+        popperInstance.update();
+    }
+
+    function hide() {
+        tooltip.removeAttribute('data-show');
+    }
+
+    const showEvents = ['mouseenter', 'focus'];
+    const hideEvents = ['mouseleave', 'blur'];
+
+    showEvents.forEach((event) => {
+        button.addEventListener(event, show);
+    });
+
+    hideEvents.forEach((event) => {
+        button.addEventListener(event, hide);
+    });
+};
 window.addEventListener('load', windowLoad);
+

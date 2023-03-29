@@ -73,6 +73,40 @@ html body .icon__link img {
   height: 100%;
   object-fit: contain;
 }
+html #tooltip {
+  display: none;
+  max-width: 370px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  font-size: 2rem;
+  word-wrap: break-word;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+html #tooltip #arrow,
+html #tooltip #arrow::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: inherit;
+}
+html #tooltip #arrow {
+  visibility: hidden;
+  top: -4px;
+}
+html #tooltip #arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+html #tooltip[data-show] {
+  display: block;
+}
 
 @font-face {
   font-family: "Parangon";
