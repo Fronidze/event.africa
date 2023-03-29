@@ -15,7 +15,7 @@
     <link href="/css/plugins/select2/select2-bootstrap4.min.css" rel="stylesheet">
     <link href="/css/plugins/dropzone/dropzone.min.css" rel="stylesheet">
     <link href="/css/plugins/switchery/switchery.css" rel="stylesheet">
-    <link href="/css/style.css?t={{microtime(true)}}" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
 
 </head>
@@ -77,7 +77,7 @@
 
 <!-- Custom and plugin javascript -->
 <script src="/js/inspinia.js"></script>
-<script src="/js/common.js?t={{microtime(true)}}"></script>
+<script src="/js/common.js"></script>
 
 </body>
 </html>
