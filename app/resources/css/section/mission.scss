@@ -1,6 +1,11 @@
 .mission {
     margin-top: 14rem;
     position: relative;
+    background: url("/images/mission_black_bg.svg") no-repeat;
+    background-size: 100vw;
+
+    padding-bottom: 49rem;
+
     @media screen {
         @media (max-width: $mobile) {
             margin-top: 6.4rem;
@@ -15,13 +20,13 @@
             }
         }
         position: absolute;
-        top: 10rem;
+        top: 0;
         right: 0;
-        width: 70rem;
-        height: 70rem;
+        width: 140.4rem;
+        height: 99.9rem;
         background: radial-gradient(50% 50% at 50% 50%, rgba(246, 131, 131, 0.6) 0%, rgba(229, 120, 73, 0.6) 100%);
         filter: blur(250px);
-        z-index: 1;
+        z-index: -1;
     }
 
     .red_icon {
@@ -38,7 +43,7 @@
         width: 57rem;
         height: 57rem;
         position: absolute;
-        top: 16rem;
+        top: -5rem;
         right: 10rem;
         z-index: 1001;
 
@@ -49,7 +54,6 @@
         }
     }
     .news_title {
-        display: none;
         margin: 0;
         @media screen {
             @media (max-width: $mobile) {
@@ -87,7 +91,7 @@
         }
 
         &__wrapper {
-            margin-top: 14rem;
+            margin-top: 10rem;
             @media screen {
                 @media (max-width: $mobile) {
                     margin-top: 2rem;
@@ -151,8 +155,11 @@
                 }
 
                 p {
-                    margin-top: 6rem;
+                    margin-top: 5rem;
                     width: 105.5rem;
+                    line-height: 1.24;
+                    font-size: 4rem;
+
                     @media screen {
                         @media (max-width: $mobile) {
                             margin-top: 0;

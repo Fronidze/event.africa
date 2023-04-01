@@ -605,9 +605,9 @@ footer .footer_wrapper .social ul li a img {
 }
 .about__description .date small {
   font-family: "Parangon 330", sans-serif;
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 400;
-  margin: 1.5rem 0 0 1.5rem;
+  margin: 1rem 0 0 1rem;
 }
 @media screen and (max-width: 768px) {
   .about__description .date small {
@@ -629,8 +629,11 @@ footer .footer_wrapper .social ul li a img {
   top: 0;
   right: 0;
   z-index: -1;
-  width: 126rem;
-  height: 135rem;
+  width: 163.9rem;
+  height: 135.8rem;
+  background: url("/images/africa.png") no-repeat;
+  background-size: contain;
+  background-position-x: 33rem;
 }
 @media screen and (max-width: 768px) {
   .about .africa {
@@ -644,11 +647,11 @@ footer .footer_wrapper .social ul li a img {
   object-fit: contain;
 }
 .about .green_blur {
-  width: 85rem;
-  height: 85rem;
+  width: 111.4rem;
+  height: 111.4rem;
   position: absolute;
-  bottom: -6rem;
-  left: -6rem;
+  bottom: 7rem;
+  left: -23.3rem;
   background: radial-gradient(50% 50% at 50% 50%, rgba(47, 255, 199, 0.8) 0%, rgba(18, 58, 43, 0) 100%);
   filter: blur(250px);
   z-index: -1;
@@ -667,11 +670,24 @@ footer .footer_wrapper .social ul li a img {
     padding: 6.4rem var(--container-padding) 31rem;
   }
 }
+.festival__left_first_background {
+  position: absolute;
+  top: 0;
+  left: 18.4rem;
+  width: 57.6rem;
+  height: 106.7rem;
+}
+.festival__left_first_background img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 .festival__left_background {
   position: absolute;
-  top: -11rem;
-  left: 0;
-  height: 168rem;
+  top: 0;
+  left: -70.5rem;
+  width: 143.6rem;
+  height: 131.9rem;
 }
 @media screen and (max-width: 768px) {
   .festival__left_background {
@@ -737,6 +753,9 @@ footer .footer_wrapper .social ul li a img {
 .mission {
   margin-top: 14rem;
   position: relative;
+  background: url("/images/mission_black_bg.svg") no-repeat;
+  background-size: 100vw;
+  padding-bottom: 49rem;
 }
 @media screen and (max-width: 768px) {
   .mission {
@@ -745,13 +764,13 @@ footer .footer_wrapper .social ul li a img {
 }
 .mission .red_square {
   position: absolute;
-  top: 10rem;
+  top: 0;
   right: 0;
-  width: 70rem;
-  height: 70rem;
+  width: 140.4rem;
+  height: 99.9rem;
   background: radial-gradient(50% 50% at 50% 50%, rgba(246, 131, 131, 0.6) 0%, rgba(229, 120, 73, 0.6) 100%);
   filter: blur(250px);
-  z-index: 1;
+  z-index: -1;
 }
 @media screen and (max-width: 768px) {
   .mission .red_square {
@@ -763,7 +782,7 @@ footer .footer_wrapper .social ul li a img {
   width: 57rem;
   height: 57rem;
   position: absolute;
-  top: 16rem;
+  top: -5rem;
   right: 10rem;
   z-index: 1001;
 }
@@ -783,7 +802,6 @@ footer .footer_wrapper .social ul li a img {
   object-fit: contain;
 }
 .mission .news_title {
-  display: none;
   margin: 0;
 }
 @media screen and (max-width: 768px) {
@@ -815,7 +833,7 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .mission__gallery__wrapper {
-  margin-top: 14rem;
+  margin-top: 10rem;
 }
 @media screen and (max-width: 768px) {
   .mission__gallery__wrapper {
@@ -872,8 +890,10 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .mission__gallery .mission__element__describe p {
-  margin-top: 6rem;
+  margin-top: 5rem;
   width: 105.5rem;
+  line-height: 1.24;
+  font-size: 4rem;
 }
 @media screen and (max-width: 768px) {
   .mission__gallery .mission__element__describe p {
@@ -883,9 +903,16 @@ footer .footer_wrapper .social ul li a img {
 }
 
 .program {
+  background: url("/images/program_bg_bottom.svg") no-repeat;
+  background-size: 130vw;
+  background-position-y: 30rem;
+  background-position-x: center;
   position: relative;
-  padding-top: 30rem;
-  padding-bottom: 10rem;
+  padding-top: 10.8rem;
+  padding-bottom: 23.8rem;
+  border-top-left-radius: 14rem;
+  border-top-right-radius: 14rem;
+  box-shadow: 0px -10rem 19rem -5rem rgba(243, 156, 17, 0.5);
 }
 @media screen and (max-width: 768px) {
   .program {
@@ -991,7 +1018,7 @@ footer .footer_wrapper .social ul li a img {
 }
 .program__top_image {
   position: absolute;
-  top: 0;
+  bottom: 13.9rem;
   left: 0;
   z-index: -1;
   width: 93.5rem;
@@ -1069,8 +1096,10 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .about_festival__description p {
-  width: 86.6rem;
+  width: 82.6rem;
   margin-top: 6rem;
+  font-size: 4rem;
+  line-height: 1.24;
 }
 @media screen and (max-width: 768px) {
   .about_festival__description p {
@@ -1079,7 +1108,7 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .about_festival .about_festival__images {
-  padding-top: 25rem;
+  padding-top: 35rem;
 }
 @media screen and (max-width: 768px) {
   .about_festival .about_festival__images {
@@ -1097,7 +1126,6 @@ footer .footer_wrapper .social ul li a img {
 }
 .about_festival .about_festival__images .images__wrapper__left {
   width: 82.6rem;
-  padding-bottom: 15.4rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -1173,7 +1201,7 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .teams__record {
-  width: 31rem;
+  width: 30rem;
   margin-right: 10rem;
   margin-bottom: 3rem;
 }
@@ -1250,7 +1278,7 @@ footer .footer_wrapper .social ul li a img {
   width: 57rem;
   height: 57rem;
   position: absolute;
-  top: -12.5rem;
+  top: -30.5rem;
   left: -6rem;
   z-index: 1001;
 }
@@ -1290,7 +1318,7 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .program_festival__element {
-  margin-bottom: 5.2rem;
+  margin-bottom: 13.9rem;
 }
 @media screen and (max-width: 768px) {
   .program_festival__element {
@@ -1395,13 +1423,19 @@ footer .footer_wrapper .social ul li a img {
 }
 
 .invite {
-  padding-top: 19rem;
   padding-bottom: 4rem;
+  padding-top: 18.9rem;
+  background: url("/images/program_bg_bottom.svg") no-repeat;
+  background-size: 100vw;
+  background-position: center top;
 }
 @media screen and (max-width: 768px) {
   .invite {
     padding: 0;
   }
+}
+.invite__description h3 {
+  font-size: 12.9rem;
 }
 .invite__wrapper {
   display: flex;
@@ -1457,6 +1491,87 @@ footer .footer_wrapper .social ul li a img {
 }
 .invite__form form {
   margin-bottom: 1.6rem;
+}
+
+.partners_block {
+  padding-top: 15.8rem;
+  padding-bottom: 24.8rem;
+  background: url("/images/partners_right.svg"), url("/images/partners_left.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3.3rem) center, 3.3rem calc(100% - 3.3rem);
+  background-size: 57.5rem, 57.5rem;
+}
+.partners_block__content {
+  margin-top: 6rem;
+  background: var(--color-white);
+  padding: 12.1rem 2.3rem;
+  color: var(--color-black);
+}
+.partners_block__content .official {
+  display: flex;
+  align-items: center;
+}
+.partners_block__content .official__title {
+  font-size: 2.4rem;
+  line-height: 1.11;
+  width: 23.8rem;
+  text-align: right;
+  margin-right: 5.3rem;
+}
+.partners_block__content .official__list {
+  display: flex;
+  align-items: center;
+}
+.partners_block__content .official__list .official__img_wrapper:nth-child(1) {
+  margin-right: 13.5rem;
+  width: 40.3rem;
+  height: 5.9rem;
+}
+.partners_block__content .official__list .official__img_wrapper:nth-child(2) {
+  width: 41.9rem;
+  height: 8.6rem;
+}
+.partners_block__content .official__list .official__img_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.partners_block__content .information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12.9rem;
+}
+.partners_block__content .information__title {
+  font-size: 2.4rem;
+  line-height: 1.11;
+  width: 23.8rem;
+  text-align: right;
+  margin-right: 5.3rem;
+}
+.partners_block__content .information__partner, .partners_block__content .information__organization {
+  width: 50%;
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+}
+.partners_block__content .information__partner__logo_wrapper {
+  width: 13.6rem;
+  height: 18.5rem;
+}
+.partners_block__content .information__partner__logo_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.partners_block__content .information__organization__logo_wrapper {
+  width: 18.3rem;
+  height: 11rem;
+}
+.partners_block__content .information__organization__logo_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */

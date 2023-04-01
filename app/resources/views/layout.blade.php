@@ -94,7 +94,7 @@ use App\Models\NewsGallery;
     </div>
 
     <div class="africa">
-        <img src="/images/africa.png" alt="">
+        {{--        <img src="/images/africa.png" alt="">--}}
     </div>
 
     <div class="green_blur"></div>
@@ -102,9 +102,15 @@ use App\Models\NewsGallery;
 </section>
 
 <section class="festival" id="festival">
+
+    <div class="festival__left_first_background">
+        <img src="/images/festival_left_first.png" alt="">
+    </div>
+
     <div class="festival__left_background">
         <img src="/images/festival_left_background.png" alt="">
     </div>
+
     <div class="festival__container">
         <div class="festival__description">
             <h3>{!! trans('content.title_about_festival') !!}</h3>
@@ -128,21 +134,42 @@ use App\Models\NewsGallery;
 
 </section>
 
-<section class="mission">
+<section class="about_festival">
 
-    <div class="red_square"></div>
-    <div class="red_icon">
-        <img src="/images/mission_red.svg" alt="">
+    <div class="top_left_bg">
+        <img src="/images/about_festival_top_bg.svg" alt="">
     </div>
 
-    <div class="mission__description">
+    <div class="about_festival__description">
         <div class="container">
             <h3>{!! trans('content.title_mission') !!}</h3>
             <p>{!! trans('content.description_mission') !!}</p>
         </div>
     </div>
 
-    <h3 class="news_title">{!! trans('content.mission_title_news') !!}</h3>
+    <div class="about_festival__images">
+        <div class="container">
+            <div class="images__wrapper">
+                <div class="images__wrapper__left">
+                    <img src="/images/bout_festival_one.jpg" alt="">
+                </div>
+                <div class="images__wrapper__right">
+                    <img src="/images/bout_festival_two.jpg" alt="">
+                    <img src="/images/bout_festival_three.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mission">
+
+    <div class="container">
+        <div class="red_square"></div>
+        <div class="red_icon"><img src="/images/mission_red.svg" alt=""></div>
+        <h3 class="news_title">{!! trans('content.mission_title_news') !!}</h3>
+    </div>
 
     <div id="news" class="mission__gallery__wrapper">
         <div class="swiper mission__gallery">
@@ -167,13 +194,13 @@ use App\Models\NewsGallery;
         </div>
     </div>
 
-</section>
-
-<section id="program" class="program">
-
     <div class="program__top_image">
         <img src="/images/program_top_image.svg" alt="">
     </div>
+
+</section>
+
+<section id="program" class="program">
     <div class="program__bottom_image">
         <img src="/images/program_bottom_image.svg" alt="">
     </div>
@@ -189,7 +216,6 @@ use App\Models\NewsGallery;
             </div>
 
             <div class="program__information__row">
-                <div class="program__header"><img src="/images/program_header_line.svg" alt=""></div>
                 <p class="program__title">{!! trans('content.title_culture_program') !!}</p>
                 <p class="program__description">{!! trans('content.description_culture_program') !!}</p>
                 <ul class="program__list">
@@ -205,33 +231,120 @@ use App\Models\NewsGallery;
 
 </section>
 
-<section class="about_festival">
-
-    <div class="top_left_bg">
-        <img src="/images/about_festival_top_bg.svg" alt="">
+<section class="program_festival">
+    <div class="red_icon">
+        <img src="/images/mission_red.svg" alt="">
     </div>
 
-    <div class="about_festival__description">
-        <div class="container">
-            <h3>{!! trans('content.title_about_festival') !!}</h3>
-            <p>{!! trans('content.description_about_festival') !!}</p>
-        </div>
-    </div>
+    <div class="program_festival__description">
+        <div class="program_festival__element">
+            <div class="container element">
+                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
+                <p class="element__title">{!! trans('content.program_cinema_title') !!}</p>
+                <p class="element__description">{!! trans('content.program_cinema_description_movies') !!}</p>
+                <p class="element__description">{!! trans('content.program_cinema_description_famous') !!}</p>
+            </div>
 
-    <div class="about_festival__images">
-        <div class="container">
-            <div class="images__wrapper">
-                <div class="images__wrapper__left">
-                    <img src="/images/bout_festival_one.jpg" alt="">
+            <div class="movies_wrapper">
+                <div class="program_festival__gallery movies swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                    </div>
                 </div>
-                <div class="images__wrapper__right">
-                    <img src="/images/bout_festival_two.jpg" alt="">
-                    <img src="/images/bout_festival_three.jpg" alt="">
-                </div>
+                <div class="swiper-pagination movies"></div>
             </div>
         </div>
+
+        <div class="program_festival__element">
+            <div class="container element">
+                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
+                <p class="element__title">{!! trans('content.program_music_title') !!}</p>
+                <p class="element__description">{!! trans('content.program_music_description') !!}</p>
+            </div>
+
+            <div class="music_wrapper">
+                <div class="program_festival__gallery music swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination music"></div>
+            </div>
+        </div>
+
+        <div class="program_festival__element">
+            <div class="container element">
+                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
+                <p class="element__title">{!! trans('content.program_photo_title') !!}</p>
+                <p class="element__description">{!! trans('content.program_photo_description') !!}</p>
+            </div>
+
+            <div class="photos_wrapper">
+                <div class="program_festival__gallery photos swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
+            </div>
+        </div>
+
+
     </div>
 
+</section>
+
+<section id="participant" class="invite">
+    <div class="invite__description">
+        <div class="container">
+            <h3>{!! trans('content.participant_title') !!}</h3>
+
+            <div class="invite__wrapper">
+                <div class="invite__text_how">
+                    <p>{!! trans('content.participant_about') !!} {!! trans('content.participant_about_register') !!}</p>
+                    <p>{!! trans('content.participant_about_time') !!}</p>
+                </div>
+                <div class="invite__form">
+                    <form action="" onsubmit="return false;">
+                        <div data-register-tooltip id="tooltip">
+                            Регистрация на фестиваль откроется 1 мая 2023 года.
+                            <div id="arrow" data-popper-arrow></div>
+                        </div>
+                        <button data-register-button
+                                class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <section class="teams">
@@ -310,127 +423,33 @@ use App\Models\NewsGallery;
     </div>
 </section>
 
-<section class="program_festival">
-    <div class="red_icon">
-        <img src="/images/mission_red.svg" alt="">
-    </div>
-
-    <div class="program_festival__description">
-        <div class="container">
-            <h3>{!! trans('content.title_program') !!}</h3>
-        </div>
-
-        <div class="program_festival__element">
-            <div class="container element">
-                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                <p class="element__title">{!! trans('content.program_cinema_title') !!}</p>
-                <p class="element__description">{!! trans('content.program_cinema_description_movies') !!}</p>
-                <p class="element__description">{!! trans('content.program_cinema_description_famous') !!}</p>
-            </div>
-
-            <div class="movies_wrapper">
-                <div class="program_festival__gallery movies swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+<section class="partners_block">
+    <div class="container">
+        <h3>{!! trans('content.partners_title') !!}</h3>
+        <div class="partners_block__content">
+            <div class="row official">
+                <div class="official__title">официальный<br>партнер фестиваля</div>
+                <div class="official__list">
+                    <div class="official__img_wrapper">
+                        <img src="/images/alrosa.svg" alt="">
                     </div>
-                </div>
-                <div class="swiper-pagination movies"></div>
-            </div>
-
-            <div class="container">
-                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-            </div>
-        </div>
-
-        <div class="program_festival__element">
-            <div class="container element">
-                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                <p class="element__title">{!! trans('content.program_music_title') !!}</p>
-                <p class="element__description">{!! trans('content.program_music_description') !!}</p>
-            </div>
-
-            <div class="music_wrapper">
-                <div class="program_festival__gallery music swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                    </div>
-                </div>
-                <div class="swiper-pagination music"></div>
-            </div>
-
-            <div class="container">
-                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-            </div>
-        </div>
-
-        <div class="program_festival__element">
-            <div class="container element">
-                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                <p class="element__title">{!! trans('content.program_photo_title') !!}</p>
-                <p class="element__description">{!! trans('content.program_photo_description') !!}</p>
-            </div>
-
-            <div class="photos_wrapper">
-                <div class="program_festival__gallery photos swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                    <div class="official__img_wrapper">
+                        <img src="/images/mkrf.svg" alt="">
                     </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-            </div>
-        </div>
-
-
-    </div>
-
-</section>
-
-<section id="participant" class="invite">
-    <div class="invite__description">
-        <div class="container">
-            <h3>{!! trans('content.participant_title') !!}</h3>
-            <div class="invite__wrapper">
-                <div class="invite__text_how">
-                    <p>{!! trans('content.participant_about') !!} {!! trans('content.participant_about_register') !!}
-{{--                        <a href="" class="btn btn-link btn-link-default">{!! trans('content.participant_about_register') !!}</a>--}}
-                    </p>
-                    <p>{!! trans('content.participant_about_time') !!}</p>
+            <div class="row information">
+                <div class="information__partner">
+                    <div class="information__title">информационный партнер фестиваля</div>
+                    <div class="information__logo_wrapper">
+                        <img src="/images/information__partner.svg" alt="">
+                    </div>
                 </div>
-                <div class="invite__form">
-                    <form action="" onsubmit="return false;">
-                        <div data-register-tooltip id="tooltip">
-                            Регистрация на фестиваль откроется 1 мая 2023 года.
-                            <div id="arrow" data-popper-arrow></div>
-                        </div>
-                        <button data-register-button class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
-                    </form>
+                <div class="information__organization">
+                    <div class="information__title">организатор</div>
+                    <div class="information__logo_wrapper">
+                        <img src="/images/information__organization.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>

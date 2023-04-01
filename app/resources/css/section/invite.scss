@@ -1,6 +1,10 @@
 .invite {
-    padding-top: 19rem;
     padding-bottom: 4rem;
+    padding-top: 18.9rem;
+    background: url("/images/program_bg_bottom.svg") no-repeat;
+    background-size: 100vw;
+    background-position: center top;
+
     @media screen {
         @media (max-width: $mobile) {
             padding: 0;
@@ -8,6 +12,9 @@
     }
 
     &__description {
+        h3 {
+            font-size: 12.9rem;
+        }
     }
 
     &__wrapper {

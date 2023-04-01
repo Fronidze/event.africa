@@ -47,8 +47,10 @@
         }
 
         p {
-            width: 86.6rem;
+            width: 82.6rem;
             margin-top: 6rem;
+            font-size: 4rem;
+            line-height: 1.24;
 
             @media screen {
                 @media (max-width: $mobile) {
@@ -60,7 +62,7 @@
     }
 
     .about_festival__images {
-        padding-top: 25rem;
+        padding-top: 35rem;
         @media screen {
             @media (max-width: $mobile) {
                 padding: 0;
@@ -79,7 +81,7 @@
 
             &__left {
                 width: 82.6rem;
-                padding-bottom: 15.4rem;
+                //padding-bottom: 15.4rem;
                 position: relative;
 
                 @media screen {

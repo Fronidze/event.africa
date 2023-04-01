@@ -6,9 +6,16 @@
         }
     }
 
+    background: url("/images/program_bg_bottom.svg") no-repeat;
+    background-size: 130vw;
+    background-position-y: 30rem;
+    background-position-x: center;
     position: relative;
-    padding-top: 30rem;
-    padding-bottom: 10rem;
+    padding-top: 10.8rem;
+    padding-bottom: 23.8rem;
+    border-top-left-radius: 14rem;
+    border-top-right-radius: 14rem;
+    box-shadow: 0px -10rem 19rem -5rem rgba(243, 156, 17, 0.5);
 
     &__information {
         h3 {
@@ -124,7 +131,7 @@
 
     &__top_image {
         position: absolute;
-        top: 0;
+        bottom: calc(49rem - 35.1rem);
         left: 0;
         z-index: -1;
         width: 93.5rem;

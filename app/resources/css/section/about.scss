@@ -54,9 +54,9 @@
 
             small {
                 font-family: "Parangon 330", sans-serif;
-                font-size: 4rem;
+                font-size: 7rem;
                 font-weight: 400;
-                margin: 1.5rem 0 0 1.5rem;
+                margin: 1rem 0 0 1rem;
                 @media screen {
                     @media (max-width: $mobile) {
                         font-size: 1.6rem;
@@ -80,10 +80,14 @@
     .africa {
         position: absolute;
         top: 0;
+        //right: -33.3rem;
         right: 0;
         z-index: -1;
-        width: 126rem;
-        height: 135rem;
+        width: 163.9rem;
+        height: 135.8rem;
+        background: url("/images/africa.png") no-repeat;
+        background-size: contain;
+        background-position-x: 33rem;
 
         @media screen {
             @media (max-width: $mobile) {
@@ -100,11 +104,11 @@
     }
 
     .green_blur {
-        width: 85rem;
-        height: 85rem;
+        width: 111.4rem;
+        height: 111.4rem;
         position: absolute;
-        bottom: -6rem;
-        left: -6rem;
+        bottom: 7rem;
+        left: -23.3rem;
         background: radial-gradient(50% 50% at 50% 50%, rgba(47, 255, 199, 0.8) 0%, rgba(18, 58, 43, 0) 100%);
         filter: blur(250px);
         z-index: -1;

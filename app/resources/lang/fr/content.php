@@ -4,7 +4,7 @@ return [
     'africa' => 'африка',
     'cradle_civilization' => 'колыбель<br>цивилизации',
     'july' => 'июля',
-    'st_petersburg' => 'С.-Петербург',
+    'st_petersburg' => 'Saint-Pétersbourg',
 
     'title_about_festival' => 'À propos du festival',
     'description_about_festival' => 'Les Journées de la culture et du cinéma africains sont un festival créé pour permettre aux téléspectateurs russes de mieux comprendre la culture moderne unique du continent africain, à travers la démonstration de films, d’arts visuels, de musique, de poésie et d’autres types d’expression créative.',
