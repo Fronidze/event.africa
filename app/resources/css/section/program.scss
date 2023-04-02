@@ -3,6 +3,8 @@
         @media (max-width: $mobile) {
             background: var(--color-black);
             padding: 6.4rem 0 0 0;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
         }
     }
 
@@ -16,6 +18,7 @@
     border-top-left-radius: 14rem;
     border-top-right-radius: 14rem;
     box-shadow: 0px -10rem 19rem -5rem rgba(243, 156, 17, 0.5);
+
 
     &__information {
         h3 {
@@ -151,9 +154,10 @@
                 width: 16.7rem;
                 height: 6.4rem;
                 z-index: 1;
+                top: auto;
                 left: auto;
-                right: 0;
-                top: -.4rem;
+                right: 1rem;
+                bottom: -6.2rem;
             }
         }
 

@@ -2,7 +2,7 @@ let windowLoad = () => {
 
     const swiper = new Swiper('.festival__swiper', {
         slidesPerView: "auto",
-        spaceBetween: 32,
+        spaceBetween: 10,
     });
 
     const swiper_mission = new Swiper('.mission__gallery', {
@@ -12,7 +12,7 @@ let windowLoad = () => {
 
     const program_festival_movies = new Swiper('.program_festival__gallery.movies', {
         slidesPerView: 5,
-        spaceBetween: 10,
+        spaceBetween: 3,
         pagination: {el: '.swiper-pagination.movies', clickable: true},
     });
 
@@ -51,7 +51,6 @@ let windowLoad = () => {
     registerPopover();
 }
 const registerPopover = () => {
-    console.log('run init');
     const button = document.querySelector('[data-register-button]');
     const tooltip = document.querySelector('[data-register-tooltip]');
     //

@@ -9,6 +9,7 @@
     @media screen {
         @media (max-width: $mobile) {
             margin-top: 6.4rem;
+            padding-bottom: 9.7rem;
         }
     }
 
@@ -34,9 +35,9 @@
             @media (max-width: $mobile) {
                 width: 9.8rem;
                 height: 9.8rem;
-                top: 21rem;
+                top: 0rem;
                 right: auto;
-                left: 1.2rem;
+                left: 0rem;
                 transform: rotate(20deg);
             }
         }
@@ -163,7 +164,9 @@
                     @media screen {
                         @media (max-width: $mobile) {
                             margin-top: 0;
-                            width: 24rem;
+                            width: 100%;
+                            font-size: 1.4rem;
+                            line-height: 1.21;
                         }
                     }
                 }

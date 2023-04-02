@@ -303,16 +303,26 @@ header .main_logo {
     margin-right: 2rem;
   }
 }
+header .main_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 header .partners_logo {
   width: 13.5rem;
   height: 8.2rem;
-  margin-right: 12rem;
+  margin-right: 10rem;
 }
 @media screen and (max-width: 768px) {
   header .partners_logo {
     width: 4.6rem;
     height: 2.8rem;
   }
+}
+header .partners_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 header .menu {
   display: flex;
@@ -356,6 +366,7 @@ header.open .mobile_menu__list li a {
   text-decoration: none;
   font-size: 2.2rem;
   line-height: 2.4rem;
+  display: block;
 }
 header .mobile_menu {
   max-height: 0;
@@ -573,6 +584,9 @@ footer .footer_wrapper .social ul li a img {
     padding-top: 0;
   }
 }
+.about__description .container {
+  position: relative;
+}
 .about__description h1 {
   font-size: 24rem;
   font-weight: 700;
@@ -630,6 +644,13 @@ footer .footer_wrapper .social ul li a img {
 .about .invite__form {
   margin-top: 5.3rem;
 }
+@media screen and (max-width: 768px) {
+  .about .invite__form {
+    margin-top: 0;
+    position: absolute;
+    top: 15.5rem;
+  }
+}
 .about .africa {
   position: absolute;
   top: 0;
@@ -643,8 +664,9 @@ footer .footer_wrapper .social ul li a img {
 }
 @media screen and (max-width: 768px) {
   .about .africa {
-    width: 50rem;
-    height: 53rem;
+    width: 64.7rem;
+    height: 53.6rem;
+    background-position-x: 13rem;
   }
 }
 .about .africa img {
@@ -673,7 +695,7 @@ footer .footer_wrapper .social ul li a img {
 }
 @media screen and (max-width: 768px) {
   .festival {
-    padding: 6.4rem var(--container-padding) 31rem;
+    padding: 6.4rem var(--container-padding) 0;
   }
 }
 .festival__left_first_background {
@@ -688,6 +710,14 @@ footer .footer_wrapper .social ul li a img {
   width: 100%;
   object-fit: contain;
 }
+@media screen and (max-width: 768px) {
+  .festival__left_first_background {
+    width: 16.6rem;
+    height: 30.7rem;
+    top: 27rem;
+    left: 11.4rem;
+  }
+}
 .festival__left_background {
   position: absolute;
   top: 0;
@@ -697,10 +727,10 @@ footer .footer_wrapper .social ul li a img {
 }
 @media screen and (max-width: 768px) {
   .festival__left_background {
-    top: 25rem;
-    letter-spacing: 0;
-    width: 100%;
-    height: 50rem;
+    width: 41.4rem;
+    height: 38rem;
+    top: 27rem;
+    left: -15.8rem;
   }
 }
 .festival__left_background img {
@@ -739,16 +769,28 @@ footer .footer_wrapper .social ul li a img {
 }
 @media screen and (max-width: 768px) {
   .festival .gallery_wrapper {
-    display: none;
+    padding: 0;
+    margin-top: 28rem;
   }
 }
 .festival__swiper {
   width: 100%;
   height: 48rem;
 }
+@media screen and (max-width: 768px) {
+  .festival__swiper {
+    height: 16rem;
+  }
+}
 .festival__swiper .swiper-slide {
   width: 36rem;
   height: 48rem;
+}
+@media screen and (max-width: 768px) {
+  .festival__swiper .swiper-slide {
+    width: 12rem;
+    height: 16rem;
+  }
 }
 .festival__swiper .swiper-slide img {
   width: 100%;
@@ -766,6 +808,7 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .mission {
     margin-top: 6.4rem;
+    padding-bottom: 9.7rem;
   }
 }
 .mission .red_square {
@@ -796,9 +839,9 @@ footer .footer_wrapper .social ul li a img {
   .mission .red_icon {
     width: 9.8rem;
     height: 9.8rem;
-    top: 21rem;
+    top: 0rem;
     right: auto;
-    left: 1.2rem;
+    left: 0rem;
     transform: rotate(20deg);
   }
 }
@@ -904,7 +947,9 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .mission__gallery .mission__element__describe p {
     margin-top: 0;
-    width: 24rem;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.21;
   }
 }
 
@@ -924,6 +969,8 @@ footer .footer_wrapper .social ul li a img {
   .program {
     background: var(--color-black);
     padding: 6.4rem 0 0 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
   }
 }
 .program__information h3 {
@@ -1042,9 +1089,10 @@ footer .footer_wrapper .social ul li a img {
     width: 16.7rem;
     height: 6.4rem;
     z-index: 1;
+    top: auto;
     left: auto;
-    right: 0;
-    top: -0.4rem;
+    right: 1rem;
+    bottom: -6.2rem;
   }
 }
 .program__top_image img {
@@ -1118,6 +1166,8 @@ footer .footer_wrapper .social ul li a img {
   .about_festival__description p {
     margin-top: 2rem;
     width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.22;
   }
 }
 .about_festival .about_festival__images {
@@ -1450,6 +1500,11 @@ footer .footer_wrapper .social ul li a img {
 .invite__description h3 {
   font-size: 12.9rem;
 }
+@media screen and (max-width: 768px) {
+  .invite__description h3 {
+    font-size: 2.7rem;
+  }
+}
 .invite__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1512,13 +1567,24 @@ footer .footer_wrapper .social ul li a img {
   background: url("/images/partners_right.svg"), url("/images/partners_left.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 3.3rem) center, 3.3rem calc(100% - 3.3rem);
-  background-size: 57.5rem, 57.5rem;
+  background-size: 11.6rem, 13.1rem;
+}
+@media screen and (max-width: 768px) {
+  .partners_block {
+    padding: 3rem 0;
+  }
 }
 .partners_block__content {
   margin-top: 6rem;
   background: var(--color-white);
   padding: 12.1rem 2.3rem;
   color: var(--color-black);
+}
+@media screen and (max-width: 768px) {
+  .partners_block__content {
+    padding: 1.6rem 2.4rem;
+    margin-top: 1.3rem;
+  }
 }
 .partners_block__content .official {
   display: flex;
@@ -1531,18 +1597,47 @@ footer .footer_wrapper .social ul li a img {
   text-align: right;
   margin-right: 5.3rem;
 }
+@media screen and (max-width: 768px) {
+  .partners_block__content .official__title {
+    font-size: 0.8rem;
+    line-height: 1.11;
+    width: 6.4rem;
+    min-width: 6.4rem;
+    display: block;
+    margin-right: 1.2rem;
+  }
+}
 .partners_block__content .official__list {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .partners_block__content .official__list {
+    flex-direction: column;
+  }
 }
 .partners_block__content .official__list .official__img_wrapper:nth-child(1) {
   margin-right: 13.5rem;
   width: 40.3rem;
   height: 5.9rem;
 }
+@media screen and (max-width: 768px) {
+  .partners_block__content .official__list .official__img_wrapper:nth-child(1) {
+    width: 12.1rem;
+    height: 1.7rem;
+    margin-right: 0;
+  }
+}
 .partners_block__content .official__list .official__img_wrapper:nth-child(2) {
   width: 41.9rem;
   height: 8.6rem;
+}
+@media screen and (max-width: 768px) {
+  .partners_block__content .official__list .official__img_wrapper:nth-child(2) {
+    margin-top: 1rem;
+    width: 11.9rem;
+    height: 2.4rem;
+  }
 }
 .partners_block__content .official__list .official__img_wrapper img {
   width: 100%;
@@ -1555,12 +1650,27 @@ footer .footer_wrapper .social ul li a img {
   justify-content: center;
   margin-top: 12.9rem;
 }
+@media screen and (max-width: 768px) {
+  .partners_block__content .information {
+    margin-top: 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .partners_block__content .information__title {
   font-size: 2.4rem;
   line-height: 1.11;
   width: 23.8rem;
   text-align: right;
   margin-right: 5.3rem;
+}
+@media screen and (max-width: 768px) {
+  .partners_block__content .information__title {
+    font-size: 0.8rem;
+    line-height: 1.11;
+    width: 6.4rem;
+    margin-right: 1.2rem;
+  }
 }
 .partners_block__content .information__partner, .partners_block__content .information__organization {
   width: 50%;
@@ -1572,14 +1682,31 @@ footer .footer_wrapper .social ul li a img {
   width: 13.6rem;
   height: 18.5rem;
 }
+@media screen and (max-width: 768px) {
+  .partners_block__content .information__partner__logo_wrapper {
+    width: 2.9rem;
+    height: 4rem;
+  }
+}
 .partners_block__content .information__partner__logo_wrapper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+@media screen and (max-width: 768px) {
+  .partners_block__content .information__organization {
+    margin-top: 1.6rem;
+  }
+}
 .partners_block__content .information__organization__logo_wrapper {
   width: 18.3rem;
   height: 11rem;
+}
+@media screen and (max-width: 768px) {
+  .partners_block__content .information__organization__logo_wrapper {
+    width: 4.6rem;
+    height: 2.8rem;
+  }
 }
 .partners_block__content .information__organization__logo_wrapper img {
   width: 100%;

@@ -16,6 +16,11 @@
                 padding-top: 0;
             }
         }
+
+        .container {
+            position: relative;
+        }
+
         h1 {
             font-size: 24rem;
             font-weight: 700;
@@ -78,11 +83,17 @@
     }
     .invite__form {
         margin-top: 5.3rem;
+        @media screen {
+            @media (max-width: $mobile) {
+                margin-top: 0;
+                position: absolute;
+                top: 15.5rem;
+            }
+        }
     }
     .africa {
         position: absolute;
         top: 0;
-        //right: -33.3rem;
         right: 0;
         z-index: -1;
         width: 163.9rem;
@@ -93,8 +104,9 @@
 
         @media screen {
             @media (max-width: $mobile) {
-                width: 50rem;
-                height: 53rem;
+                width: 64.7rem;
+                height: 53.6rem;
+                background-position-x: 13rem;
             }
         }
 

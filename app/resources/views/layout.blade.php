@@ -85,7 +85,7 @@ use App\Models\Team;
             <li><a data-close-menu href="#festival">{{ trans('menu.about') }}</a></li>
             <li><a data-close-menu href="#news">{{ trans('menu.news') }}</a></li>
             <li><a data-close-menu href="#program">{{ trans('menu.program') }}</a></li>
-            <li><a data-close-menu href="#participant">{{ trans('menu.participant') }}</a></li>
+            <li><a data-close-menu href="#participant">{!! trans('menu.participant') !!}</a></li>
         </ul>
     </div>
 
@@ -398,13 +398,13 @@ use App\Models\Team;
             <div class="row information">
                 <div class="information__partner">
                     <div class="information__title">информационный партнер фестиваля</div>
-                    <div class="information__logo_wrapper">
+                    <div class="information__partner__logo_wrapper">
                         <img src="/images/information__partner.svg" alt="">
                     </div>
                 </div>
                 <div class="information__organization">
                     <div class="information__title">организатор</div>
-                    <div class="information__logo_wrapper">
+                    <div class="information__organization__logo_wrapper">
                         <img src="/images/information__organization.svg" alt="">
                     </div>
                 </div>
