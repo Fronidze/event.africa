@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\FestivalGallery;
+use App\Models\MoviesGallery;
+use App\Models\MusicGallery;
 use App\Models\NewsGallery;
+use App\Models\PhotoGallery;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
@@ -13,21 +19,27 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
+    protected function elements(Builder $model): Collection {
+        return $model
+            ->with('file')
+            ->orderBy('sorting')
+            ->get();
+    }
+
     public function main(): View {
 
-        $festivalElements = FestivalGallery::query()
-            ->with('file')
-            ->orderBy('sorting')
-            ->get();
-
-        $newsElements = NewsGallery::query()
-            ->with('file')
-            ->orderBy('sorting')
-            ->get();
+        $festivalElements = $this->elements(FestivalGallery::query());
+        $newsElements = $this->elements(NewsGallery::query());
+        $moviesElements = $this->elements(MoviesGallery::query());
+        $musicElements = $this->elements(MusicGallery::query());
+        $photoElements = $this->elements(PhotoGallery::query());
 
         return view('layout', compact(
             'festivalElements',
             'newsElements',
+            'moviesElements',
+            'musicElements',
+            'photoElements'
         ));
 
     }

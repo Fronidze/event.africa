@@ -1,11 +1,17 @@
 <?php
 
 use App\Models\FestivalGallery;
+use App\Models\MoviesGallery;
+use App\Models\MusicGallery;
 use App\Models\NewsGallery;
+use App\Models\PhotoGallery;
 
 /**
  * @var FestivalGallery[] $festivalElements
  * @var NewsGallery[] $newsElements
+ * @var MoviesGallery[] $moviesElements
+ * @var MusicGallery[] $musicElements
+ * @var PhotoGallery[] $photoElements
  */
 ?>
     <!doctype html>
@@ -26,7 +32,6 @@ use App\Models\NewsGallery;
 </head>
 <body>
 
-{{--<header class="open">--}}
 <header>
     <div class="container menu">
 
@@ -39,17 +44,22 @@ use App\Models\NewsGallery;
         </div>
 
         <ul class="menu__list">
-            <li><a href="#festival">{{ trans('menu.about') }}</a></li>
-            <li><a href="#news">{{ trans('menu.news') }}</a></li>
-            <li><a href="#program">{{ trans('menu.program') }}</a></li>
-            <li><a href="#participant">{{ trans('menu.participant') }}</a></li>
+            <li><a href="#festival">{!! trans('menu.about') !!}</a></li>
+            <li><a href="#news">{!! trans('menu.news') !!}</a></li>
+            <li><a href="#program">{!! trans('menu.program') !!}</a></li>
+            <li><a href="#participant">{!! trans('menu.participant') !!}</a></li>
         </ul>
 
         <ul class="language">
             @if(App::getLocale() == 'ru')
                 <li><a href="/fr/">fr</a></li>
+                <li><a href="/en/">en</a></li>
+            @elseif(App::getLocale() == 'fr')
+                <li><a href="/">ru</a></li>
+                <li><a href="/en/">en</a></li>
             @else
                 <li><a href="/">ru</a></li>
+                <li><a href="/fr/">fr</a></li>
             @endif
         </ul>
 
@@ -86,13 +96,20 @@ use App\Models\NewsGallery;
             <h2>{!! trans('content.cradle_civilization') !!}</h2>
             <div class="date">25-30 <small>/{!! trans('content.july') !!}/</small></div>
             <div class="city">{!! trans('content.st_petersburg') !!}</div>
+            <div class="invite__form">
+                <form action="" onsubmit="return false;">
+                    <div data-register-tooltip id="tooltip">
+                        Регистрация на фестиваль откроется 1 мая 2023 года.
+                        <div id="arrow" data-popper-arrow></div>
+                    </div>
+                    <button data-register-button
+                            class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
+                </form>
+            </div>
         </div>
     </div>
 
-    <div class="africa">
-        {{--        <img src="/images/africa.png" alt="">--}}
-    </div>
-
+    <div class="africa"></div>
     <div class="green_blur"></div>
 
 </section>
@@ -215,10 +232,10 @@ use App\Models\NewsGallery;
                 <p class="program__title">{!! trans('content.title_culture_program') !!}</p>
                 <p class="program__description">{!! trans('content.description_culture_program') !!}</p>
                 <ul class="program__list">
-                    <li><p>{!! trans('content.list_culture_program_cinema') !!}</p></li>
-                    <li><p>{!! trans('content.list_culture_program_music') !!}</p></li>
-                    <li><p>{!! trans('content.list_culture_program_fairy') !!}</p></li>
-                    <li><p>{!! trans('content.list_culture_program_photo') !!}</p></li>
+                    <li><a href="#movie"><p>{!! trans('content.list_culture_program_cinema') !!}</p></a></li>
+                    <li><a href="#music"><p>{!! trans('content.list_culture_program_music') !!}</p></a></li>
+                    <li><a href="#fairy_tail"><p>{!! trans('content.list_culture_program_fairy') !!}</p></a></li>
+                    <li><a href="#photo"><p>{!! trans('content.list_culture_program_photo') !!}</p></a></li>
                 </ul>
             </div>
 
@@ -233,7 +250,7 @@ use App\Models\NewsGallery;
     </div>
 
     <div class="program_festival__description">
-        <div class="program_festival__element">
+        <div id="movie" class="program_festival__element">
             <div class="container element">
                 <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                 <p class="element__title">{!! trans('content.program_cinema_title') !!}</p>
@@ -244,21 +261,18 @@ use App\Models\NewsGallery;
             <div class="movies_wrapper">
                 <div class="program_festival__gallery movies swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/movie_mock.jpg" alt=""></div>
+                        @foreach($moviesElements as $element)
+                            <div class="swiper-slide">
+                                <img src="{{ $element->file?->filePath() }}" alt="{{ $element->title }}">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="swiper-pagination movies"></div>
             </div>
         </div>
 
-        <div class="program_festival__element">
+        <div id="music" class="program_festival__element">
             <div class="container element">
                 <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                 <p class="element__title">{!! trans('content.program_music_title') !!}</p>
@@ -268,21 +282,26 @@ use App\Models\NewsGallery;
             <div class="music_wrapper">
                 <div class="program_festival__gallery music swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/music_mock.jpg" alt=""></div>
+                        @foreach($musicElements as $element)
+                            <div class="swiper-slide">
+                                <img src="{{ $element->file?->filePath() }}" alt="{{ $element->title }}">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="swiper-pagination music"></div>
             </div>
         </div>
 
-        <div class="program_festival__element">
+        <div id="fairy_tail" class="program_festival__element">
+            <div class="container element">
+                <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
+                <p class="element__title">Поэтический вечер<br>«Слово Африки»</p>
+                <p class="element__description">{!! trans('content.program_music_description') !!}</p>
+            </div>
+        </div>
+
+        <div id="photo" class="program_festival__element">
             <div class="container element">
                 <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                 <p class="element__title">{!! trans('content.program_photo_title') !!}</p>
@@ -292,17 +311,11 @@ use App\Models\NewsGallery;
             <div class="photos_wrapper">
                 <div class="program_festival__gallery photos swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="/images/mocks/photo_mock.jpg" alt=""></div>
+                        @foreach($photoElements as $element)
+                            <div class="swiper-slide">
+                                <img src="{{ $element->file?->filePath() }}" alt="{{ $element->title }}">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

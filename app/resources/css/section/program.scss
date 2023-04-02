@@ -98,6 +98,15 @@
                         }
                     }
 
+                    a {
+                        text-decoration: none;
+                        color: var(--color-white);
+
+                        &:hover {
+                            color: var(--color-orange);
+                        }
+                    }
+
                     &:before {
                         content: '';
                         width: 2rem;

@@ -2,8 +2,12 @@
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\FestivalGalleryController;
+use App\Http\Controllers\MovieGalleryController;
+use App\Http\Controllers\MusicGalleryController;
 use App\Http\Controllers\NewsGalleryController;
 use App\Http\Controllers\PanelController;
+use App\Http\Controllers\PhotoGalleryController;
+use App\Http\Controllers\PoetryGalleryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,6 +49,34 @@ Route::prefix('panel')->name('panel.')->group(function () {
         Route::get('news/{id}/remove', [NewsGalleryController::class, 'newsRemove'])->name('news.remove');
         Route::get('news/{id}/view', [NewsGalleryController::class, 'newsView'])->name('news.view');
         Route::post('news/{id}/edit', [NewsGalleryController::class, 'newsEdit'])->name('news.edit');
+
+        Route::get('movie', [MovieGalleryController::class, 'list'])->name('movie');
+        Route::get('movie/form', [MovieGalleryController::class, 'movieForm'])->name('movie.form');
+        Route::post('movie/form', [MovieGalleryController::class, 'movieCreate'])->name('movie.create');
+        Route::get('movie/{id}/remove', [MovieGalleryController::class, 'movieRemove'])->name('movie.remove');
+        Route::get('movie/{id}/view', [MovieGalleryController::class, 'movieView'])->name('movie.view');
+        Route::post('movie/{id}/edit', [MovieGalleryController::class, 'movieEdit'])->name('movie.edit');
+
+        Route::get('music', [MusicGalleryController::class, 'music'])->name('music');
+        Route::get('music/form', [MusicGalleryController::class, 'musicForm'])->name('music.form');
+        Route::post('music/form', [MusicGalleryController::class, 'musicCreate'])->name('music.create');
+        Route::get('music/{id}/remove', [MusicGalleryController::class, 'musicRemove'])->name('music.remove');
+        Route::get('music/{id}/view', [MusicGalleryController::class, 'musicView'])->name('music.view');
+        Route::post('music/{id}/edit', [MusicGalleryController::class, 'musicEdit'])->name('music.edit');
+
+        Route::get('poetry', [PoetryGalleryController::class, 'poetry'])->name('poetry');
+        Route::get('poetry/form', [PoetryGalleryController::class, 'poetryForm'])->name('poetry.form');
+        Route::post('poetry/form', [PoetryGalleryController::class, 'poetryCreate'])->name('poetry.create');
+        Route::get('poetry/{id}/remove', [PoetryGalleryController::class, 'poetryRemove'])->name('poetry.remove');
+        Route::get('poetry/{id}/view', [PoetryGalleryController::class, 'poetryView'])->name('poetry.view');
+        Route::post('poetry/{id}/edit', [PoetryGalleryController::class, 'poetryEdit'])->name('poetry.edit');
+
+        Route::get('photo', [PhotoGalleryController::class, 'photo'])->name('photo');
+        Route::get('photo/form', [PhotoGalleryController::class, 'photoForm'])->name('photo.form');
+        Route::post('photo/form', [PhotoGalleryController::class, 'photoCreate'])->name('photo.create');
+        Route::get('photo/{id}/remove', [PhotoGalleryController::class, 'photoRemove'])->name('photo.remove');
+        Route::get('photo/{id}/view', [PhotoGalleryController::class, 'photoView'])->name('photo.view');
+        Route::post('photo/{id}/edit', [PhotoGalleryController::class, 'photoEdit'])->name('photo.edit');
 
     });
 
