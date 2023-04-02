@@ -5,6 +5,7 @@ use App\Models\MoviesGallery;
 use App\Models\MusicGallery;
 use App\Models\NewsGallery;
 use App\Models\PhotoGallery;
+use App\Models\Team;
 
 /**
  * @var FestivalGallery[] $festivalElements
@@ -12,6 +13,7 @@ use App\Models\PhotoGallery;
  * @var MoviesGallery[] $moviesElements
  * @var MusicGallery[] $musicElements
  * @var PhotoGallery[] $photoElements
+ * @var Team[] $teams
  */
 ?>
     <!doctype html>
@@ -364,69 +366,15 @@ use App\Models\PhotoGallery;
         <p class="teams__title">{!! trans('content.title_festival_team') !!}</p>
 
         <div class="teams__elements">
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
+            @foreach($teams as $team)
+                <div class="teams__record">
+                    <div class="images">
+                        <img src="{{$element->file?->filePath()}}" alt="{{$team->title}}">
+                    </div>
+                    <div class="title">{{$team->title}}</div>
+                    <div class="description">{{$team->description}}</div>
                 </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
-
-            <div class="teams__record">
-                <div class="images">
-                    <img src="/images/mocks/person.jpg" alt="">
-                </div>
-                <div class="title">Константин Константинов</div>
-                <div class="description">Регалии на несколько строк. Регалии на несколько строк</div>
-            </div>
+            @endforeach
         </div>
 
     </div>

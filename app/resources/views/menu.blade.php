@@ -1,11 +1,12 @@
 @php
     $menus = [
-        ['label' => 'Галлерея фестиваля', 'route' => route('panel.gallery.festival'), 'active' => 'panel/gallery/festival*'],
+        ['label' => 'Галерея фестиваля', 'route' => route('panel.gallery.festival'), 'active' => 'panel/gallery/festival*'],
         ['label' => 'Новости', 'route' => route('panel.gallery.news'), 'active' => 'panel/gallery/news*'],
         ['label' => 'Фильмы', 'route' => route('panel.gallery.movie'), 'active' => 'panel/gallery/movie*'],
         ['label' => 'Музыка', 'route' => route('panel.gallery.music'), 'active' => 'panel/gallery/music*'],
         ['label' => 'Стихи', 'route' => route('panel.gallery.poetry'), 'active' => 'panel/gallery/poetry*'],
         ['label' => 'Фотографии', 'route' => route('panel.gallery.photo'), 'active' => 'panel/gallery/photo*'],
+        ['label' => 'Команда', 'route' => route('panel.gallery.team'), 'active' => 'panel/gallery/team*'],
     ];
 @endphp
 

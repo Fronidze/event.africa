@@ -8,6 +8,7 @@ use App\Http\Controllers\NewsGalleryController;
 use App\Http\Controllers\PanelController;
 use App\Http\Controllers\PhotoGalleryController;
 use App\Http\Controllers\PoetryGalleryController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -77,6 +78,13 @@ Route::prefix('panel')->name('panel.')->group(function () {
         Route::get('photo/{id}/remove', [PhotoGalleryController::class, 'photoRemove'])->name('photo.remove');
         Route::get('photo/{id}/view', [PhotoGalleryController::class, 'photoView'])->name('photo.view');
         Route::post('photo/{id}/edit', [PhotoGalleryController::class, 'photoEdit'])->name('photo.edit');
+
+        Route::get('team', [TeamController::class, 'team'])->name('team');
+        Route::get('team/form', [TeamController::class, 'teamForm'])->name('team.form');
+        Route::post('team/form', [TeamController::class, 'teamCreate'])->name('team.create');
+        Route::get('team/{id}/remove', [TeamController::class, 'teamRemove'])->name('team.remove');
+        Route::get('team/{id}/view', [TeamController::class, 'teamView'])->name('team.view');
+        Route::post('team/{id}/edit', [TeamController::class, 'teamEdit'])->name('team.edit');
 
     });
 

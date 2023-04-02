@@ -7,6 +7,7 @@ use App\Models\MoviesGallery;
 use App\Models\MusicGallery;
 use App\Models\NewsGallery;
 use App\Models\PhotoGallery;
+use App\Models\Team;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -33,13 +34,15 @@ class Controller extends BaseController
         $moviesElements = $this->elements(MoviesGallery::query());
         $musicElements = $this->elements(MusicGallery::query());
         $photoElements = $this->elements(PhotoGallery::query());
+        $teams = $this->elements(Team::query());
 
         return view('layout', compact(
             'festivalElements',
             'newsElements',
             'moviesElements',
             'musicElements',
-            'photoElements'
+            'photoElements',
+            'teams'
         ));
 
     }
