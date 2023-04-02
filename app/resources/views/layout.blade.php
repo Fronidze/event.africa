@@ -31,15 +31,11 @@ use App\Models\NewsGallery;
     <div class="container menu">
 
         <div class="main_logo">
-            <a class="icon icon__link" href="">
-                <img src="/images/logo.svg" alt="">
-            </a>
+            <img src="/images/logo.svg" alt="">
         </div>
 
         <div class="partners_logo">
-            <a class="icon icon__link" href="">
-                <img src="/images/logo_partner.svg" alt="">
-            </a>
+            <img src="/images/logo_partner.svg" alt="">
         </div>
 
         <ul class="menu__list">
@@ -459,7 +455,7 @@ use App\Models\NewsGallery;
 <footer>
     <div class="footer_wrapper container">
         <div class="partners">
-            <a class="icon icon__link" href="">
+            <a class="icon icon__link" href="https://alfavitproduction.ru" target="_blank">
                 <img src="/images/logo_partner.svg" alt="">
             </a>
         </div>
