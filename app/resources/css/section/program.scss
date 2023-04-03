@@ -112,15 +112,15 @@
 
                     &:before {
                         content: '';
-                        width: 2rem;
-                        height: 2rem;
                         display: block;
+                        width: 3rem;
+                        height: 3.2rem;
                         position: absolute;
                         top: 50%;
-                        left: -3.2rem;
-                        margin-top: -1.2rem;
-                        border-radius: 50%;
-                        border: .1rem solid var(--color-border-brown);
+                        left: -3.6rem;
+                        margin-top: -1.6rem;
+                        background: url("/images/list_dot.svg") no-repeat center center;
+                        background-size: contain;
                         @media screen {
                             @media (max-width: $mobile) {
                                 top: 50%;
@@ -143,7 +143,7 @@
 
     &__top_image {
         position: absolute;
-        bottom: calc(49rem - 35.1rem);
+        bottom: calc(15rem - 35.1rem);
         left: 0;
         z-index: -1;
         width: 93.5rem;

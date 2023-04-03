@@ -42,7 +42,9 @@ use App\Models\Team;
         </div>
 
         <div class="partners_logo">
-            <img src="/images/logo_partner.svg" alt="">
+            <a href="https://alfavitproduction.ru" target="_blank">
+                <img src="/images/logo_partner.svg" alt="">
+            </a>
         </div>
 
         <ul class="menu__list">
@@ -369,7 +371,7 @@ use App\Models\Team;
             @foreach($teams as $team)
                 <div class="teams__record">
                     <div class="images">
-                        <img src="{{$element->file?->filePath()}}" alt="{{$team->title}}">
+                        <img src="{{$team->file?->filePath()}}" alt="{{$team->title}}">
                     </div>
                     <div class="title">{{$team->title}}</div>
                     <div class="description">{{$team->description}}</div>
@@ -429,8 +431,9 @@ use App\Models\Team;
         <div class="social">
             <ul>
                 <li><a href=""><img src="/images/social/whatsapp.svg" alt=""></a></li>
-                <li><a href=""><img src="/images/social/instagram.svg" alt=""></a></li>
-                <li><a href=""><img src="/images/social/facebook.svg" alt=""></a></li>
+{{--                <li><a href=""><img src="/images/social/instagram.svg" alt=""></a></li>--}}
+{{--                <li><a href=""><img src="/images/social/facebook.svg" alt=""></a></li>--}}
+                <li><a href=""><img src="/images/social/telegram.svg" alt=""></a></li>
                 <li><a href=""><img src="/images/social/vk.svg" alt=""></a></li>
                 <li><a href=""><img src="/images/social/youtube.svg" alt=""></a></li>
             </ul>
