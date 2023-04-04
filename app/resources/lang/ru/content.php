@@ -45,5 +45,7 @@ return [
     'participant_remember' => 'Напомнить',
 
     'partners_title' => 'Партнёры',
-    '' => '',
+    'partners_official' => 'официальный<br>партнер фестиваля',
+    'partners_information' => 'информационный партнер фестиваля',
+    'partners_organization' => 'организатор',
 ];

@@ -387,7 +387,7 @@ use App\Models\Team;
         <h3>{!! trans('content.partners_title') !!}</h3>
         <div class="partners_block__content">
             <div class="row official">
-                <div class="official__title">официальный<br>партнер фестиваля</div>
+                <div class="official__title">{!! trans('content.partners_official') !!}</div>
                 <div class="official__list">
                     <div class="official__img_wrapper">
                         <img src="/images/alrosa.svg" alt="">
@@ -399,13 +399,13 @@ use App\Models\Team;
             </div>
             <div class="row information">
                 <div class="information__partner">
-                    <div class="information__title">информационный партнер фестиваля</div>
+                    <div class="information__title">{!! trans('content.partners_information') !!}</div>
                     <div class="information__partner__logo_wrapper">
                         <img src="/images/information__partner.svg" alt="">
                     </div>
                 </div>
                 <div class="information__organization">
-                    <div class="information__title">организатор</div>
+                    <div class="information__title">{!! trans('content.partners_organization') !!}</div>
                     <div class="information__organization__logo_wrapper">
                         <img src="/images/information__organization.svg" alt="">
                     </div>

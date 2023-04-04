@@ -40,7 +40,12 @@ return [
     'participant_title' => 'Devenir membre',
     'participant_about' => 'Обращаем ваше внимание, что для посещения мероприятий фестиваля “Дни Африканской культуры и кино”, необходимо пройти',
     'participant_about_register' => 'регистрацию.',
-    'participant_about_time' => 'Les inscriptions aux événements du festival débuteront le <span>1er mai 2023.</span>',
+    'participant_about_time' => 'Les inscriptions aux événements du festival débuteront le <br><span>1er mai 2023.</span>',
     'participant_register' => 'inscription',
     'participant_remember' => 'Rappeler',
+
+    'partners_title' => 'Les partenaires',
+    'partners_official' => 'официальный<br>партнер фестиваля',
+    'partners_information' => 'информационный партнер фестиваля',
+    'partners_organization' => 'организатор',
 ];
