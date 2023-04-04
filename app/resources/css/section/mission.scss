@@ -83,7 +83,8 @@
 
         width: 100%;
         height: 111.4rem;
-        border-top: .1rem solid var(--color-border-brown);
+        //border-top: .1rem solid var(--color-border-brown);
+        //border-bottom: .1rem solid var(--color-border-brown);
 
         @media screen {
             @media (max-width: $mobile) {

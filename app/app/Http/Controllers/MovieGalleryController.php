@@ -62,7 +62,7 @@ class MovieGalleryController extends Controller
 
         if ($element instanceof MoviesGallery === false) {
             return redirect()
-                ->route('panel.gallery.movies');
+                ->route('panel.gallery.movie');
         }
 
         $file = $element->file;
@@ -74,7 +74,7 @@ class MovieGalleryController extends Controller
         $element->delete();
 
         return redirect()
-            ->route('panel.gallery.movies');
+            ->route('panel.gallery.movie');
 
     }
 
