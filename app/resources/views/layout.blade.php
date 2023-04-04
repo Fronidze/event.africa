@@ -373,8 +373,8 @@ use App\Models\Team;
                     <div class="images">
                         <img src="{{$team->file?->filePath()}}" alt="{{$team->title}}">
                     </div>
-                    <div class="title">{{$team->title}}</div>
-                    <div class="description">{{$team->description}}</div>
+                    <div class="title">{{$team->getTitle()}}</div>
+                    <div class="description">{{$team->getDescription()}}</div>
                 </div>
             @endforeach
         </div>

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Translate;
 use App\Models\FestivalGallery;
 use App\Models\Files;
 use App\Models\NewsGallery;
 use App\Models\PhotoGallery;
 use App\Models\Team;
+use App\Models\TeamTranslate;
 use App\Services\FilesService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -48,12 +50,41 @@ class TeamController extends Controller
         $element->file_id = $files?->id;
 
         $element->save();
+
+        $france_title = new TeamTranslate();
+        $france_title->lang = Translate::FR->value;
+        $france_title->team_id = $element->id;
+        $france_title->code = 'title';
+        $france_title->value = $request->input('title_fr');
+        $france_title->save();
+
+        $english_title = new TeamTranslate();
+        $english_title->lang = Translate::EN->value;
+        $english_title->team_id = $element->id;
+        $english_title->code = 'title';
+        $english_title->value = $request->input('title_en');
+        $english_title->save();
+
+        $france_description = new TeamTranslate();
+        $france_description->lang = Translate::FR->value;
+        $france_description->team_id = $element->id;
+        $france_description->code = 'description';
+        $france_description->value = $request->input('description_fr');
+        $france_description->save();
+
+        $english_description = new TeamTranslate();
+        $english_description->lang = Translate::EN->value;
+        $english_description->team_id = $element->id;
+        $english_description->code = 'description';
+        $english_description->value = $request->input('description_en');
+        $english_description->save();
+
         return redirect()
             ->route('panel.gallery.team');
     }
 
     public function teamRemove(
-        int $id,
+        int          $id,
         FilesService $filesService,
     ): RedirectResponse {
 
@@ -85,7 +116,7 @@ class TeamController extends Controller
     ): View|RedirectResponse {
 
         $element = Team::query()
-            ->with('file')
+            ->with('file', 'translates')
             ->where('id', $id)
             ->first();
 
@@ -93,16 +124,27 @@ class TeamController extends Controller
             return redirect()
                 ->route('panel.gallery.team');
         }
-        return \view('pages.team.view', compact('element'));
+
+        $translates = [];
+        /** @var TeamTranslate $translate */
+        foreach ($element->translates as $translate) {
+            $translates[$translate->lang][$translate->code] = $translate->value;
+        }
+
+        return \view('pages.team.view', compact('element', 'translates'));
 
     }
 
     public function teamEdit(
-        int $id,
+        int     $id,
         Request $request
     ): RedirectResponse {
 
-        $element = Team::find($id);
+        $element = Team::query()
+            ->with('translates')
+            ->where('id', $id)
+            ->first();
+
         if ($element instanceof Team === false) {
             return redirect()
                 ->route('panel.gallery.team');
@@ -111,6 +153,13 @@ class TeamController extends Controller
         $element->title = $request->input('title');
         $element->description = $request->input('description');
         $element->sorting = $request->input('sorting');
+
+        /** @var TeamTranslate $translate */
+        foreach ($element->translates as $translate) {
+            $key = "{$translate->code}_{$translate->lang}";
+            $translate->value = $request->input($key);
+            $translate->save();
+        }
         $element->save();
 
         return redirect()

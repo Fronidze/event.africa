@@ -4,6 +4,7 @@ use App\Models\Team;
 
 /**
  * @var Team $element
+ * @var array $translates
  */
 ?>
 @extends('template')
@@ -19,16 +20,44 @@ use App\Models\Team;
                     <form action="{{ route('panel.gallery.team.edit', ['id' => $element->id]) }}" method="post"
                           enctype="multipart/form-data">
                         @csrf
+
                         <div class="form-group">
                             <label class="form-label" for="">Название</label>
                             <input class="form-control" type="text" name="title"
                                    value="{{ old('title', $element->title) }}">
                         </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[FR] Название</label>
+                            <input class="form-control" type="text" name="title_fr"
+                                   value="{{ old('title', Arr::get($translates, 'fr.title')) }}">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[EN] Название</label>
+                            <input class="form-control" type="text" name="title_en"
+                                   value="{{ old('title', Arr::get($translates, 'en.title')) }}">
+                        </div>
+
+
                         <div class="form-group">
                             <label class="form-label" for="">Описание</label>
                             <textarea class="form-control" name="description" cols="30"
                                       rows="5">{{ old('description', $element->description) }}</textarea>
                         </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[FR] Описание</label>
+                            <textarea class="form-control" name="description_fr" cols="30"
+                                      rows="5">{{ old('description', Arr::get($translates, 'fr.description')) }}</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[EN] Описание</label>
+                            <textarea class="form-control" name="description_en" cols="30"
+                                      rows="5">{{ old('description', Arr::get($translates, 'en.description')) }}</textarea>
+                        </div>
+
                         <div class="form-group">
                             <label class="form-label" for="">Сортировка</label>
                             <input class="form-control" type="text" name="sorting"
