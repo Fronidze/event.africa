@@ -89,7 +89,7 @@ class TeamController extends Controller
             ->where('id', $id)
             ->first();
 
-        if ($element instanceof PhotoGallery === false) {
+        if ($element instanceof Team === false) {
             return redirect()
                 ->route('panel.gallery.team');
         }
