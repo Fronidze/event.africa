@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Translate;
 use App\Models\FestivalGallery;
 use App\Models\Files;
 use App\Models\NewsGallery;
+use App\Models\NewsTranslate;
+use App\Models\TeamTranslate;
 use App\Services\FilesService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -46,6 +49,35 @@ class NewsGalleryController extends Controller
         $element->file_id = $files?->id;
 
         $element->save();
+
+        $france_title = new NewsTranslate();
+        $france_title->lang = Translate::FR->value;
+        $france_title->code = 'title';
+        $france_title->news_id = $element->id;
+        $france_title->value = $request->input('title_fr');
+        $france_title->save();
+
+        $english_title = new NewsTranslate();
+        $english_title->lang = Translate::EN->value;
+        $english_title->code = 'title';
+        $english_title->news_id = $element->id;
+        $english_title->value = $request->input('title_en');
+        $english_title->save();
+
+        $france_description = new NewsTranslate();
+        $france_description->lang = Translate::FR->value;
+        $france_description->code = 'description';
+        $france_description->news_id = $element->id;
+        $france_description->value = $request->input('description_fr');
+        $france_description->save();
+
+        $english_description = new NewsTranslate();
+        $english_description->lang = Translate::EN->value;
+        $english_description->code = 'description';
+        $english_description->news_id = $element->id;
+        $english_description->value = $request->input('description_en');
+        $english_description->save();
+
         return redirect()
             ->route('panel.gallery.news');
     }
@@ -83,7 +115,7 @@ class NewsGalleryController extends Controller
     ): View|RedirectResponse {
 
         $element = NewsGallery::query()
-            ->with('file')
+            ->with('file', 'translates')
             ->where('id', $id)
             ->first();
 
@@ -91,7 +123,14 @@ class NewsGalleryController extends Controller
             return redirect()
                 ->route('panel.gallery.news');
         }
-        return \view('pages.news.view', compact('element'));
+
+        $translates = [];
+        /** @var NewsTranslate $translate */
+        foreach ($element->translates as $translate) {
+            $translates[$translate->lang][$translate->code] = $translate->value;
+        }
+
+        return \view('pages.news.view', compact('element', 'translates'));
 
     }
 
@@ -109,6 +148,14 @@ class NewsGalleryController extends Controller
         $element->title = $request->input('title');
         $element->description = $request->input('description');
         $element->sorting = $request->input('sorting');
+
+        /** @var NewsTranslate $translate */
+        foreach ($element->translates as $translate) {
+            $key = "{$translate->code}_{$translate->lang}";
+            $translate->value = $request->input($key);
+            $translate->save();
+        }
+
         $element->save();
 
         return redirect()

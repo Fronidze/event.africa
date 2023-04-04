@@ -10,14 +10,37 @@
                 <div class="ibox-content">
                     <form action="{{ route('panel.gallery.news.create') }}" method="post" enctype="multipart/form-data">
                         @csrf
+
                         <div class="form-group">
                             <label class="form-label" for="">Название</label>
                             <input class="form-control" type="text" name="title">
                         </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[FR] Название</label>
+                            <input class="form-control" type="text" name="title_fr">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[EN] Название</label>
+                            <input class="form-control" type="text" name="title_en">
+                        </div>
+
                         <div class="form-group">
                             <label class="form-label" for="">Описание</label>
                             <textarea class="form-control" name="description" cols="30" rows="5"></textarea>
                         </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[FR] Описание</label>
+                            <textarea class="form-control" name="description_fr" cols="30" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="">[EN] Описание</label>
+                            <textarea class="form-control" name="description_en" cols="30" rows="5"></textarea>
+                        </div>
+
                         <div class="form-group">
                             <label class="form-label" for="">Сортировка</label>
                             <input class="form-control" type="text" name="sorting">

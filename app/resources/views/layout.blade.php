@@ -200,8 +200,8 @@ use App\Models\Team;
                             </div>
 
                             <div class="mission__element__describe">
-                                <h3>{{ $element->title }}</h3>
-                                <p>{!! $element->description !!}</p>
+                                <h3>{{ $element->getTitle() }}</h3>
+                                <p>{!! $element->getDescription() !!}</p>
                             </div>
 
                         </div>
