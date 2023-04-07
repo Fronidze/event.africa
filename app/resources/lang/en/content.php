@@ -2,7 +2,7 @@
 
 return [
     'africa' => 'африка',
-    'cradle_civilization' => 'колыбель<br>цивилизации',
+    'cradle_civilization' => 'Вместе в будущее',
     'july' => 'июля',
     'st_petersburg' => 'Санкт-Петербург',
 

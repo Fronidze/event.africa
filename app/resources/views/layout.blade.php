@@ -56,14 +56,9 @@ use App\Models\Team;
 
         <ul class="language">
             @if(App::getLocale() == 'ru')
-                <li><a href="/fr/">fr</a></li>
-                <li><a href="/en/">en</a></li>
-            @elseif(App::getLocale() == 'fr')
-                <li><a href="/">ru</a></li>
                 <li><a href="/en/">en</a></li>
             @else
                 <li><a href="/">ru</a></li>
-                <li><a href="/fr/">fr</a></li>
             @endif
         </ul>
 
@@ -71,7 +66,7 @@ use App\Models\Team;
             <div class="mobil_action__wrapper">
                 <div class="lang">
                     @if(App::getLocale() == 'ru')
-                        <a href="/fr/">fr</a>
+                        <a href="/en/">en</a>
                     @else
                         <a href="/">ru</a>
                     @endif
@@ -229,8 +224,45 @@ use App\Models\Team;
             <div class="program__information__row">
                 <div class="program__header"><img src="/images/program_header_line.svg" alt=""></div>
                 <p class="program__title">{!! trans('content.title_deal_program') !!}</p>
-                <p class="program__description">{!! trans('content.description_deal_program') !!}</p>
+                {{--                <p class="program__description">{!! trans('content.description_deal_program') !!}</p>--}}
+                <h5>Круглый стол “Африканская культура в 21 веке”.</h5>
+                <p class="program__description"><b>Куратор: Юрате Гураускайте</b> (editor-in-chief «U magazine» Russia)
+                </p>
+                <p class="program__description">Идея заключается в том, чтобы устранить катастрофическую нехватку
+                    информации в современной африканской культуре, объединить  и сблизить наши страны посредством
+                    культурного диалога. </p>
+
+                <p style="margin-top: 1rem">
+                    <b>Участники мероприятия:</b>
+                <ul class="program__list">
+                    <li>Oumi Ndour (journalist, filmmaker)</li>
+                    <li>Didier Awadi ( musician, producer)</li>
+                    <li>Iain Macdonald (Joburg ballet art director)</li>
+                </ul>
+                </p>
+
+                <h5 style="margin-top: 10rem">Круглый стол «Киноиндустрия России и Африки»</h5>
+                <p class="program__description"><b>Куратор: Юрате Гураускайте</b> (editor-in-chief «U magazine» Russia)
+                </p>
+                <p class="program__description">Круглый стол по сотрудничеству в производстве ТВ-продукции, кино и анимаций даст возможность познакомить представителей африканского аудиовизуального бизнеса с российским и наоборот.</p>
+
+                <p style="margin-top: 1rem">
+                    <b>Участники мероприятия:</b>
+                <ul class="program__list">
+                    <li>Ibra Kane - emedia senegal (tv, radio, web) </li>
+                    <li>Timothy Odhiamo Owase (CEO Kenya Film Comission) </li>
+                    <li>Wanuri Kahiu (Kenya,  film director & producer) </li>
+                    <li>Mo Abudu (Nigeria,  film director, co founder EbonyLife TV) </li>
+                    <li>David ‘tosh’ Gitonga (Kenya, filmmaker and producer)</li>
+                    <li>Shirley Frimpong-manso (Ghana, filmmaker, producer, founder of Sparrow Productions)</li>
+                    <li>Ousman Samassekou (Mali, filmmaker) </li>
+                    <li>Moses Babatope (Nigeria, director filmhouse group) </li>
+                    <li>Ferdy Adimefe (CEO Magic Carpet Studios, Nigeria,  animation) </li>
+                </ul>
+                </p>
+
             </div>
+
 
             <div class="program__information__row">
                 <p class="program__title">{!! trans('content.title_culture_program') !!}</p>
@@ -431,8 +463,8 @@ use App\Models\Team;
         <div class="social">
             <ul>
                 <li><a href=""><img src="/images/social/whatsapp.svg" alt=""></a></li>
-{{--                <li><a href=""><img src="/images/social/instagram.svg" alt=""></a></li>--}}
-{{--                <li><a href=""><img src="/images/social/facebook.svg" alt=""></a></li>--}}
+                {{--                <li><a href=""><img src="/images/social/instagram.svg" alt=""></a></li>--}}
+                {{--                <li><a href=""><img src="/images/social/facebook.svg" alt=""></a></li>--}}
                 <li><a href=""><img src="/images/social/telegram.svg" alt=""></a></li>
                 <li><a href=""><img src="/images/social/vk.svg" alt=""></a></li>
                 <li><a href=""><img src="/images/social/youtube.svg" alt=""></a></li>
