@@ -22,17 +22,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('{lang?}')->group(function () {
-    $lang = request()->segment(1);
-    if ($lang !== null) {
-        App::setLocale($lang);
-    }
-
-    Route::get('/', [Controller::class, 'main']);
-});
-
-
-Route::prefix('panel')->name('panel.')->group(function () {
+Route::prefix('admin')->name('panel.')->group(function () {
     Route::get('/', [PanelController::class, 'index'])->name('index');
 
     Route::prefix('gallery')->name('gallery.')->group(function () {
@@ -87,5 +77,13 @@ Route::prefix('panel')->name('panel.')->group(function () {
         Route::post('team/{id}/edit', [TeamController::class, 'teamEdit'])->name('team.edit');
 
     });
+});
 
+Route::prefix('{lang?}')->group(function () {
+    $lang = request()->segment(1);
+    if ($lang !== null) {
+        App::setLocale($lang);
+    }
+
+    Route::get('/', [Controller::class, 'main']);
 });
