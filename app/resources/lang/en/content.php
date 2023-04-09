@@ -24,6 +24,7 @@ return [
     'list_culture_program_music' => 'Музыкальная программа «Urban Africa»',
     'list_culture_program_fairy' => 'Поэтический вечер «Слово Африки»',
     'list_culture_program_photo' => 'Фотовыставка «Африканская мечта»',
+    'list_culture_program_lecture' => 'Лекции, Паблик-токи, Кураторские показы',
 
     'title_festival_team' => 'Команда фестиваля',
 
