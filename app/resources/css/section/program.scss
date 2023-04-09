@@ -19,6 +19,12 @@
     border-top-right-radius: 14rem;
     box-shadow: 0px -10rem 19rem -5rem rgba(243, 156, 17, 0.5);
 
+    .event_action {
+        margin-top: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__information {
         h3 {

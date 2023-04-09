@@ -226,7 +226,7 @@ html #tooltip[data-show] {
 .btn-link-white {
   color: white;
 }
-.btn.show_more {
+.btn.show_more, .btn.event_register {
   background: #57322F;
   font-weight: 500;
   font-size: 4.7rem;
@@ -243,14 +243,14 @@ html #tooltip[data-show] {
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-  .btn.show_more {
+  .btn.show_more, .btn.event_register {
     font-size: 1.6rem;
     line-height: 1.8rem;
     padding: 1.7rem 3.2rem 1.1rem 3.2rem;
     border-radius: 1.1rem;
   }
 }
-.btn.show_more::before {
+.btn.show_more::before, .btn.event_register::before {
   content: "";
   position: absolute;
   top: -2.71rem;
@@ -261,12 +261,12 @@ html #tooltip[data-show] {
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
-  .btn.show_more::before {
+  .btn.show_more::before, .btn.event_register::before {
     top: -0.85rem;
     height: 1.7rem;
   }
 }
-.btn.show_more::after {
+.btn.show_more::after, .btn.event_register::after {
   content: "";
   position: absolute;
   bottom: -2.71rem;
@@ -277,9 +277,16 @@ html #tooltip[data-show] {
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
-  .btn.show_more::after {
+  .btn.show_more::after, .btn.event_register::after {
     bottom: -0.85rem;
     height: 1.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn.event_register {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding: 1.4rem 1rem 1rem 1rem;
   }
 }
 .btn.registration {
@@ -1045,6 +1052,12 @@ footer .footer_wrapper .social ul li a img {
     border-top-right-radius: 2rem;
   }
 }
+.program .event_action {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .program__information h3 {
   text-align: right;
 }
@@ -1498,6 +1511,12 @@ footer .footer_wrapper .social ul li a img {
   .program_festival {
     margin-top: 0;
   }
+}
+.program_festival .event_action {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .program_festival .red_icon {
   width: 57rem;

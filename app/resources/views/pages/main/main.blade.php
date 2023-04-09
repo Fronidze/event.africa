@@ -169,6 +169,9 @@ use App\Models\Team;
                             <li>Didier Awadi ( musician, producer)</li>
                             <li>Iain Macdonald (Joburg ballet art director)</li>
                         </ul>
+                        <div class="event_action">
+                            <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                        </div>
                     </div>
 
                     <div class="program__subsection">
@@ -192,6 +195,9 @@ use App\Models\Team;
                             <li>Moses Babatope (Nigeria, director filmhouse group)</li>
                             <li>Ferdy Adimefe (CEO Magic Carpet Studios, Nigeria, animation)</li>
                         </ul>
+                        <div class="event_action">
+                            <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                        </div>
                     </div>
 
                 </div>
@@ -207,7 +213,9 @@ use App\Models\Team;
                         <li><a href="#fairy_tail"><p>{!! trans('content.list_culture_program_fairy') !!}</p></a></li>
                         <li><a href="#photo"><p>{!! trans('content.list_culture_program_photo') !!}</p></a></li>
                     </ul>
-
+                    <div class="event_action">
+                        <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                    </div>
                 </div>
 
             </div>
@@ -259,6 +267,11 @@ use App\Models\Team;
                     </div>
                     <div class="swiper-pagination movies"></div>
                 </div>
+
+                <div class="event_action">
+                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                </div>
+
             </div>
 
             <div id="lecture" class="program_festival__element">
@@ -291,6 +304,11 @@ use App\Models\Team;
                         мечта".
                     </p>
                 </div>
+
+                <div class="event_action">
+                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                </div>
+
             </div>
 
             <div id="music" class="program_festival__element">
@@ -348,6 +366,11 @@ use App\Models\Team;
                     </div>
                     <div class="swiper-pagination music"></div>
                 </div>
+
+                <div class="event_action">
+                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                </div>
+
             </div>
 
             <div id="fairy_tail" class="program_festival__element">
@@ -365,6 +388,11 @@ use App\Models\Team;
                         познакомят зрителя с уникальной поэзией свободы и любви.</p>
                     <p class="element__description">Чтение поэзии в аудиовизуальном сопровождении.</p>
                 </div>
+
+                <div class="event_action">
+                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                </div>
+
             </div>
 
             <div id="photo" class="program_festival__element">
@@ -408,7 +436,6 @@ use App\Models\Team;
                             куратор
                             музейно-выставочной организации - центра фотографии имени братьев Люмьер.</p>
                     </div>
-
                 </div>
 
                 <div class="photos_wrapper">
@@ -423,9 +450,13 @@ use App\Models\Team;
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
+                <div class="event_action">
+                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
                 </div>
+
+{{--                <div class="container">--}}
+{{--                    <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>--}}
+{{--                </div>--}}
             </div>
 
         </div>

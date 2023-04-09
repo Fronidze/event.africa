@@ -20,7 +20,8 @@
     &-md {
     }
 
-    &.show_more {
+    &.show_more,
+    &.event_register {
         background: #57322F;
         font-weight: 500;
         font-size: 4.7rem;
@@ -73,6 +74,16 @@
                     bottom: -0.85rem;
                     height: 1.7rem;
                 }
+            }
+        }
+    }
+
+    &.event_register {
+        @media screen {
+            @media (max-width: $mobile) {
+                font-size: 1.4rem;
+                line-height: 1.2;
+                padding: 1.4rem 1rem 1rem 1rem;
             }
         }
     }
