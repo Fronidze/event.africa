@@ -92,9 +92,9 @@
             //margin-top: 12.9rem;
             @media screen {
                 @media (max-width: $mobile) {
-                    margin-top: 1.3rem;
-                    flex-direction: column;
-                    align-items: flex-start;
+                    margin-top: 0;
+                    //flex-direction: column;
+                    //align-items: flex-start;
                 }
             }
             &__title {
@@ -144,7 +144,7 @@
             &__organization {
                 @media screen {
                     @media (max-width: $mobile) {
-                        margin-top: 1.6rem;
+                        //margin-top: 1.6rem;
                     }
                 }
                 &__logo_wrapper {
