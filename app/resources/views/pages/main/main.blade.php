@@ -35,6 +35,7 @@ use App\Models\Team;
                         </div>
                         <button data-register-button
                                 class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
+                        <p class="invite__form__about">{!! trans('content.participant_about') !!}</p>
                     </form>
                 </div>
             </div>
@@ -119,7 +120,7 @@ use App\Models\Team;
             <div class="news_list__wrapper">
                 @foreach($newsElements as $news)
                     <div class="news_list__element news">
-                        <a class="news__link" href="{{ route('news.list') }}">
+                        <a class="news__link" href="{{ route('news.detail', ['id' => $news->id]) }}">
                             <div class="news__date">17 мая 2023</div>
                             <div class="news__description">{{$news->getTitle()}}</div>
                             <div class="news__image"><img src="{{$news->file?->filePath()}}" alt=""></div>

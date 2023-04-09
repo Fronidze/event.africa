@@ -51,7 +51,7 @@ use App\Models\Team;
             <li><a href="#festival">{!! trans('menu.about') !!}</a></li>
             <li><a href="#news">{!! trans('menu.news') !!}</a></li>
             <li><a href="#program">{!! trans('menu.program') !!}</a></li>
-{{--            <li><a href="#participant">{!! trans('menu.participant') !!}</a></li>--}}
+            <li><a href="#participant">{!! trans('menu.participant') !!}</a></li>
         </ul>
 
         <ul class="language">
@@ -82,7 +82,7 @@ use App\Models\Team;
             <li><a data-close-menu href="#festival">{{ trans('menu.about') }}</a></li>
             <li><a data-close-menu href="#news">{{ trans('menu.news') }}</a></li>
             <li><a data-close-menu href="#program">{{ trans('menu.program') }}</a></li>
-{{--            <li><a data-close-menu href="#participant">{!! trans('menu.participant') !!}</a></li>--}}
+            <li><a data-close-menu href="#participant">{!! trans('menu.participant') !!}</a></li>
         </ul>
     </div>
 

@@ -35,6 +35,14 @@
         display: block;
         position: relative;
         overflow: hidden;
+        @media screen {
+            @media (max-width: $mobile) {
+                font-size: 1.6rem;
+                line-height: 1.8rem;
+                padding: 1.7rem 3.2rem 1.1rem 3.2rem;
+                border-radius: 1.1rem;
+            }
+        }
         &::before {
             content: '';
             position: absolute;
@@ -44,6 +52,12 @@
             height: 5.42rem;
             background: url("/images/more_button_border.svg") no-repeat;
             background-size: cover;
+            @media screen {
+                @media (max-width: $mobile) {
+                    top: -0.85rem;
+                    height: 1.7rem;
+                }
+            }
         }
         &::after {
             content: '';
@@ -54,6 +68,12 @@
             height: 5.42rem;
             background: url("/images/more_button_border.svg") no-repeat;
             background-size: cover;
+            @media screen {
+                @media (max-width: $mobile) {
+                    bottom: -0.85rem;
+                    height: 1.7rem;
+                }
+            }
         }
     }
 

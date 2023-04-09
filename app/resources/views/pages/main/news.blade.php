@@ -1,5 +1,12 @@
 @extends('layout')
 @section('content')
+
+    <div class="news_navigation">
+        <ul class="news_navigation__list container">
+            <li><a href="{{ route('main') }}"><i class="icon icon-arrow-left"></i>на главную</a></li>
+        </ul>
+    </div>
+
     <section class="mission">
 
         <div class="container">

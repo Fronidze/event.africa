@@ -108,6 +108,13 @@
                 font-size: 5rem;
                 font-weight: 500;
 
+                @media screen {
+                    @media (max-width: $mobile) {
+                        font-size: 1.8rem;
+                        margin-top: 1.2rem;
+                    }
+                }
+
                 .no_bold {
                     font-weight: 300;
                 }
@@ -120,26 +127,49 @@
             margin-top: 3rem;
             font-size: 4rem;
             line-height: 1.2;
+            @media screen {
+                @media (max-width: $mobile) {
+                    margin-top: 1.2rem;
+                    font-size: 1.6rem;
+                }
+            }
         }
 
-        .element__curator {
-            margin-top: 3rem;
-            font-size: 4rem;
-            line-height: 1.2;
-        }
+        //.element__curator {
+        //    margin-top: 3rem;
+        //    font-size: 4rem;
+        //    line-height: 1.2;
+        //}
 
         .element__list__title {
             margin-top: 3rem;
             margin-bottom: 3rem;
             font-size: 3.5rem;
             font-weight: 500;
+            @media screen {
+                @media (max-width: $mobile) {
+                    margin-top: 1.2rem;
+                    margin-bottom: 1.2rem;
+                    font-size: 1.6rem;
+                }
+            }
         }
 
         .element__list {
             padding-left: 10rem;
+            @media screen {
+                @media (max-width: $mobile) {
+                    padding-left: 3.5rem;
+                }
+            }
             li {
                 margin-top: 1.8rem;
                 position: relative;
+                @media screen {
+                    @media (max-width: $mobile) {
+                        margin-top: 0.1rem;
+                    }
+                }
                 &:before {
                     content: '';
                     display: block;
@@ -153,8 +183,8 @@
                     background-size: contain;
                     @media screen {
                         @media (max-width: $mobile) {
-                            top: 50%;
-                            margin-top: -0.6rem;
+                            top: 0;
+                            margin-top: 0.3rem;
                             left: -1.6rem;
                             width: 0.8rem;
                             height: 0.8rem;

@@ -5,7 +5,7 @@
 
     @media screen {
         @media (max-width: $mobile) {
-            min-height: auto;
+            min-height: 53.6rem;
         }
     }
 
@@ -88,6 +88,18 @@
                 margin-top: 0;
                 position: absolute;
                 top: 15.5rem;
+                text-align: left;
+            }
+        }
+
+        &__about {
+            margin-top: 7rem;
+            text-align: left;
+            @media screen {
+                @media (max-width: $mobile) {
+                    margin-top: 2rem;
+                    padding-right: var(--container-padding);
+                }
             }
         }
     }
