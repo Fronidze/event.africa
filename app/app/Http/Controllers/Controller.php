@@ -20,23 +20,27 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    protected function elements(Builder $model): Collection {
-        return $model
+    protected function elements(Builder $model, ?int $limit = null): Collection {
+        $query = $model
             ->with('file')
-            ->orderBy('sorting')
-            ->get();
+            ->orderBy('sorting');
+
+        if ($limit !== null) {
+            $query->limit($limit);
+        }
+
+        return $query->get();
     }
 
     public function main(): View {
-
         $festivalElements = $this->elements(FestivalGallery::query());
-        $newsElements = $this->elements(NewsGallery::query());
+        $newsElements = $this->elements(NewsGallery::query(), 3);
         $moviesElements = $this->elements(MoviesGallery::query());
         $musicElements = $this->elements(MusicGallery::query());
         $photoElements = $this->elements(PhotoGallery::query());
         $teams = $this->elements(Team::query());
 
-        return view('layout', compact(
+        return view('pages.main.main', compact(
             'festivalElements',
             'newsElements',
             'moviesElements',
@@ -45,5 +49,17 @@ class Controller extends BaseController
             'teams'
         ));
 
+    }
+
+    public function news(): View {
+        $newsElements = $this->elements(NewsGallery::query());
+        return \view('pages.main.news', compact('newsElements'));
+    }
+
+    public function detail(
+        int $news_id
+    ): View {
+        $news = NewsGallery::find($news_id);
+        return \view('pages.main.news-detail', compact('news'));
     }
 }

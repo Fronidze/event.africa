@@ -50,26 +50,12 @@ class NewsGalleryController extends Controller
 
         $element->save();
 
-        $france_title = new NewsTranslate();
-        $france_title->lang = Translate::FR->value;
-        $france_title->code = 'title';
-        $france_title->news_id = $element->id;
-        $france_title->value = $request->input('title_fr');
-        $france_title->save();
-
         $english_title = new NewsTranslate();
         $english_title->lang = Translate::EN->value;
         $english_title->code = 'title';
         $english_title->news_id = $element->id;
         $english_title->value = $request->input('title_en');
         $english_title->save();
-
-        $france_description = new NewsTranslate();
-        $france_description->lang = Translate::FR->value;
-        $france_description->code = 'description';
-        $france_description->news_id = $element->id;
-        $france_description->value = $request->input('description_fr');
-        $france_description->save();
 
         $english_description = new NewsTranslate();
         $english_description->lang = Translate::EN->value;

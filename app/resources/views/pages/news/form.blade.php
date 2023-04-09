@@ -17,11 +17,6 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label" for="">[FR] Название</label>
-                            <input class="form-control" type="text" name="title_fr">
-                        </div>
-
-                        <div class="form-group">
                             <label class="form-label" for="">[EN] Название</label>
                             <input class="form-control" type="text" name="title_en">
                         </div>
@@ -29,11 +24,6 @@
                         <div class="form-group">
                             <label class="form-label" for="">Описание</label>
                             <textarea class="form-control" name="description" cols="30" rows="5"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label" for="">[FR] Описание</label>
-                            <textarea class="form-control" name="description_fr" cols="30" rows="5"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -45,10 +35,12 @@
                             <label class="form-label" for="">Сортировка</label>
                             <input class="form-control" type="text" name="sorting">
                         </div>
+
                         <div class="form-group">
                             <label class="form-label" for="">Файл</label>
                             <input class="form-control" type="file" name="image">
                         </div>
+
                         <div class="form-group">
                             <a href="{{ route('panel.gallery.news') }}" class="btn btn-xs btn-white">К списку</a>
                             <button type="submit" class="btn btn-xs btn-primary">Сохранить</button>

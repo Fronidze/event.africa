@@ -79,11 +79,22 @@ Route::prefix('admin')->name('panel.')->group(function () {
     });
 });
 
-Route::prefix('{lang?}')->group(function () {
-    $lang = request()->segment(1);
-    if ($lang !== null) {
-        App::setLocale($lang);
-    }
 
-    Route::get('/', [Controller::class, 'main']);
+Route::prefix('/')->group(function (){
+    App::setLocale('ru');
+    Route::get('news/{id}', [Controller::class, 'detail'])->name('news.detail');
+    Route::get('news', [Controller::class, 'news'])->name('news.list');
+    Route::get('/', [Controller::class, 'main'])->name('main');
 });
+
+//Route::prefix('{lang?}/')->group(function () {
+//
+//    $lang = request()->segment(1);
+//    $expect = ['ru', 'en'];
+//    if ($lang !== null && in_array($lang, $expect)) {
+//        App::setLocale($lang);
+//    }
+//
+//    Route::get('news', [Controller::class, 'news'])->name('news.list');
+//    Route::get('/', [Controller::class, 'main'])->name('main');
+//})->where('lang', 'en|ru');

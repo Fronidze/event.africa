@@ -226,6 +226,42 @@ html #tooltip[data-show] {
 .btn-link-white {
   color: white;
 }
+.btn.show_more {
+  background: #57322F;
+  font-weight: 500;
+  font-size: 4.7rem;
+  line-height: 5.2rem;
+  color: white;
+  border-radius: 3.3rem;
+  border: none;
+  text-align: center;
+  padding: 5.04rem 9.1rem 3.2rem 9.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.btn.show_more::before {
+  content: "";
+  position: absolute;
+  top: -2.71rem;
+  left: 0;
+  width: 100%;
+  height: 5.42rem;
+  background: url("/images/more_button_border.svg") no-repeat;
+  background-size: cover;
+}
+.btn.show_more::after {
+  content: "";
+  position: absolute;
+  bottom: -2.71rem;
+  left: 0;
+  width: 100%;
+  height: 5.42rem;
+  background: url("/images/more_button_border.svg") no-repeat;
+  background-size: cover;
+}
 .btn.registration {
   background: rgba(243, 156, 17, 0.87);
   width: 66.7rem;
@@ -834,8 +870,8 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .mission .red_icon {
-  width: 57rem;
-  height: 57rem;
+  width: 35rem;
+  height: 35rem;
   position: absolute;
   top: -5rem;
   right: 10rem;
@@ -1482,13 +1518,17 @@ footer .footer_wrapper .social ul li a img {
 .program_festival__element .element__title__sub .no_bold {
   font-weight: 300;
 }
-.program_festival__element .element__event_data {
+.program_festival__element .element__event_data,
+.program_festival__element .element__curator,
+.program_festival__element .element__durations {
   margin-top: 3rem;
   font-size: 4rem;
+  line-height: 1.2;
 }
 .program_festival__element .element__curator {
   margin-top: 3rem;
   font-size: 4rem;
+  line-height: 1.2;
 }
 .program_festival__element .element__list__title {
   margin-top: 3rem;
@@ -1682,11 +1722,12 @@ footer .footer_wrapper .social ul li a img {
   background: url("/images/partners_right.svg"), url("/images/partners_left.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 3.3rem) center, 3.3rem calc(100% - 3.3rem);
-  background-size: 11.6rem, 13.1rem;
+  background-size: 57.5rem, 57.5rem;
 }
 @media screen and (max-width: 768px) {
   .partners_block {
     padding: 3rem 0;
+    background-size: 11.6rem, 13.1rem;
   }
 }
 .partners_block__content {
@@ -1763,7 +1804,6 @@ footer .footer_wrapper .social ul li a img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12.9rem;
 }
 @media screen and (max-width: 768px) {
   .partners_block__content .information {
@@ -1795,7 +1835,7 @@ footer .footer_wrapper .social ul li a img {
 }
 .partners_block__content .information__partner__logo_wrapper {
   width: 13.6rem;
-  height: 18.5rem;
+  height: 13rem;
 }
 @media screen and (max-width: 768px) {
   .partners_block__content .information__partner__logo_wrapper {
@@ -1827,6 +1867,55 @@ footer .footer_wrapper .social ul li a img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.news_list__wrapper {
+  margin-top: 14rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news_list__more {
+  margin-top: 15rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news_list .news {
+  width: 48rem;
+  max-width: 48rem;
+  margin-right: 4rem;
+  margin-top: 4rem;
+}
+.news_list .news:nth-child(3n) {
+  margin-right: 0;
+}
+.news_list .news__link {
+  display: block;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.news_list .news__date {
+  color: var(--color-orange);
+  margin-bottom: 2.5rem;
+}
+.news_list .news__description {
+  height: 15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news_list .news__image {
+  width: 100%;
+  height: 44.7rem;
+  margin-top: 10rem;
+}
+.news_list .news__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

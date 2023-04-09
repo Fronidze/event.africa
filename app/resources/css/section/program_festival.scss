@@ -114,14 +114,18 @@
             }
         }
 
-        .element__event_data {
+        .element__event_data,
+        .element__curator,
+        .element__durations {
             margin-top: 3rem;
             font-size: 4rem;
+            line-height: 1.2;
         }
 
         .element__curator {
             margin-top: 3rem;
             font-size: 4rem;
+            line-height: 1.2;
         }
 
         .element__list__title {
