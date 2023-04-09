@@ -104,7 +104,8 @@
                     left: -6.45rem;
                     width: 12.9rem;
                     height: 42.8rem;
-                    background: url("/images/about_festival_left_decoration.svg");
+                    background: url("/images/about_festival_left_decoration.svg") no-repeat;
+                    background-size: contain;
                 }
             }
 
