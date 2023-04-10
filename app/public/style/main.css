@@ -659,9 +659,14 @@ footer .footer_wrapper .social ul li a img {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: none;
   border-radius: 1rem;
   padding: 0.8rem 1.2px;
+}
+@media screen and (max-width: 768px) {
+  .popover {
+    font-size: 1.2rem;
+  }
 }
 
 .popover .arrow {
@@ -695,7 +700,7 @@ footer .footer_wrapper .social ul li a img {
 }
 
 .bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^=top] > .arrow::after {
-  bottom: 1px;
+  bottom: 2px;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: #fff;
 }
