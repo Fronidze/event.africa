@@ -47,8 +47,8 @@ let windowLoad = () => {
         });
     });
 
-
-    registerPopover();
+    $("[data-toggle=popover]").popover();
+    // registerPopover();
 }
 const registerPopover = () => {
     const button = document.querySelector('[data-register-button]');

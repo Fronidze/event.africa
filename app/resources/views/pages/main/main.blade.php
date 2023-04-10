@@ -29,12 +29,7 @@ use App\Models\Team;
                 <div class="city">{!! trans('content.st_petersburg') !!}</div>
                 <div class="invite__form">
                     <form action="" onsubmit="return false;">
-                        <div data-register-tooltip id="tooltip">
-                            {!! trans('content.register_will_open') !!}
-                            <div id="arrow" data-popper-arrow></div>
-                        </div>
-                        <button data-register-button
-                                class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
+                        <button data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>
                         <p class="invite__form__about">{!! trans('content.participant_about') !!}</p>
                     </form>
                 </div>
@@ -164,7 +159,7 @@ use App\Models\Team;
                             <li>{!! trans('content.iain_macdonald') !!}</li>
                         </ul>
                         <div class="event_action">
-                            <a href="javascript: void(0)"
+                            <a href="javascript: void(0)" data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}"
                                class="btn event_register">{!! trans('content.event_register') !!}</a>
                         </div>
                     </div>
@@ -188,7 +183,7 @@ use App\Models\Team;
                             <li>{!! trans('content.ferdy_adimefe') !!}</li>
                         </ul>
                         <div class="event_action">
-                            <a href="javascript: void(0)"
+                            <a href="javascript: void(0)" data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}"
                                class="btn event_register">{!! trans('content.event_register') !!}</a>
                         </div>
                     </div>
@@ -251,7 +246,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                    <a data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -286,7 +281,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                    <a data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -333,7 +328,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                    <a data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -352,7 +347,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                    <a data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -399,7 +394,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                    <a data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>

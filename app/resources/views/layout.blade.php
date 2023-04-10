@@ -117,7 +117,9 @@ use App\Models\Team;
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/js/jquery-3.1.1.min.js"></script>
 <script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.js"></script>
 <script src="/js/main.js"></script>
 
 </body>
