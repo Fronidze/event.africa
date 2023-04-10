@@ -1926,7 +1926,8 @@ footer .footer_wrapper .social ul li a img {
 }
 @media screen and (max-width: 768px) {
   .program_festival .photos_wrapper {
-    display: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .program_festival__gallery.movies .swiper-slide {
@@ -1957,11 +1958,22 @@ footer .footer_wrapper .social ul li a img {
   width: 120rem;
   height: 90rem;
 }
+@media screen and (max-width: 768px) {
+  .program_festival__gallery.photos .swiper-slide {
+    width: 32.7rem;
+    height: 23.8rem;
+  }
+}
 .program_festival__gallery.photos .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .program_festival__gallery.photos .swiper-slide img {
+    border-radius: 0.6rem;
+  }
 }
 
 .invite {

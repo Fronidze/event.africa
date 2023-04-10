@@ -37,6 +37,18 @@ let windowLoad = () => {
     const program_festival_photos = new Swiper('.program_festival__gallery.photos', {
         slidesPerView: 'auto',
         spaceBetween: 10,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: false,
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+            }
+        }
     });
 
     let menuToggle = document.querySelector('[data-menu-toggle]');
