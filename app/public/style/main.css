@@ -1887,6 +1887,7 @@ footer .footer_wrapper .social ul li a img {
   }
   .program_festival .mobile_music_gallery__wrapper .one_music_images {
     height: 7.5rem;
+    margin: 0 0.2rem 0.2rem 0;
   }
   .program_festival .mobile_music_gallery__wrapper .one_music_images img {
     height: 100%;
