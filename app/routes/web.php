@@ -110,6 +110,6 @@ Route::prefix('{lang}/')->group(function () {
     }
 
     Route::get('news/{id}', [Controller::class, 'detail'])->name('news.detail');
-    Route::get('news', [Controller::class, 'news'])->name('news.list');
+    Route::get('news', [Controller::class, 'newsList'])->name('news.list');
     Route::get('/', [Controller::class, 'main'])->name('main');
 });

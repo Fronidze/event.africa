@@ -51,7 +51,7 @@ class Controller extends BaseController
 
     }
 
-    public function news(
+    public function newsList(
         string $lang
     ): View {
         $newsElements = $this->elements(NewsGallery::query());

@@ -7,7 +7,6 @@ use App\Models\FestivalGallery;
 use App\Models\Files;
 use App\Models\NewsGallery;
 use App\Models\NewsTranslate;
-use App\Models\TeamTranslate;
 use App\Services\FilesService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -17,7 +16,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class NewsGalleryController extends Controller
 {
-    public function news(string $lang): View {
+    public function news(): View {
 
         $elements = NewsGallery::query()
             ->with('file')
