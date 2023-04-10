@@ -306,7 +306,7 @@ use App\Models\Team;
                     <p class="element__list__title text-orange no_margin__bottom">Iemi Alade (Nigeria)</p>
                     <p class="element__description no_margin__top">{!! trans('content.iemi_alade_description') !!}</p>
 
-                    <p class="element__curator"><b>{!! trans('content.didier_awadi') !!}</b>,{!! trans('content.didier_awadi_description') !!}</p>
+                    <p class="element__curator"><b>{!! trans('content.didier_awadi_name') !!}</b>,{!! trans('content.didier_awadi_description_two') !!}</p>
 
                 </div>
 
@@ -332,17 +332,12 @@ use App\Models\Team;
             <div id="fairy_tail" class="program_festival__element">
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                    <p class="element__title">Поэтический вечер<br>"Слово Африки"</p>
-                    <p class="element__event_data"><b>Дата проведения:</b> 26 июля</p>
-                    <p class="element__durations"><b>Продолжительность:</b> 60 мин</p>
-                    <p class="element__description">Самым известным популяризатором Африки в русской литературе был
-                        Николай
-                        Гумилёв, трижды побывавший на жарком континенте и многократно использовавший эти образы в своём
-                        творчестве. Но что мы знаем об африканской поэзии?</p>
-                    <p class="element__description">Артисты поэтического вечера исполнят произведения знаковых поэтов
-                        африканского континента (таких как Леопольд Седар Сенгор, Давид Диоп, Зехор Зерари и др.) и
-                        познакомят зрителя с уникальной поэзией свободы и любви.</p>
-                    <p class="element__description">Чтение поэзии в аудиовизуальном сопровождении.</p>
+                    <p class="element__title">{!! trans('content.fairy_tails') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date_once') !!}:</b> 26 {!! trans('content.july') !!}</p>
+                    <p class="element__durations"><b>{!! trans('content.duration') !!}:</b> 60 {!! trans('content.min') !!}</p>
+                    <p class="element__description">{!! trans('content.fairy_tails_description_one') !!}</p>
+                    <p class="element__description">{!! trans('content.fairy_tails_description_two') !!}</p>
+                    <p class="element__description">{!! trans('content.fairy_tails_description_three') !!}</p>
                 </div>
 
                 <div class="event_action">
@@ -354,43 +349,26 @@ use App\Models\Team;
             <div id="photo" class="program_festival__element">
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                    <p class="element__title">ВЫСТАВОЧНАЯ ПРОГРАММА<br>"АФРИКАНСКАЯ МЕЧТА"</p>
+                    <p class="element__title">{!! trans('content.photo_program_title') !!}</p>
 
                     <div class="element_subsection">
-                        <p class="element__title__sub text-orange">Фотовыставка "Африканская мечта"</p>
-                        <p class="element__description">Фотовыставка объединит фотографов разных поколений и жанров и
-                            будет
-                            посвящена тому, как фотография способна перемещать нас в пространстве и времени. Выставка 
-                            поможет представить зрителю разнообразие культуры Африки в новом ключе. Используя темы
-                            духовности, идентичности, урбанизма и уникальной природы, выставка проведет зрителя через
-                            африканские мечты российских фотохудожников</p>
-                        <p class="element__curator"><b>Фотографы:</b> С.Горшков, А. Дафтари, Д.Кох, А. Нисходимов, М.
-                            Финогенов, К.Макеева, А.Белков.</p>
-                        <p class="element__curator"><b>Куратор:</b> Анастасия Локтаева.</p>
-                        <p class="element__description no_margin__top">Родилась в 1984 году в Санкт Петербурге. По
-                            окончанию
-                            школы переехала в Великобританию, где закончила University of the Art London. После
-                            университета
-                            вернулась в Москву. Анастасия занимается поддержкой современных художников и обращается к
-                            различным направлениям искусства среди которых живопись, графика и фотография.  Анастасия
-                            курирует проведение различных выставок и лекций.
-                            Последние из которых, выставка и лекция  фотографа Дмитрия Коха, лекция о ДНК профессора
-                            Анатолия Алексеевича Клесова, выставка фотографа Андрея Белкова. </p>
+                        <p class="element__title__sub text-orange">{!! trans('content.photo_program_title_subtitle_one') !!}</p>
+                        <p class="element__description">{!! trans('content.photo_program_description_subtitle_one') !!}</p>
+                        <p class="element__curator"><b>{!! trans('content.photograther') !!}:</b> {!! trans('content.photograther_list') !!}</p>
+                        <p class="element__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.anastasia_loktaeva') !!}</p>
+                        <p class="element__description no_margin__top">{!! trans('content.photograther_description') !!}</p>
                     </div>
 
                     <div class="element_subsection">
-                        <p class="element__title__sub text-orange">"История Африканского фотоархива" <span
-                                class="no_bold">от галереи Люмьер</span>
+
+                        <p class="element__title__sub text-orange">
+                            {!! trans('content.african_photo_archive') !!}
+                            <span class="no_bold">{!! trans('content.lumiere_gallery') !!}</span>
                         </p>
-                        <p class="element__description">Архивные фотографии 1957-х годов советских фотографов-репортеров
-                            из
-                            Африки. 
-                            Уникальная фотохроника из архивов галереи Люмьер.</p>
-                        <p class="element__curator"><b>Куратор:</b> Наталья Литвинская.</p>
-                        <p class="element__description no_margin__top">Основатель и куратор галереи Люмьер - первой
-                            российской галереи, занимающейся классической черно-белой фотографией, а также главный
-                            куратор
-                            музейно-выставочной организации - центра фотографии имени братьев Люмьер.</p>
+
+                        <p class="element__description">{!! trans('content.african_photo_archive_description') !!}</p>
+                        <p class="element__curator"><b>{!! trans('content.curator') !!}:</b>{!! trans('content.natalia_litvinskaya') !!}.</p>
+                        <p class="element__description no_margin__top">{!! trans('content.natalia_litvinskaya_description') !!}</p>
                     </div>
                 </div>
 

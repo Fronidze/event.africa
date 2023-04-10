@@ -105,6 +105,27 @@ return [
 
     'didier_awadi_description' => 'Musician and producer, Didier Avady is one of the main stars of the Senegalese and West African hip-hop movement.',
     'iemi_alade_description' => 'Singer, songwriter, actress and activist. Yemi is considered one of Africa\'s greatest artists. She stands out for her creative performances on stage, her fashion and music videos. Alade is the second Nigerian and Afrobite artist and the first woman to reach 100 million views in a single YouTube video.',
-    'didier_awadi' => 'Curator: Didier Awadi',
-    'didier_awadi_description' => 'director of Studio Sankara, musician and producer. Didier Awady is one of the pioneers and stars of the Senegalese and West African hip-hop movement.',
+    'didier_awadi_name' => 'Curator: Didier Awadi',
+    'didier_awadi_description_two' => 'director of Studio Sankara, musician and producer. Didier Awady is one of the pioneers and stars of the Senegalese and West African hip-hop movement.',
+
+    'fairy_tails' => 'Poetry evening<br>"Word of Africa"',
+    'min' => 'min',
+    'fairy_tails_description_one' => 'The most famous popularizer of Africa in Russian literature was Nikolai Gumilyov, who visited the hot continent three times and repeatedly used these images in his work. But what do we know about African poetry?',
+    'fairy_tails_description_two' => 'The artists of the poetry evening will perform the works of iconic poets of the African continent (such as Leopold Sedar Senghor, David Diop, Zehor Zerari, etc.) and introduce the viewer to the unique poetry of freedom and love.',
+    'fairy_tails_description_three' => 'Reading poetry with audiovisual accompaniment.',
+
+    'photo_program_title' => 'EXHIBITION PROGRAM <br>"AFRICAN DREAM"',
+    'photo_program_title_subtitle_one' => 'Photo exhibition "African Dream"',
+    'photo_program_description_subtitle_one' => 'The photo exhibition will bring together photographers of different generations and genres and will focus on how photography can move us in space and time. The exhibition will help to present the viewer with the diversity of African culture in a new way. Using the themes of spirituality, identity, urbanism and unique nature, the exhibition will take the viewer through the African dreams of Russian photographers',
+    'photograther' => 'Photographers',
+    'photograther_list' => 'S. Gorshkov, A. Daftari, D. Kokh, A. Niskhomov, M. Finogenov, K. Makeeva, A. Belkov.',
+    'anastasia_loktaeva' => 'Anastasia Loktaeva.',
+    'photograther_description' => 'Born in 1984 in St. Petersburg. Upon graduation, she moved to the UK, where she graduated from the University of the Art London. After university she returned to Moscow. Anastasia is engaged in supporting contemporary artists and refers to various areas of art, including painting, graphics and photography. Anastasia oversees various exhibitions and lectures. The last of which are an exhibition and lecture by photographer Dmitry Kokh, a lecture on DNA by Professor Anatoly Alekseevich Klesov, an exhibition by photographer Andrey Belkov.',
+
+    'african_photo_archive' => '"History of the African Photo Archive"',
+    'lumiere_gallery' => 'from the Lumiere Gallery',
+    'african_photo_archive_description' => 'Archival photographs of the 1957s by Soviet reporter photographers from Africa. A unique photo chronicle from the archives of the Lumiere Gallery.',
+    'natalia_litvinskaya' => 'Natalia Litvinskaya',
+    'natalia_litvinskaya_description' => 'Founder and curator of the Lumiere Gallery - the first Russian gallery dealing with classical black and white photography, as well as the chief curator of the museum and exhibition organization - the Lumiere Brothers Center for Photography.',
+
 ];
