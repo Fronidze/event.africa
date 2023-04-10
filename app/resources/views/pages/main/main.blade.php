@@ -270,7 +270,7 @@ use App\Models\Team;
 
                     <p class="element__description">
                         <b class="text-orange">{!! trans('content.lectures_african_photo_archive') !!}</b><br>
-                        {!! trans('content.lectures_african_photo_archive_description') !!}
+                        {!! trans('content.lectures_african_photo_archive_description') !!}.
                     </p>
 
                     <p class="element__description">
@@ -309,7 +309,7 @@ use App\Models\Team;
                     <p class="element__description no_margin__top">{!! trans('content.iemi_alade_description') !!}</p>
 
                     <p class="element__curator">
-                        <b>{!! trans('content.didier_awadi_name') !!}</b>,{!! trans('content.didier_awadi_description_two') !!}
+                        <b>{!! trans('content.didier_awadi_name') !!}</b>, {!! trans('content.didier_awadi_description_two') !!}
                     </p>
 
                 </div>
@@ -385,8 +385,7 @@ use App\Models\Team;
                         </p>
 
                         <p class="element__description">{!! trans('content.african_photo_archive_description') !!}</p>
-                        <p class="element__curator"><b>{!! trans('content.curator') !!}
-                                :</b>{!! trans('content.natalia_litvinskaya') !!}.</p>
+                        <p class="element__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.natalia_litvinskaya') !!}.</p>
                         <p class="element__description no_margin__top">{!! trans('content.natalia_litvinskaya_description') !!}</p>
                     </div>
                 </div>
