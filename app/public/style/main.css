@@ -1582,7 +1582,7 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .teams__border {
     height: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
 .teams__border img {
@@ -1661,6 +1661,8 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .teams__record .title {
     font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
   }
 }
 .teams__record .description {

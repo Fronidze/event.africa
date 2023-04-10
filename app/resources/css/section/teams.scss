@@ -13,7 +13,7 @@
         @media screen {
             @media (max-width: $mobile) {
                 height: 1.4rem;
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
             }
         }
         img {
@@ -102,6 +102,8 @@
             @media screen {
                 @media (max-width: $mobile) {
                     font-size: 1.1rem;
+                    margin-bottom: 1.3rem;
+                    margin-top: 1.3rem;
                 }
             }
         }
