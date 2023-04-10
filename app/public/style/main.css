@@ -1582,7 +1582,7 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .teams__border {
     height: 1.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
 .teams__border img {
