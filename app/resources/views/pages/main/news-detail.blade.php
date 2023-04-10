@@ -11,8 +11,8 @@ use App\Models\NewsGallery;
 
     <div class="news_navigation">
         <ul class="news_navigation__list container">
-            <li><a href="{{ route('news.list') }}"><i class="icon icon-arrow-left"></i>все новости</a></li>
-            <li><a href="{{ route('main') }}">на главную</a></li>
+            <li><a href="{{ route('news.list', ['lang' => app()->getLocale()]) }}"><i class="icon icon-arrow-left"></i>все новости</a></li>
+            <li><a href="{{ route('main', ['lang' => app()->getLocale()]) }}">на главную</a></li>
         </ul>
     </div>
 

@@ -1035,7 +1035,7 @@ footer .footer_wrapper .social ul li a img {
 .program {
   background: url("/images/program_bg_bottom.svg") no-repeat;
   background-size: 130vw;
-  background-position-y: 30rem;
+  background-position-y: calc(100% + 20rem);
   background-position-x: center;
   position: relative;
   padding-top: 10.8rem;
@@ -1053,10 +1053,15 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .program .event_action {
-  margin-top: 2.4rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .program .event_action {
+    margin-top: 2.4rem;
+  }
 }
 .program__information h3 {
   text-align: right;
@@ -1513,10 +1518,15 @@ footer .footer_wrapper .social ul li a img {
   }
 }
 .program_festival .event_action {
-  margin-top: 2.4rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .program_festival .event_action {
+    margin-top: 2.4rem;
+  }
 }
 .program_festival .red_icon {
   width: 57rem;

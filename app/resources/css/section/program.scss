@@ -10,7 +10,7 @@
 
     background: url("/images/program_bg_bottom.svg") no-repeat;
     background-size: 130vw;
-    background-position-y: 30rem;
+    background-position-y: calc(100% - -20rem);
     background-position-x: center;
     position: relative;
     padding-top: 10.8rem;
@@ -20,10 +20,15 @@
     box-shadow: 0px -10rem 19rem -5rem rgba(243, 156, 17, 0.5);
 
     .event_action {
-        margin-top: 2.4rem;
+        margin-top: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen {
+            @media (max-width: $mobile) {
+                margin-top: 2.4rem;
+            }
+        }
     }
 
     &__information {

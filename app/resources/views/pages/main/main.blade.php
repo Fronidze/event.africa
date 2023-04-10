@@ -120,7 +120,7 @@ use App\Models\Team;
             <div class="news_list__wrapper">
                 @foreach($newsElements as $news)
                     <div class="news_list__element news">
-                        <a class="news__link" href="{{ route('news.detail', ['id' => $news->id]) }}">
+                        <a class="news__link" href="{{ route('news.detail', ['id' => $news->id, 'lang' => app()->getLocale()]) }}">
                             <div class="news__date">17 мая 2023</div>
                             <div class="news__description">{{$news->getTitle()}}</div>
                             <div class="news__image"><img src="{{$news->file?->filePath()}}" alt=""></div>
@@ -128,7 +128,7 @@ use App\Models\Team;
                     </div>
                 @endforeach
                 <div class="news_list__more">
-                    <a class="btn show_more" href="{{ route('news.list') }}">все новости</a>
+                    <a class="btn show_more" href="{{ route('news.list', ['lang' => app()->getLocale()]) }}">все новости</a>
                 </div>
             </div>
         </div>

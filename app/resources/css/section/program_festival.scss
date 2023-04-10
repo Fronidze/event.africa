@@ -8,10 +8,15 @@
     }
 
     .event_action {
-        margin-top: 2.4rem;
+        margin-top: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen {
+            @media (max-width: $mobile) {
+                margin-top: 2.4rem;
+            }
+        }
     }
 
     .red_icon {

@@ -51,12 +51,15 @@ class Controller extends BaseController
 
     }
 
-    public function news(): View {
+    public function news(
+        string $lang
+    ): View {
         $newsElements = $this->elements(NewsGallery::query());
         return \view('pages.main.news', compact('newsElements'));
     }
 
     public function detail(
+        string $lang,
         int $news_id
     ): View {
         $news = NewsGallery::find($news_id);
