@@ -17,7 +17,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class NewsGalleryController extends Controller
 {
-    public function news(): View {
+    public function news(string $lang): View {
 
         $elements = NewsGallery::query()
             ->with('file')
