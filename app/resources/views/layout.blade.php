@@ -108,7 +108,7 @@ use App\Models\Team;
                 <li><a href=""><img src="/images/social/whatsapp.svg" alt=""></a></li>
                 {{--                <li><a href=""><img src="/images/social/instagram.svg" alt=""></a></li>--}}
                 {{--                <li><a href=""><img src="/images/social/facebook.svg" alt=""></a></li>--}}
-                <li><a href=""><img src="/images/social/telegram.svg" alt=""></a></li>
+                <li><a href="https://t.me/africandays"><img src="/images/social/telegram.svg" alt=""></a></li>
                 <li><a href=""><img src="/images/social/vk.svg" alt=""></a></li>
                 <li><a href=""><img src="/images/social/youtube.svg" alt=""></a></li>
             </ul>

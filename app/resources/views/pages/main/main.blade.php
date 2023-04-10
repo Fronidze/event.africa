@@ -151,7 +151,7 @@ use App\Models\Team;
                     <p class="program__title">{!! trans('content.title_deal_program') !!}</p>
 
                     <div class="program__subsection">
-                        <p class="program__title_sub">{!! trans('content.culture_21_age') !!}</p>
+                        <p class="program__title_sub">{!! trans('content.culture_21_age') !!}.</p>
                         <p class="program__curator"><b>{!! trans('content.curator') !!}
                                 :</b> {!! trans('content.culture_21_age_curator') !!}</p>
                         <p class="program__description">{!! trans('content.culture_21_age_description') !!}</p>
@@ -170,7 +170,7 @@ use App\Models\Team;
                     </div>
 
                     <div class="program__subsection">
-                        <p class="program__title_sub">{!! trans('content.cinema_industry') !!}</p>
+                        <p class="program__title_sub">{!! trans('content.cinema_industry') !!}.</p>
                         <p class="program__description">{!! trans('content.cinema_industry_description') !!}</p>
                         <p class="program__members">
                             <span class="program__members__title">{!! trans('content.members_event') !!}:</span>
@@ -206,10 +206,6 @@ use App\Models\Team;
                         <li><a href="#fairy_tail"><p>{!! trans('content.list_culture_program_fairy') !!}</p></a></li>
                         <li><a href="#photo"><p>{!! trans('content.list_culture_program_photo') !!}</p></a></li>
                     </ul>
-                    <div class="event_action">
-                        <a href="javascript: void(0)"
-                           class="btn event_register">{!! trans('content.event_register') !!}</a>
-                    </div>
                 </div>
 
             </div>
@@ -367,7 +363,7 @@ use App\Models\Team;
                     <p class="element__title">{!! trans('content.photo_program_title') !!}</p>
 
                     <div class="element_subsection">
-                        <p class="element__title__sub text-orange">{!! trans('content.photo_program_title_subtitle_one') !!}</p>
+                        <p class="element__title__sub text-orange">{!! trans('content.photo_program_title_subtitle_one') !!}.</p>
                         <p class="element__description">{!! trans('content.photo_program_description_subtitle_one') !!}</p>
                         <p class="element__curator"><b>{!! trans('content.photograther') !!}
                                 :</b> {!! trans('content.photograther_list') !!}</p>
@@ -380,7 +376,7 @@ use App\Models\Team;
 
                         <p class="element__title__sub text-orange">
                             {!! trans('content.african_photo_archive') !!}
-                            <span class="no_bold">{!! trans('content.lumiere_gallery') !!}</span>
+                            <span class="no_bold">{!! trans('content.lumiere_gallery') !!}</span>.
                         </p>
 
                         <p class="element__description">{!! trans('content.african_photo_archive_description') !!}</p>
