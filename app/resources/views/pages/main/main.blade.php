@@ -289,43 +289,24 @@ use App\Models\Team;
             <div id="music" class="program_festival__element">
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                    <p class="element__title">МУЗЫКАЛЬНАЯ ПРОГРАММА<br>"URBAN AFRICA"</p>
-                    <p class="element__event_data"><b>Дата проведения:</b> 27 июля</p>
-                    <p class="element__durations"><b>Продолжительность:</b> 2-2,5 часа</p>
-                    <p class="element__description">Музыкальный концерт с участием знаковых африканских исполнителей
-                        перенесет зрителей в мир яркой музыкальной Африки и даст почувствовать вкус богатой и
-                        необыкновенной
-                        земли.</p>
+                    <p class="element__title">{!! trans('content.music_program') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date_once') !!}:</b> 27 {!! trans('content.july') !!}</p>
+                    <p class="element__durations"><b>{!! trans('content.duration') !!}:</b> 2-2,5 {!! trans('content.hours') !!}</p>
+                    <p class="element__description">{!! trans('content.music_program_description') !!}</p>
 
                     <p class="element__list__title text-orange no_margin__bottom">Salif Keita (Mali)</p>
-                    <p class="element__description no_margin__top">Салиф Кейта - всемирно известный автор и исполнитель
-                        направления афро-поп из Мали. Салиф известен тем, что его считают золотым голосом Африки, а
-                        также
-                        тем, что он является прямым потомком основателя империи Мали, Сундьяты Кейта.</p>
+                    <p class="element__description no_margin__top">{!! trans('content.salif_keita_description') !!}</p>
 
                     <p class="element__list__title text-orange no_margin__bottom">Ismael LO (Senegal)</p>
-                    <p class="element__description no_margin__top">Исмаэль Ло — автор неофициального гимна Африканского
-                        союза "Джамму Африка / Мир Африке". Исмаэль Ло играл в составе группы Super Diamond. В начале
-                        80-х
-                        он начал сольную карьеру, а в 1981 г. записал дебютный альбом "Gor Sayina". В Африке Исмаэля Ло
-                        называют сенегальским Бобом Диланом, за его манеру игры на гитаре и губной гармошке, а также за
-                        глубокомысленную лирику.</p>
+                    <p class="element__description no_margin__top">{!! trans('content.ismael_lo_description') !!}</p>
 
                     <p class="element__list__title text-orange no_margin__bottom">Didier Awadi (Senegal)</p>
-                    <p class="element__description no_margin__top">Музыкант и продюсер, Дидье Авади является одним из
-                        главных звезд сенегальского и западноафриканского хип-хоп движения.</p>
+                    <p class="element__description no_margin__top">{!! trans('content.didier_awadi_description') !!}</p>
 
                     <p class="element__list__title text-orange no_margin__bottom">Iemi Alade (Nigeria)</p>
-                    <p class="element__description no_margin__top">Певица, композитор, актриса и активистка. Йеми
-                        считается
-                        одним из величайших артистов Африки. Она выделяется своими творческими выступлениями на сцене,
-                        своими модными и музыкальными клипами. Аладе является второй нигерийской и афробитской
-                        артисткой и первой женщиной, которая набрала 100 миллионов просмотров за одно видео на
-                        YouTube.</p>
+                    <p class="element__description no_margin__top">{!! trans('content.iemi_alade_description') !!}</p>
 
-                    <p class="element__curator"><b>Куратор: Didier Awadi,</b> директор Studio Sankara, музыкант и
-                        продюсер. Дидье Авади является одним из пионеров  и звезд сенегальского и западноафриканского
-                        хип-хоп движения.</p>
+                    <p class="element__curator"><b>{!! trans('content.didier_awadi') !!}</b>,{!! trans('content.didier_awadi_description') !!}</p>
 
                 </div>
 

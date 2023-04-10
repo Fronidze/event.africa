@@ -94,4 +94,17 @@ return [
     'lectures_african_photo_archive_description' => 'Natalia Litvinskaya',
     'lecture_meet_with_photographer' => 'Creative meeting with photographer Sergey Gorshkov and <br>Dave Varty.',
     'lecture_meet_with_photographer_description' => 'Dave Varty is the founder and co-owner of the londolozi private game reserve ecopark in South Africa. <br>Sergey Gorshkov is a Russian photographer known for his wildlife photography in Kamchatka, Africa and the Far North. Winner of numerous awards both in Russia and abroad, including - Wildlife photographer of the year, Shell Wildlife Photographer of the Year, as well as the international competition "Golden Turtle". Participant of the exhibition of the festival "African Dream".',
+
+    'music_program' => 'MUSIC PROGRAM<br>"URBAN AFRICA"',
+    'event_date_once' => 'The date of the',
+    'duration' => 'Duration',
+    'hours' => 'hours',
+    'music_program_description' => 'A musical concert with the participation of iconic African performers will take the audience into the world of vibrant musical Africa and give a taste of the rich and extraordinary land.',
+    'salif_keita_description' => 'Salif Keita is a world-famous Afro-pop songwriter and performer from Mali. Salif is known for being considered the golden voice of Africa, and also for being a direct descendant of the founder of the Mali Empire, Sunjata Keita.',
+    'ismael_lo_description' => 'Ismael Lo is the author of the African Union\'s unofficial anthem Jammu Africa / Peace to Africa. Ismael Lo played in the band Super Diamond. In the early 80s he started his solo career, and in 1981 he recorded his debut album "Gor Sayina". In Africa, Ismael Lo is called the Senegalese Bob Dylan, for his style of playing the guitar and harmonica, as well as for thoughtful lyrics.',
+
+    'didier_awadi_description' => 'Musician and producer, Didier Avady is one of the main stars of the Senegalese and West African hip-hop movement.',
+    'iemi_alade_description' => 'Singer, songwriter, actress and activist. Yemi is considered one of Africa\'s greatest artists. She stands out for her creative performances on stage, her fashion and music videos. Alade is the second Nigerian and Afrobite artist and the first woman to reach 100 million views in a single YouTube video.',
+    'didier_awadi' => 'Curator: Didier Awadi',
+    'didier_awadi_description' => 'director of Studio Sankara, musician and producer. Didier Awady is one of the pioneers and stars of the Senegalese and West African hip-hop movement.',
 ];
