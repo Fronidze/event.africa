@@ -1618,7 +1618,7 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .teams__record {
     width: 8.9rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-right: 2.8rem;
   }
 }
