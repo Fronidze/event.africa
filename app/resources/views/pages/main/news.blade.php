@@ -1,9 +1,18 @@
+<?php
+
+use App\Models\NewsGallery;
+
+/**
+ * @var NewsGallery[] $newsElements
+ */
+?>
 @extends('layout')
 @section('content')
 
     <div class="news_navigation">
         <ul class="news_navigation__list container">
-            <li><a href="{{ route('main', ['lang' => app()->getLocale()]) }}"><i class="icon icon-arrow-left"></i>на главную</a></li>
+            <li><a href="{{ route('main', ['lang' => app()->getLocale()]) }}"><i class="icon icon-arrow-left"></i>на
+                    главную</a></li>
         </ul>
     </div>
 
@@ -19,8 +28,9 @@
             <div class="news_list__wrapper">
                 @foreach($newsElements as $news)
                     <div class="news_list__element news">
-                        <a class="news__link" href="{{ route('news.detail', ['id' => $news->id, 'lang' => app()->getLocale()]) }}">
-                            <div class="news__date">17 мая 2023</div>
+                        <a class="news__link"
+                           href="{{ route('news.detail', ['id' => $news->id, 'lang' => app()->getLocale()]) }}">
+                            <div class="news__date">{!! $news->getPublishAt() !!}</div>
                             <div class="news__description">{{$news->getTitle()}}</div>
                             <div class="news__image"><img src="{{$news->file?->filePath()}}" alt=""></div>
                         </a>

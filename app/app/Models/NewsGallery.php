@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Helpers\NewsDateFormatter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -17,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property int $sorting
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $publish_at
  * @property-read \App\Models\Files|null $file
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\NewsTranslate> $translates
  * @property-read int|null $translates_count
@@ -27,6 +29,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery whereDescription($value)
  * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery whereFileId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery wherePublishAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery whereSorting($value)
  * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|NewsGallery whereUpdatedAt($value)
@@ -58,6 +61,10 @@ class NewsGallery extends Model
             });
 
         return $description;
+    }
+
+    public function getPublishAt(): string {
+        return (new NewsDateFormatter($this->publish_at))->format();
     }
 
     public function file(): HasOne {

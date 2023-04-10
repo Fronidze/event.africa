@@ -22,7 +22,7 @@ use App\Models\NewsGallery;
                 <img src="{{ $news->file?->filePath() }}" alt="{{ $news->title }}">
             </div>
             <div class="news_detail__content">
-                <div class="news_detail__content__date">12 мая 2013</div>
+                <div class="news_detail__content__date">{!! $news->getPublishAt() !!}</div>
                 <div class="news_detail__content__description">{!! $news->getDescription() !!}</div>
             </div>
 

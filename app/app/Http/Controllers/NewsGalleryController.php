@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\Translate;
+use App\Helpers\NewsDateFormatter;
 use App\Models\FestivalGallery;
 use App\Models\Files;
 use App\Models\NewsGallery;
@@ -46,7 +47,7 @@ class NewsGalleryController extends Controller
         $element->description = $request->input('description');
         $element->sorting = $request->input('sorting') ?? 100;
         $element->file_id = $files?->id;
-
+        $element->publish_at = (new \DateTime($request->input('publish_at')))->format(DATE_ATOM);
         $element->save();
 
         $english_title = new NewsTranslate();
@@ -133,6 +134,7 @@ class NewsGalleryController extends Controller
         $element->title = $request->input('title');
         $element->description = $request->input('description');
         $element->sorting = $request->input('sorting');
+        $element->publish_at = $request->input('publish_at');
 
         /** @var NewsTranslate $translate */
         foreach ($element->translates as $translate) {

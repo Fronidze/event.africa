@@ -12,6 +12,11 @@
                         @csrf
 
                         <div class="form-group">
+                            <label for="" class="form-label">Дата публикации</label>
+                            <input class="form-control" type="text" name="publish_at" title="">
+                        </div>
+
+                        <div class="form-group">
                             <label class="form-label" for="">Название</label>
                             <input class="form-control" type="text" name="title">
                         </div>

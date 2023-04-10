@@ -17,6 +17,12 @@ use App\Models\NewsGallery;
                 <div class="ibox-content">
                     <form action="{{ route('panel.gallery.news.edit', ['id' => $element->id]) }}" method="post" enctype="multipart/form-data">
                         @csrf
+
+                        <div class="form-group">
+                            <label for="" class="form-label">Дата публикации</label>
+                            <input class="form-control" type="text" name="publish_at" title="" value="{{ old('publish_at', $element->publish_at) }}">
+                        </div>
+
                         <div class="form-group">
                             <label class="form-label" for="">Название</label>
                             <input class="form-control" type="text" name="title" value="{{ old('title', $element->title) }}">
