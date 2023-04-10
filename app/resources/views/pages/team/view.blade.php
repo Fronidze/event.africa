@@ -28,28 +28,15 @@ use App\Models\Team;
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label" for="">[FR] Название</label>
-                            <input class="form-control" type="text" name="title_fr"
-                                   value="{{ old('title', Arr::get($translates, 'fr.title')) }}">
-                        </div>
-
-                        <div class="form-group">
                             <label class="form-label" for="">[EN] Название</label>
                             <input class="form-control" type="text" name="title_en"
                                    value="{{ old('title', Arr::get($translates, 'en.title')) }}">
                         </div>
 
-
                         <div class="form-group">
                             <label class="form-label" for="">Описание</label>
                             <textarea class="form-control" name="description" cols="30"
                                       rows="5">{{ old('description', $element->description) }}</textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label" for="">[FR] Описание</label>
-                            <textarea class="form-control" name="description_fr" cols="30"
-                                      rows="5">{{ old('description', Arr::get($translates, 'fr.description')) }}</textarea>
                         </div>
 
                         <div class="form-group">

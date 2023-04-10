@@ -120,7 +120,8 @@ use App\Models\Team;
             <div class="news_list__wrapper">
                 @foreach($newsElements as $news)
                     <div class="news_list__element news">
-                        <a class="news__link" href="{{ route('news.detail', ['id' => $news->id, 'lang' => app()->getLocale()]) }}">
+                        <a class="news__link"
+                           href="{{ route('news.detail', ['id' => $news->id, 'lang' => app()->getLocale()]) }}">
                             <div class="news__date">17 мая 2023</div>
                             <div class="news__description">{{$news->getTitle()}}</div>
                             <div class="news__image"><img src="{{$news->file?->filePath()}}" alt=""></div>
@@ -128,7 +129,8 @@ use App\Models\Team;
                     </div>
                 @endforeach
                 <div class="news_list__more">
-                    <a class="btn show_more" href="{{ route('news.list', ['lang' => app()->getLocale()]) }}">{!! trans('content.all_news') !!}</a>
+                    <a class="btn show_more"
+                       href="{{ route('news.list', ['lang' => app()->getLocale()]) }}">{!! trans('content.all_news') !!}</a>
                 </div>
             </div>
         </div>
@@ -150,7 +152,8 @@ use App\Models\Team;
 
                     <div class="program__subsection">
                         <p class="program__title_sub">{!! trans('content.culture_21_age') !!}</p>
-                        <p class="program__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.culture_21_age_curator') !!}</p>
+                        <p class="program__curator"><b>{!! trans('content.curator') !!}
+                                :</b> {!! trans('content.culture_21_age_curator') !!}</p>
                         <p class="program__description">{!! trans('content.culture_21_age_description') !!}</p>
                         <p class="program__members">
                             <span class="program__members__title">{!! trans('content.members_event') !!}:</span>
@@ -161,7 +164,8 @@ use App\Models\Team;
                             <li>{!! trans('content.iain_macdonald') !!}</li>
                         </ul>
                         <div class="event_action">
-                            <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                            <a href="javascript: void(0)"
+                               class="btn event_register">{!! trans('content.event_register') !!}</a>
                         </div>
                     </div>
 
@@ -184,7 +188,8 @@ use App\Models\Team;
                             <li>{!! trans('content.ferdy_adimefe') !!}</li>
                         </ul>
                         <div class="event_action">
-                            <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                            <a href="javascript: void(0)"
+                               class="btn event_register">{!! trans('content.event_register') !!}</a>
                         </div>
                     </div>
 
@@ -202,7 +207,8 @@ use App\Models\Team;
                         <li><a href="#photo"><p>{!! trans('content.list_culture_program_photo') !!}</p></a></li>
                     </ul>
                     <div class="event_action">
-                        <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
+                        <a href="javascript: void(0)"
+                           class="btn event_register">{!! trans('content.event_register') !!}</a>
                     </div>
                 </div>
 
@@ -221,8 +227,10 @@ use App\Models\Team;
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                     <p class="element__title">{!! trans('content.cinema_program') !!}</p>
-                    <p class="element__event_data"><b>{!! trans('content.event_date') !!}:</b> 26-28 {!! trans('content.july') !!}</p>
-                    <p class="element__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.evgeniy_aizukovich') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date') !!}:</b>
+                        26-28 {!! trans('content.july') !!}</p>
+                    <p class="element__curator"><b>{!! trans('content.curator') !!}
+                            :</b> {!! trans('content.evgeniy_aizukovich') !!}</p>
                     <p class="element__description">{!! trans('content.cinema_program_description') !!}</p>
                     <p class="element__list__title">{!! trans('content.cinema_curator_in_lecture') !!}:</p>
                     <ul class="element__list">
@@ -256,7 +264,8 @@ use App\Models\Team;
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                     <p class="element__title">{!! trans('content.lectures_public_curator') !!}</p>
-                    <p class="element__event_data"><b>{!! trans('content.event_date') !!}:</b> 26-28 {!! trans('content.july') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date') !!}:</b>
+                        26-28 {!! trans('content.july') !!}</p>
 
                     <p class="element__description">
                         <b class="text-orange">{!! trans('content.lectures_african_and_contemporary_art') !!}</b><br>
@@ -290,8 +299,10 @@ use App\Models\Team;
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                     <p class="element__title">{!! trans('content.music_program') !!}</p>
-                    <p class="element__event_data"><b>{!! trans('content.event_date_once') !!}:</b> 27 {!! trans('content.july') !!}</p>
-                    <p class="element__durations"><b>{!! trans('content.duration') !!}:</b> 2-2,5 {!! trans('content.hours') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date_once') !!}:</b>
+                        27 {!! trans('content.july') !!}</p>
+                    <p class="element__durations"><b>{!! trans('content.duration') !!}:</b>
+                        2-2,5 {!! trans('content.hours') !!}</p>
                     <p class="element__description">{!! trans('content.music_program_description') !!}</p>
 
                     <p class="element__list__title text-orange no_margin__bottom">Salif Keita (Mali)</p>
@@ -306,7 +317,9 @@ use App\Models\Team;
                     <p class="element__list__title text-orange no_margin__bottom">Iemi Alade (Nigeria)</p>
                     <p class="element__description no_margin__top">{!! trans('content.iemi_alade_description') !!}</p>
 
-                    <p class="element__curator"><b>{!! trans('content.didier_awadi_name') !!}</b>,{!! trans('content.didier_awadi_description_two') !!}</p>
+                    <p class="element__curator">
+                        <b>{!! trans('content.didier_awadi_name') !!}</b>,{!! trans('content.didier_awadi_description_two') !!}
+                    </p>
 
                 </div>
 
@@ -333,8 +346,10 @@ use App\Models\Team;
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
                     <p class="element__title">{!! trans('content.fairy_tails') !!}</p>
-                    <p class="element__event_data"><b>{!! trans('content.event_date_once') !!}:</b> 26 {!! trans('content.july') !!}</p>
-                    <p class="element__durations"><b>{!! trans('content.duration') !!}:</b> 60 {!! trans('content.min') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date_once') !!}:</b>
+                        26 {!! trans('content.july') !!}</p>
+                    <p class="element__durations"><b>{!! trans('content.duration') !!}:</b>
+                        60 {!! trans('content.min') !!}</p>
                     <p class="element__description">{!! trans('content.fairy_tails_description_one') !!}</p>
                     <p class="element__description">{!! trans('content.fairy_tails_description_two') !!}</p>
                     <p class="element__description">{!! trans('content.fairy_tails_description_three') !!}</p>
@@ -354,8 +369,10 @@ use App\Models\Team;
                     <div class="element_subsection">
                         <p class="element__title__sub text-orange">{!! trans('content.photo_program_title_subtitle_one') !!}</p>
                         <p class="element__description">{!! trans('content.photo_program_description_subtitle_one') !!}</p>
-                        <p class="element__curator"><b>{!! trans('content.photograther') !!}:</b> {!! trans('content.photograther_list') !!}</p>
-                        <p class="element__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.anastasia_loktaeva') !!}</p>
+                        <p class="element__curator"><b>{!! trans('content.photograther') !!}
+                                :</b> {!! trans('content.photograther_list') !!}</p>
+                        <p class="element__curator"><b>{!! trans('content.curator') !!}
+                                :</b> {!! trans('content.anastasia_loktaeva') !!}</p>
                         <p class="element__description no_margin__top">{!! trans('content.photograther_description') !!}</p>
                     </div>
 
@@ -367,7 +384,8 @@ use App\Models\Team;
                         </p>
 
                         <p class="element__description">{!! trans('content.african_photo_archive_description') !!}</p>
-                        <p class="element__curator"><b>{!! trans('content.curator') !!}:</b>{!! trans('content.natalia_litvinskaya') !!}.</p>
+                        <p class="element__curator"><b>{!! trans('content.curator') !!}
+                                :</b>{!! trans('content.natalia_litvinskaya') !!}.</p>
                         <p class="element__description no_margin__top">{!! trans('content.natalia_litvinskaya_description') !!}</p>
                     </div>
                 </div>
@@ -388,40 +406,11 @@ use App\Models\Team;
                     <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
-{{--                <div class="container">--}}
-{{--                    <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>--}}
-{{--                </div>--}}
             </div>
 
         </div>
 
     </section>
-
-    {{--<section id="participant" class="invite">--}}
-    {{--    <div class="invite__description">--}}
-    {{--        <div class="container">--}}
-    {{--            <h3>{!! trans('content.participant_title') !!}</h3>--}}
-
-    {{--            <div class="invite__wrapper">--}}
-    {{--                <div class="invite__text_how">--}}
-    {{--                    <p>{!! trans('content.participant_about') !!} {!! trans('content.participant_about_register') !!}</p>--}}
-    {{--                    <p>{!! trans('content.participant_about_time') !!}</p>--}}
-    {{--                </div>--}}
-    {{--                <div class="invite__form">--}}
-    {{--                    <form action="" onsubmit="return false;">--}}
-    {{--                        <div data-register-tooltip id="tooltip">--}}
-    {{--                            Регистрация на фестиваль откроется 1 мая 2023 года.--}}
-    {{--                            <div id="arrow" data-popper-arrow></div>--}}
-    {{--                        </div>--}}
-    {{--                        <button data-register-button--}}
-    {{--                                class="btn btn-md registration">{!! trans('content.participant_register') !!}</button>--}}
-    {{--                    </form>--}}
-    {{--                </div>--}}
-    {{--            </div>--}}
-
-    {{--        </div>--}}
-    {{--    </div>--}}
-    {{--</section>--}}
 
     <section class="teams">
         <div class="container">
@@ -449,17 +438,6 @@ use App\Models\Team;
         <div class="container">
             <h3>{!! trans('content.partners_title') !!}</h3>
             <div class="partners_block__content">
-{{--                <div class="row official">--}}
-{{--                    <div class="official__title">{!! trans('content.partners_official') !!}</div>--}}
-{{--                    <div class="official__list">--}}
-{{--                        <div class="official__img_wrapper">--}}
-{{--                            <img src="/images/alrosa.svg" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="official__img_wrapper">--}}
-{{--                            <img src="/images/mkrf.svg" alt="">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
                 <div class="row information">
                     <div class="information__partner">
                         <div class="information__title">{!! trans('content.partners_information') !!}</div>

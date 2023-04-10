@@ -51,26 +51,12 @@ class TeamController extends Controller
 
         $element->save();
 
-        $france_title = new TeamTranslate();
-        $france_title->lang = Translate::FR->value;
-        $france_title->team_id = $element->id;
-        $france_title->code = 'title';
-        $france_title->value = $request->input('title_fr');
-        $france_title->save();
-
         $english_title = new TeamTranslate();
         $english_title->lang = Translate::EN->value;
         $english_title->team_id = $element->id;
         $english_title->code = 'title';
         $english_title->value = $request->input('title_en');
         $english_title->save();
-
-        $france_description = new TeamTranslate();
-        $france_description->lang = Translate::FR->value;
-        $france_description->team_id = $element->id;
-        $france_description->code = 'description';
-        $france_description->value = $request->input('description_fr');
-        $france_description->save();
 
         $english_description = new TeamTranslate();
         $english_description->lang = Translate::EN->value;
