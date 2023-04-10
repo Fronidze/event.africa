@@ -30,7 +30,7 @@ use App\Models\Team;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Фестиваль: Дни Африканской культуры и кино</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/style/main.css?t={{microtime()}}">
+    <link rel="stylesheet" href="/style/main.css?t={{microtime(true)}}">
 </head>
 <body>
 
@@ -117,10 +117,10 @@ use App\Models\Team;
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="/js/jquery-3.1.1.min.js?t={{microtime()}}"></script>
-<script src="/js/popper.min.js?t={{microtime()}}"></script>
-<script src="/js/bootstrap.js?t={{microtime()}}"></script>
-<script src="/js/main.js?t={{microtime()}}"></script>
+<script src="/js/jquery-3.1.1.min.js?t={{microtime(true)}}"></script>
+<script src="/js/popper.min.js?t={{microtime(true)}}"></script>
+<script src="/js/bootstrap.js?t={{microtime(true)}}"></script>
+<script src="/js/main.js?t={{microtime(true)}}"></script>
 
 </body>
 </html>
