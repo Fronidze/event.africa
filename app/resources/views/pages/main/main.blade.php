@@ -220,26 +220,16 @@ use App\Models\Team;
             <div id="movie" class="program_festival__element">
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                    <p class="element__title">КИНОПРОГРАММА<br>"ЗНАКОМЬТЕСЬ, АФРИКА!"</p>
-                    <p class="element__event_data"><b>Даты проведения:</b> 26-28 июля</p>
-                    <p class="element__curator"><b>Куратор:</b> Евгений Айзикович</p>
-                    <p class="element__description">
-                        Евгений Айзикович - продюсер, сценарист, телеведущий. <br>
-                        Окончил ВГИК (сценарно-киноведческий факультет, мастерская В. Утилова).
-                        Ведущий программы "Панорама с Евгением Айзиковичем", выходившая на телеканале ТРО и один из
-                        авторов
-                        программы "Матадор" на телеканале ОРТ.
-                        Креативный продюсер "Студии ВоенФильм". Член Союза кинематографистов России. Член Международной
-                        Академии телевидения и радиовещания.
-                    </p>
-                    <p class="element__list__title">
-                        В программу фестиваля входят лекции кураторов:
-                    </p>
+                    <p class="element__title">{!! trans('content.cinema_program') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date') !!}:</b> 26-28 {!! trans('content.july') !!}</p>
+                    <p class="element__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.evgeniy_aizukovich') !!}</p>
+                    <p class="element__description">{!! trans('content.cinema_program_description') !!}</p>
+                    <p class="element__list__title">{!! trans('content.cinema_curator_in_lecture') !!}:</p>
                     <ul class="element__list">
-                        <li>Сембен Усман и новая африканская волна</li>
-                        <li>Кино против колониализма</li>
-                        <li>Нил Блокамп и кинематограф ЮАР</li>
-                        <li>Искусство производить полторы тысячи фильмов в год</li>
+                        <li>{!! trans('content.cinema_curator_in_lecture_wave') !!}</li>
+                        <li>{!! trans('content.cinema_curator_in_lecture_colonization') !!}</li>
+                        <li>{!! trans('content.cinema_curator_in_lecture_cinematography_south_africa') !!}</li>
+                        <li>{!! trans('content.cinema_curator_in_lecture_one_and_a_half_thousand_a_year') !!}</li>
                     </ul>
                 </div>
 
@@ -265,32 +255,29 @@ use App\Models\Team;
             <div id="lecture" class="program_festival__element">
                 <div class="container element">
                     <div class="program_festival__border"><img src="/images/program_header_line.svg" alt=""></div>
-                    <p class="element__title">ЛЕКЦИИ, ПАБЛИК-ТОКИ,<br>КУРАТОРСКИЕ ПОКАЗЫ</p>
-                    <p class="element__event_data"><b>Даты проведения:</b> 26-28 июля</p>
-                    <p class="element__description"><b class="text-orange">Лекция по "Африканскому и современному
-                            искусству".</b><br>
-                        Посвящена влиянию африканского искусства на творчество современных художников, а также на
-                        художников начала xx века в связи с активным распространением "негритянского искусства" в
-                        Европе.</p>
-                    <p class="element__description"><b class="text-orange">"Россия и Египет близки как никогда".</b>
-                        <br>
-                        Паблик-ток с Михаилом Орловым, внуком последнего короля Египта Фарука, Председателем
-                        Российско-Египетского делового совета при ТПП РФ.</p>
-                    <p class="element__description"><b class="text-orange">Кураторский показ выставки "История
-                            Африканского
-                            фотоархива".</b><br>Наталия Литвинская</p>
-                    <p class="element__description"><b class="text-orange">Творческая встреча с фотографом Сергеем
-                            Горшковым и
-                            <br> Дэйвом Варти.</b><br>
-                        Дейв Варти - основатель и совладелец экопарка "londolozi private game reserve" в ЮАР. <br>
-                        Сергей Горшков – российский фотограф, известный своими снимками дикой природы Камчатки, Африки и
-                        крайнего Севера.
-                        Лауреат многочисленных премий как в России, так и за рубежом, в том числе - Wildlife
-                        photographer
-                        of the year, Shell Wildlife Photographer of the Year,
-                        а также международного конкурса "Золотая черепаха". Участник выставки фестиваля "Африканская
-                        мечта".
+                    <p class="element__title">{!! trans('content.lectures_public_curator') !!}</p>
+                    <p class="element__event_data"><b>{!! trans('content.event_date') !!}:</b> 26-28 {!! trans('content.july') !!}</p>
+
+                    <p class="element__description">
+                        <b class="text-orange">{!! trans('content.lectures_african_and_contemporary_art') !!}</b><br>
+                        {!! trans('content.lectures_african_and_contemporary_art_description') !!}
                     </p>
+
+                    <p class="element__description">
+                        <b class="text-orange">{!! trans('content.lectures_russia_and_egypt') !!}</b> <br>
+                        {!! trans('content.lectures_russia_and_egypt_description') !!}
+                    </p>
+
+                    <p class="element__description">
+                        <b class="text-orange">{!! trans('content.lectures_african_photo_archive') !!}</b><br>
+                        {!! trans('content.lectures_african_photo_archive_description') !!}
+                    </p>
+
+                    <p class="element__description">
+                        <b class="text-orange">{!! trans('content.lecture_meet_with_photographer') !!}</b><br>
+                        {!! trans('content.lecture_meet_with_photographer_description') !!}
+                    </p>
+
                 </div>
 
                 <div class="event_action">
