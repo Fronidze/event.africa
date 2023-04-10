@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'about' => 'О фестивале',
-    'news' => 'Новости',
-    'program' => 'Программа',
-    'participant' => 'Стать участником',
+    'about' => 'About',
+    'news' => 'News',
+    'program' => 'Program',
+    'participant' => 'Register<br>for the event',
 ];

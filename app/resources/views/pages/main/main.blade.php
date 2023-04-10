@@ -30,7 +30,7 @@ use App\Models\Team;
                 <div class="invite__form">
                     <form action="" onsubmit="return false;">
                         <div data-register-tooltip id="tooltip">
-                            Регистрация на фестиваль откроется 1 мая 2023 года.
+                            {!! trans('content.register_will_open') !!}
                             <div id="arrow" data-popper-arrow></div>
                         </div>
                         <button data-register-button
@@ -128,14 +128,10 @@ use App\Models\Team;
                     </div>
                 @endforeach
                 <div class="news_list__more">
-                    <a class="btn show_more" href="{{ route('news.list', ['lang' => app()->getLocale()]) }}">все новости</a>
+                    <a class="btn show_more" href="{{ route('news.list', ['lang' => app()->getLocale()]) }}">{!! trans('content.all_news') !!}</a>
                 </div>
             </div>
         </div>
-
-{{--        <div class="program__top_image">--}}
-{{--            <img src="/images/program_top_image.svg" alt="">--}}
-{{--        </div>--}}
 
     </section>
 
@@ -153,50 +149,42 @@ use App\Models\Team;
                     <p class="program__title">{!! trans('content.title_deal_program') !!}</p>
 
                     <div class="program__subsection">
-                        <p class="program__title_sub">Круглый стол "Африканская культура в 21 веке"</p>
-                        <p class="program__curator"><b>Куратор:</b> Юрате Гураускайте (editor-in-chief "U magazine"
-                            Russia)
-                        </p>
-                        <p class="program__description">Идея заключается в том, чтобы устранить катастрофическую
-                            нехватку
-                            информации в современной африканской культуре, объединить и сблизить наши страны посредством
-                            культурного диалога.</p>
+                        <p class="program__title_sub">{!! trans('content.culture_21_age') !!}</p>
+                        <p class="program__curator"><b>{!! trans('content.curator') !!}:</b> {!! trans('content.culture_21_age_curator') !!}</p>
+                        <p class="program__description">{!! trans('content.culture_21_age_description') !!}</p>
                         <p class="program__members">
-                            <span class="program__members__title">Участники мероприятия:</span>
+                            <span class="program__members__title">{!! trans('content.members_event') !!}:</span>
                         </p>
                         <ul class="program__members__list">
-                            <li>Oumi Ndour (journalist, filmmaker)</li>
-                            <li>Didier Awadi ( musician, producer)</li>
-                            <li>Iain Macdonald (Joburg ballet art director)</li>
+                            <li>{!! trans('content.oumi_ndour') !!}</li>
+                            <li>{!! trans('content.didier_awadi') !!}</li>
+                            <li>{!! trans('content.iain_macdonald') !!}</li>
                         </ul>
                         <div class="event_action">
-                            <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                            <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                         </div>
                     </div>
 
                     <div class="program__subsection">
-                        <p class="program__title_sub">Круглый стол "Киноиндустрия России и Африки"</p>
-                        <p class="program__description">Круглый стол по сотрудничеству в производстве ТВ-продукции, кино
-                            и
-                            анимаций даст возможность познакомить представителей африканского аудиовизуального бизнеса с
-                            российским и наоборот.</p>
+                        <p class="program__title_sub">{!! trans('content.cinema_industry') !!}</p>
+                        <p class="program__description">{!! trans('content.cinema_industry_description') !!}</p>
                         <p class="program__members">
-                            <span class="program__members__title">Участники мероприятия:</span>
+                            <span class="program__members__title">{!! trans('content.members_event') !!}:</span>
                         </p>
                         <ul class="program__members__list">
-                            <li>Ibra Kane - emedia senegal (tv, radio, web)</li>
-                            <li>Timothy Odhiamo Owase (CEO Kenya Film Comission)</li>
-                            <li>Wanuri Kahiu (Kenya, film director & producer)</li>
-                            <li>Mo Abudu (Nigeria, film director, co founder EbonyLife TV)</li>
-                            <li>Amjad Abu Alala (Sudan, filmmakerproducer)</li>
-                            <li>David ‘tosh’ Gitonga (Kenya, filmmaker and producer)</li>
-                            <li>Shirley Frimpong-manso (Ghana, filmmaker, producer, founder of Sparrow Productions)</li>
-                            <li>Ousman Samassekou (Mali, filmmaker)</li>
-                            <li>Moses Babatope (Nigeria, director filmhouse group)</li>
-                            <li>Ferdy Adimefe (CEO Magic Carpet Studios, Nigeria, animation)</li>
+                            <li>{!! trans('content.ibra_kane') !!}</li>
+                            <li>{!! trans('content.timothy_odhiamo_owase') !!}</li>
+                            <li>{!! trans('content.wanuri_kahiu') !!}</li>
+                            <li>{!! trans('content.mo_abudu') !!}</li>
+                            <li>{!! trans('content.amjad_abu_alala') !!}</li>
+                            <li>{!! trans('content.david_gitonga') !!}</li>
+                            <li>{!! trans('content.shirley_frimpong_manso') !!}</li>
+                            <li>{!! trans('content.ousman_samassekou') !!}</li>
+                            <li>{!! trans('content.moses_babatope') !!}</li>
+                            <li>{!! trans('content.ferdy_adimefe') !!}</li>
                         </ul>
                         <div class="event_action">
-                            <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                            <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                         </div>
                     </div>
 
@@ -214,7 +202,7 @@ use App\Models\Team;
                         <li><a href="#photo"><p>{!! trans('content.list_culture_program_photo') !!}</p></a></li>
                     </ul>
                     <div class="event_action">
-                        <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                        <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                     </div>
                 </div>
 
@@ -269,7 +257,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -306,7 +294,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -368,7 +356,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -390,7 +378,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
             </div>
@@ -451,7 +439,7 @@ use App\Models\Team;
                 </div>
 
                 <div class="event_action">
-                    <a href="javascript: void(0)" class="btn event_register">зарегистрироваться на мероприятие</a>
+                    <a href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
 
 {{--                <div class="container">--}}

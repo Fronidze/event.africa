@@ -2,7 +2,6 @@
 
 return [
     'africa' => 'африка',
-    //'cradle_civilization' => 'колыбель<br>цивилизации',
     'cradle_civilization' => 'Вместе в будущее',
     'july' => 'июля',
     'st_petersburg' => 'Санкт-Петербург',
@@ -50,4 +49,29 @@ return [
     'partners_official' => 'официальный<br>партнер фестиваля',
     'partners_information' => 'информационный партнер фестиваля',
     'partners_organization' => 'организатор',
+
+    'all_news' => 'все новости',
+    'register_will_open' => 'Регистрация на фестиваль откроется 1 мая 2023 года.',
+    'culture_21_age' => 'Круглый стол "Африканская культура в 21 веке"',
+    'curator' => 'Куратор',
+    'culture_21_age_curator' => 'Юрате Гураускайте (editor-in-chief "U magazine" Russia)',
+    'culture_21_age_description' => 'Идея заключается в том, чтобы устранить катастрофическую нехватку информации в современной африканской культуре, объединить и сблизить наши страны посредством культурного диалога.',
+    'members_event' => 'Участники мероприятия',
+    'oumi_ndour' => 'Oumi Ndour (journalist, filmmaker)',
+    'didier_awadi' => 'Didier Awadi ( musician, producer)',
+    'iain_macdonald' => 'Iain Macdonald (Joburg ballet art director)',
+    'event_register' => 'зарегистрироваться на мероприятие',
+
+    'cinema_industry' => 'Круглый стол "Киноиндустрия России и Африки"',
+    'cinema_industry_description' => 'Круглый стол по сотрудничеству в производстве ТВ-продукции, кино и анимаций даст возможность познакомить представителей африканского аудиовизуального бизнеса с российским и наоборот.',
+    'ibra_kane' => 'Ibra Kane - emedia senegal (tv, radio, web)',
+    'timothy_odhiamo_owase' => 'Timothy Odhiamo Owase (CEO Kenya Film Comission)',
+    'wanuri_kahiu' => 'Wanuri Kahiu (Kenya, film director & producer)',
+    'mo_abudu' => 'Mo Abudu (Nigeria, film director, co founder EbonyLife TV)',
+    'amjad_abu_alala' => 'Amjad Abu Alala (Sudan, filmmakerproducer)',
+    'david_gitonga' => 'David ‘tosh’ Gitonga (Kenya, filmmaker and producer)',
+    'shirley_frimpong_manso' => 'Shirley Frimpong-manso (Ghana, filmmaker, producer, founder of Sparrow Productions)',
+    'ousman_samassekou' => 'Ousman Samassekou (Mali, filmmaker)',
+    'moses_babatope' => 'Moses Babatope (Nigeria, director filmhouse group)',
+    'ferdy_adimefe' => 'Ferdy Adimefe (CEO Magic Carpet Studios, Nigeria, animation)',
 ];
