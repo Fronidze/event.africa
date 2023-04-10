@@ -14,6 +14,18 @@ let windowLoad = () => {
         slidesPerView: 5,
         spaceBetween: 3,
         pagination: {el: '.swiper-pagination.movies', clickable: true},
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 5
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 5,
+                spaceBetween: 3,
+            }
+        }
     });
 
     const program_festival_music = new Swiper('.program_festival__gallery.music', {

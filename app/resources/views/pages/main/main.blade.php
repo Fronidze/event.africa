@@ -327,6 +327,16 @@ use App\Models\Team;
                     <div class="swiper-pagination music"></div>
                 </div>
 
+                <div class="mobile_music_gallery container">
+                    <div class="mobile_music_gallery__wrapper">
+                        @foreach($musicElements as $element)
+                            <div class="one_music_images">
+                                <img src="{{ $element->file?->filePath() }}" alt="{{ $element->title }}">
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
                 <div class="event_action">
                     <a data-toggle="popover" data-placement="top" data-content="{!! trans('content.register_will_open') !!}" href="javascript: void(0)" class="btn event_register">{!! trans('content.event_register') !!}</a>
                 </div>
