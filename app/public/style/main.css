@@ -1661,7 +1661,7 @@ footer .footer_wrapper .social ul li a img {
 @media screen and (max-width: 768px) {
   .teams__record .title {
     font-size: 1.1rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.3rem;
     margin-top: 1.3rem;
   }
 }
@@ -2160,7 +2160,9 @@ footer .footer_wrapper .social ul li a img {
     font-size: 0.8rem;
     line-height: 1.11;
     width: 6.4rem;
-    margin-right: 1.2rem;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }
 .partners_block__content .information__partner, .partners_block__content .information__organization {
@@ -2169,14 +2171,19 @@ footer .footer_wrapper .social ul li a img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .partners_block__content .information__partner, .partners_block__content .information__organization {
+    flex-direction: column;
+  }
+}
 .partners_block__content .information__partner__logo_wrapper {
   width: 13.6rem;
   height: 13rem;
 }
 @media screen and (max-width: 768px) {
   .partners_block__content .information__partner__logo_wrapper {
-    width: 2.9rem;
-    height: 4rem;
+    width: 4.48rem;
+    height: 6rem;
   }
 }
 .partners_block__content .information__partner__logo_wrapper img {
@@ -2190,8 +2197,8 @@ footer .footer_wrapper .social ul li a img {
 }
 @media screen and (max-width: 768px) {
   .partners_block__content .information__organization__logo_wrapper {
-    width: 4.6rem;
-    height: 2.8rem;
+    width: 6.6rem;
+    height: 4.8rem;
   }
 }
 .partners_block__content .information__organization__logo_wrapper img {
