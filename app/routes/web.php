@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('admin')->name('panel.')->group(function () {
+Route::prefix('admin-africa')->name('panel.')->group(function () {
     Route::get('/', [PanelController::class, 'index'])->name('index');
 
     Route::prefix('gallery')->name('gallery.')->group(function () {
